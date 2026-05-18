@@ -1,264 +1,264 @@
-Flow Type,Country,Country Code,Total Migrants,Male,Female,Male %,Continent
-Immigrants,United Kingdom,826,"1,119,737","566,587","553,150",50.6%,Europe
-Immigrants,New Zealand,554,"263,301","134,810","128,491",51.2%,Australia
-Immigrants,Italy,380,"256,923","138,481","118,442",53.9%,Europe
-Immigrants,Greece,300,"137,306","70,301","67,005",51.2%,Europe
-Immigrants,Viet Nam,704,"121,046","62,702","58,344",51.8%,Asia
-Immigrants,Germany,276,"114,446","55,964","58,482",48.9%,Europe
-Immigrants,Netherlands,528,"95,745","50,936","44,809",53.2%,Europe
-Immigrants,China,156,"73,079","35,443","37,636",48.5%,Asia
-Immigrants,Philippines,608,"71,142","23,761","47,381",33.4%,Asia
-Immigrants,Malaysia,458,"70,262","32,812","37,450",46.7%,Asia
-Immigrants,Poland,616,"67,785","34,841","32,944",51.4%,Europe
-Immigrants,Lebanon,422,"66,656","35,461","31,195",53.2%,Asia
-Immigrants,"China, Hong Kong SAR",344,"59,104","29,552","29,552",50.0%,Asia
-Immigrants,Serbia,688,"57,213","30,666","26,547",53.6%,Europe
-Immigrants,Croatia,191,"55,533","30,043","25,490",54.1%,Europe
-Immigrants,India,356,"54,882","30,679","24,203",55.9%,Asia
-Immigrants,Malta,470,"54,087","28,558","25,529",52.8%,Europe
-Immigrants,Ireland,372,"51,489","26,671","24,818",51.8%,Europe
-Immigrants,TFYR Macedonia,807,"49,301","25,982","23,319",52.7%,Europe
-Immigrants,United States of America,840,"48,950","26,286","22,664",53.7%,North America
-Immigrants,South Africa,710,"46,167","22,853","23,314",49.5%,Africa
-Immigrants,Sri Lanka,144,"42,523","21,389","21,134",50.3%,Asia
-Immigrants,Indonesia,360,"41,797","21,191","20,606",50.7%,Asia
-Immigrants,Egypt,818,"37,470","19,147","18,323",51.1%,Africa
-Immigrants,Fiji,242,"33,513","15,718","17,795",46.9%,Oceania
-Immigrants,Hungary,348,"30,211","16,707","13,504",55.3%,Europe
-Immigrants,Turkey,792,"29,111","14,934","14,177",51.3%,Asia
-Immigrants,Chile,152,"26,408","12,808","13,600",48.5%,South America
-Immigrants,Papua New Guinea,598,"24,941","11,722","13,219",47.0%,Oceania
-Immigrants,Singapore,702,"24,824","11,791","13,033",47.5%,Asia
-Immigrants,Austria,40,"24,364","13,278","11,086",54.5%,Europe
-Immigrants,Cyprus,196,"24,057","12,413","11,644",51.6%,Asia
-Immigrants,Canada,124,"23,243","11,691","11,552",50.3%,North America
-Immigrants,Republic of Korea,410,"21,362","10,190","11,172",47.7%,Asia
-Immigrants,Japan,392,"21,286","8,749","12,537",41.1%,Asia
-Immigrants,Cambodia,116,"21,140","10,570","10,570",50.0%,Asia
-Immigrants,Portugal,620,"18,619","9,812","8,807",52.7%,Europe
-Immigrants,Ukraine,804,"17,544","8,316","9,228",47.4%,Europe
-Immigrants,Mauritius,480,"17,128","8,376","8,752",48.9%,Africa
-Immigrants,Russian Federation,643,"15,589","6,563","9,026",42.1%,Europe
-Immigrants,Iran,364,"14,854","8,036","6,818",54.1%,Asia
-Immigrants,Spain,724,"14,752","7,996","6,756",54.2%,Europe
-Immigrants,Taiwan,158,"14,440","7,018","7,422",48.6%,Asia
-Immigrants,Bosnia and Herzegovina,70,"13,992","7,318","6,674",52.3%,Europe
-Immigrants,Czech Republic,203,"13,964","7,904","6,060",56.6%,Europe
-Immigrants,Thailand,764,"13,659","5,518","8,141",40.4%,Asia
-Immigrants,France,250,"13,349","6,715","6,634",50.3%,Europe
-Immigrants,Romania,642,"11,598","6,124","5,474",52.8%,Europe
-Immigrants,Argentina,32,"11,476","5,681","5,795",49.5%,South America
-Immigrants,Latvia,428,"11,447","5,918","5,529",51.7%,Europe
-Immigrants,Uruguay,858,"11,124","5,451","5,673",49.0%,South America
-Immigrants,Laos,418,"11,064","5,742","5,322",51.9%,Asia
-Immigrants,El Salvador,222,"10,849","5,359","5,490",49.4%,Central America
-Immigrants,Slovenia,705,"10,038","5,481","4,557",54.6%,Europe
-Immigrants,Switzerland,756,"9,845","5,385","4,460",54.7%,Europe
-Immigrants,Finland,246,"9,389","4,732","4,657",50.4%,Europe
-Immigrants,Denmark,208,"9,385","5,265","4,120",56.1%,Europe
-Immigrants,Iraq,368,"9,359","5,344","4,015",57.1%,Asia
-Immigrants,Myanmar,104,"8,763","4,250","4,513",48.5%,Asia
-Immigrants,Samoa,882,"7,863","3,656","4,207",46.5%,Oceania
-Immigrants,Tonga,776,"7,089","3,261","3,828",46.0%,Oceania
-Immigrants,Montenegro,499,"6,958","3,743","3,215",53.8%,Europe
-Immigrants,Zimbabwe,716,"6,744","3,453","3,291",51.2%,Africa
-Immigrants,Israel,376,"6,191","3,386","2,805",54.7%,Asia
-Immigrants,Lithuania,440,"5,750","3,162","2,588",55.0%,Europe
-Immigrants,Syrian Arab Republic,760,"5,630","2,809","2,821",49.9%,Asia
-Immigrants,Slovakia,703,"5,576","3,189","2,387",57.2%,Europe
-Immigrants,Sweden,752,"5,265","2,864","2,401",54.4%,Europe
-Immigrants,Pakistan,586,"5,079","2,926","2,153",57.6%,Asia
-Immigrants,Belgium,56,"4,565","2,205","2,360",48.3%,Europe
-Immigrants,Peru,604,"4,190","1,869","2,321",44.6%,South America
-Immigrants,Kenya,404,"4,190","2,296","1,894",54.8%,Africa
-Immigrants,Afghanistan,4,"3,929","2,208","1,721",56.2%,Asia
-Immigrants,Bangladesh,50,"3,071","1,987","1,084",64.7%,Asia
-Immigrants,State of Palestine,275,"3,057","1,767","1,290",57.8%,Asia
-Immigrants,Seychelles,690,"2,894","1,395","1,499",48.2%,Africa
-Immigrants,Estonia,233,"2,805","1,304","1,501",46.5%,Europe
-Immigrants,Norway,578,"2,299","1,333",966,58.0%,Europe
-Immigrants,Jordan,400,"2,294","1,305",989,56.9%,Asia
-Immigrants,Zambia,894,"2,262","1,147","1,115",50.7%,Africa
-Immigrants,Bulgaria,100,"2,196","1,291",905,58.8%,Europe
-Immigrants,Brazil,76,"2,122",985,"1,137",46.4%,South America
-Immigrants,"China, Macao SAR",446,"1,753",806,947,46.0%,Asia
-Immigrants,Colombia,170,"1,610",755,855,46.9%,South America
-Immigrants,Brunei Darussalam,96,"1,545",802,743,51.9%,Asia
-Immigrants,Ethiopia,231,"1,491",805,686,54.0%,Africa
-Immigrants,Sudan,729,"1,375",785,590,57.1%,Africa
-Immigrants,Tanzania,834,"1,358",785,573,57.8%,Africa
-Immigrants,Somalia,706,"1,273",673,600,52.9%,Africa
-Immigrants,Trinidad and Tobago,780,"1,220",617,603,50.6%,North America
-Immigrants,Ecuador,218,"1,183",599,584,50.6%,South America
-Immigrants,Kuwait,414,"1,159",617,542,53.2%,Asia
-Immigrants,Ghana,288,"1,114",648,466,58.2%,Africa
-Immigrants,New Caledonia,540,"1,076",450,626,41.8%,Oceania
-Immigrants,Belarus,112,"1,075",510,565,47.4%,Europe
-Immigrants,Solomon Islands,90,"1,067",366,701,34.3%,Oceania
-Immigrants,Morocco,504,"1,029",691,338,67.2%,Africa
-Immigrants,Libya,434,"1,021",568,453,55.6%,Africa
-Immigrants,Uganda,800,995,556,439,55.9%,Africa
-Immigrants,Nigeria,566,927,580,347,62.6%,Africa
-Immigrants,Vanuatu,548,921,284,637,30.8%,Oceania
-Immigrants,Eritrea,232,865,457,408,52.8%,Africa
-Immigrants,Nicaragua,558,858,412,446,48.0%,Central America
-Immigrants,Jamaica,388,835,428,407,51.3%,North America
-Immigrants,Albania,8,822,478,344,58.2%,Europe
-Immigrants,Nepal,524,799,558,241,69.8%,Asia
-Immigrants,Armenia,51,797,402,395,50.4%,Asia
-Immigrants,Algeria,12,696,454,242,65.2%,Africa
-Immigrants,Mexico,484,632,301,331,47.6%,North America
-Immigrants,Saudi Arabia,682,599,379,220,63.3%,Asia
-Immigrants,United Arab Emirates,784,545,318,227,58.3%,Asia
-Immigrants,Bolivia,68,534,264,270,49.4%,South America
-Immigrants,Venezuela,862,501,236,265,47.1%,South America
-Immigrants,Bahrain,48,483,266,217,55.1%,Asia
-Immigrants,Guyana,328,480,215,265,44.8%,South America
-Immigrants,Tunisia,788,461,283,178,61.4%,Africa
-Immigrants,Cuba,192,423,216,207,51.1%,North America
-Immigrants,Mozambique,508,397,218,179,54.9%,Africa
-Immigrants,Angola,24,359,190,169,52.9%,Africa
-Immigrants,Kiribati,296,350,105,245,30.0%,Oceania
-Immigrants,Barbados,52,341,194,147,56.9%,North America
-Immigrants,Malawi,454,329,171,158,52.0%,Africa
-Immigrants,Costa Rica,188,323,185,138,57.3%,Central America
-Immigrants,Iceland,352,289,159,130,55.0%,Europe
-Immigrants,Republic of Moldova,498,285,143,142,50.2%,Europe
-Immigrants,Paraguay,600,272,130,142,47.8%,South America
-Immigrants,Bahamas,44,218,100,118,45.9%,North America
-Immigrants,Guatemala,320,218,105,113,48.2%,Central America
-Immigrants,French Polynesia,258,212,86,126,40.6%,Oceania
-Immigrants,Namibia,516,207,106,101,51.2%,Africa
-Immigrants,Yemen,887,203,118,85,58.1%,Asia
-Immigrants,Uzbekistan,860,193,98,95,50.8%,Asia
-Immigrants,D.R. Congo,180,183,92,91,50.3%,Africa
-Immigrants,Senegal,686,156,100,56,64.1%,Africa
-Immigrants,Honduras,340,141,73,68,51.8%,Central America
-Immigrants,Georgia,268,130,64,66,49.2%,Asia
-Immigrants,Maldives,462,128,51,77,39.8%,Asia
-Immigrants,Botswana,72,115,69,46,60.0%,Africa
-Immigrants,Swaziland,748,114,59,55,51.8%,Africa
-Immigrants,Madagascar,450,114,58,56,50.9%,Africa
-Immigrants,Panama,591,106,62,44,58.5%,Central America
-Immigrants,Luxembourg,442,103,49,54,47.6%,Europe
-Immigrants,Sierra Leone,694,97,52,45,53.6%,Africa
-Immigrants,Mongolia,496,97,39,58,40.2%,Asia
-Immigrants,Qatar,634,94,58,36,61.7%,Asia
-Immigrants,Kazakhstan,398,94,38,56,40.4%,Asia
-Immigrants,Grenada,308,87,41,46,47.1%,North America
-Immigrants,Curaçao,531,81,36,45,44.4%,America
-Immigrants,Oman,512,74,46,28,62.2%,Asia
-Immigrants,Haiti,332,72,29,43,40.3%,North America
-Immigrants,Puerto Rico,630,72,26,46,36.1%,North America
-Immigrants,Suriname,740,67,31,36,46.3%,South America
-Immigrants,Aruba,533,60,37,23,61.7%,North America
-Immigrants,Djibouti,262,53,18,35,34.0%,Africa
-Immigrants,Saint Vincent and the Grenadines,670,53,30,23,56.6%,North America
-Immigrants,Liberia,430,50,26,24,52.0%,Africa
-Immigrants,Lesotho,426,46,27,19,58.7%,Africa
-Immigrants,Réunion,638,44,17,27,38.6%,Africa
-Immigrants,Azerbaijan,31,44,18,26,40.9%,Asia
-Immigrants,Belize,84,33,13,20,39.4%,Central America
-Immigrants,Dominican Republic,214,29,15,14,51.7%,North America
-Immigrants,Bhutan,64,29,17,12,58.6%,Asia
-Immigrants,Guam,316,29,12,17,41.4%,Oceania
-Immigrants,Côte d'Ivoire,384,21,12,9,57.1%,Africa
-Immigrants,Tajikistan,762,19,8,11,42.1%,Asia
-Immigrants,Burundi,108,18,10,8,55.6%,Africa
-Immigrants,Cameroon,120,12,8,4,66.7%,Africa
-Immigrants,Antigua and Barbuda,28,12,4,8,33.3%,North America
-Immigrants,Kyrgyzstan,417,12,6,6,50.0%,Asia
-Immigrants,Gambia,270,12,7,5,58.3%,Africa
-Immigrants,Saint Lucia,662,11,8,3,72.7%,North America
-Immigrants,Monaco,492,10,5,5,50.0%,Europe
-Immigrants,Central African Republic,140,8,7,1,87.5%,Africa
-Immigrants,Chad,148,7,5,2,71.4%,Africa
-Immigrants,Turkmenistan,795,6,2,4,33.3%,Asia
-Immigrants,Burkina Faso,854,6,5,1,83.3%,Africa
-Immigrants,Rwanda,646,3,2,1,66.7%,Africa
-Immigrants,Gabon,266,3,2,1,66.7%,Africa
-Immigrants,Togo,768,3,2,1,66.7%,Africa
-Immigrants,Guinea,324,3,2,1,66.7%,Africa
-Immigrants,Benin,204,3,2,1,66.7%,Africa
-Emigrants,United Kingdom,826,"71,717","32,201","39,516",44.9%,Europe
-Emigrants,New Zealand,554,"48,723","22,802","25,921",46.8%,Australia
-Emigrants,Greece,300,"19,643","10,489","9,154",53.4%,Europe
-Emigrants,Italy,380,"16,050","6,902","9,148",43.0%,Europe
-Emigrants,Papua New Guinea,598,"13,916","8,113","5,803",58.3%,Oceania
-Emigrants,Canada,124,"13,712","6,116","7,596",44.6%,North America
-Emigrants,China,156,"6,495","3,715","2,780",57.2%,Asia
-Emigrants,"China, Hong Kong SAR",344,"6,092","3,509","2,583",57.6%,Asia
-Emigrants,Indonesia,360,"6,047","3,169","2,878",52.4%,Asia
-Emigrants,Singapore,702,"4,549","2,384","2,165",52.4%,Asia
-Emigrants,Ireland,372,"4,510","2,142","2,368",47.5%,Europe
-Emigrants,South Africa,710,"4,309","2,103","2,206",48.8%,Africa
-Emigrants,Japan,392,"3,687","2,131","1,556",57.8%,Asia
-Emigrants,Malta,470,"3,435","1,618","1,817",47.1%,Europe
-Emigrants,India,356,"2,632","1,121","1,511",42.6%,Asia
-Emigrants,Malaysia,458,"2,426","1,339","1,087",55.2%,Asia
-Emigrants,Argentina,32,"2,234","1,099","1,135",49.2%,South America
-Emigrants,Israel,376,"1,852",815,"1,037",44.0%,Asia
-Emigrants,Serbia,688,"1,519",822,697,54.1%,Europe
-Emigrants,Libya,434,"1,499",809,690,54.0%,Africa
-Emigrants,Fiji,242,"1,306",687,619,52.6%,Oceania
-Emigrants,Philippines,608,"1,058",655,403,61.9%,Asia
-Emigrants,Denmark,208,"1,036",487,549,47.0%,Europe
-Emigrants,Hungary,348,832,419,413,50.4%,Europe
-Emigrants,Norway,578,797,355,442,44.5%,Europe
-Emigrants,Namibia,516,793,304,489,38.3%,Africa
-Emigrants,Cyprus,196,741,378,363,51.0%,Asia
-Emigrants,Peru,604,737,411,326,55.8%,South America
-Emigrants,Croatia,191,694,266,428,38.3%,Europe
-Emigrants,Chile,152,582,295,287,50.7%,South America
-Emigrants,Brazil,76,458,225,233,49.1%,South America
-Emigrants,Finland,246,452,233,219,51.5%,Europe
-Emigrants,Vanuatu,548,442,262,180,59.3%,Oceania
-Emigrants,Timor-Leste,626,425,201,224,47.3%,Asia
-Emigrants,Solomon Islands,90,360,204,156,56.7%,Oceania
-Emigrants,Portugal,620,348,158,190,45.4%,Europe
-Emigrants,Poland,616,304,155,149,51.0%,Europe
-Emigrants,Taiwan,158,278,109,169,39.2%,Asia
-Emigrants,Egypt,818,269,152,117,56.5%,Africa
-Emigrants,Brunei Darussalam,96,262,140,122,53.4%,Asia
-Emigrants,Samoa,882,236,135,101,57.2%,Oceania
-Emigrants,Slovenia,705,226,103,123,45.6%,Europe
-Emigrants,New Caledonia,540,226,102,124,45.1%,Oceania
-Emigrants,Azerbaijan,31,210,98,112,46.7%,Asia
-Emigrants,Colombia,170,192,94,98,49.0%,South America
-Emigrants,Mexico,484,189,77,112,40.7%,North America
-Emigrants,Uganda,800,137,63,74,46.0%,Africa
-Emigrants,Venezuela,862,131,68,63,51.9%,South America
-Emigrants,Montenegro,499,130,43,87,33.1%,Europe
-Emigrants,Botswana,72,120,61,59,50.8%,Africa
-Emigrants,Panama,591,115,67,48,58.3%,Central America
-Emigrants,Dem. People's Republic of Korea,408,96,53,43,55.2%,Asia
-Emigrants,Zambia,894,81,39,42,48.1%,Africa
-Emigrants,Luxembourg,442,74,35,39,47.3%,Europe
-Emigrants,Bolivia,68,74,33,41,44.6%,South America
-Emigrants,Costa Rica,188,73,31,42,42.5%,Central America
-Emigrants,Dominican Republic,214,67,47,20,70.1%,North America
-Emigrants,Seychelles,690,67,30,37,44.8%,Africa
-Emigrants,Kiribati,296,64,40,24,62.5%,Oceania
-Emigrants,French Polynesia,258,63,31,32,49.2%,Oceania
-Emigrants,Iceland,352,60,23,37,38.3%,Europe
-Emigrants,Cambodia,116,54,34,20,63.0%,Asia
-Emigrants,Sri Lanka,144,51,32,19,62.7%,Asia
-Emigrants,Guatemala,320,47,19,28,40.4%,Central America
-Emigrants,Latvia,428,45,26,19,57.8%,Europe
-Emigrants,Maldives,462,37,20,17,54.1%,Asia
-Emigrants,El Salvador,222,33,13,20,39.4%,Central America
-Emigrants,Bahamas,44,27,14,13,51.9%,North America
-Emigrants,Barbados,52,24,12,12,50.0%,North America
-Emigrants,Lithuania,440,22,13,9,59.1%,Europe
-Emigrants,Belarus,112,21,12,9,57.1%,Europe
-Emigrants,Slovakia,703,18,8,10,44.4%,Europe
-Emigrants,Laos,418,18,10,8,55.6%,Asia
-Emigrants,Ghana,288,17,5,12,29.4%,Africa
-Emigrants,Bulgaria,100,13,9,4,69.2%,Europe
-Emigrants,Bhutan,64,12,10,2,83.3%,Asia
-Emigrants,Central African Republic,140,9,9,0,100.0%,Africa
-Emigrants,Swaziland,748,8,8,0,100.0%,Africa
-Emigrants,Ecuador,218,8,5,3,62.5%,South America
-Emigrants,Antigua and Barbuda,28,7,3,4,42.9%,North America
-Emigrants,Saint Lucia,662,7,2,5,28.6%,North America
-Emigrants,Mongolia,496,3,2,1,66.7%,Asia
+FlowType,Country,CountryCode,TotalMigrants,Male,Female,Male %,Continent
+Immigrants,United Kingdom,826,1119737,566587,553150,50.60%,Europe
+Immigrants,New Zealand,554,263301,134810,128491,51.20%,Australia
+Immigrants,Italy,380,256923,138481,118442,53.90%,Europe
+Immigrants,Greece,300,137306,70301,67005,51.20%,Europe
+Immigrants,Viet Nam,704,121046,62702,58344,51.80%,Asia
+Immigrants,Germany,276,114446,55964,58482,48.90%,Europe
+Immigrants,Netherlands,528,95745,50936,44809,53.20%,Europe
+Immigrants,China,156,73079,35443,37636,48.50%,Asia
+Immigrants,Philippines,608,71142,23761,47381,33.40%,Asia
+Immigrants,Malaysia,458,70262,32812,37450,46.70%,Asia
+Immigrants,Poland,616,67785,34841,32944,51.40%,Europe
+Immigrants,Lebanon,422,66656,35461,31195,53.20%,Asia
+Immigrants,"China, Hong Kong SAR",344,59104,29552,29552,50.00%,Asia
+Immigrants,Serbia,688,57213,30666,26547,53.60%,Europe
+Immigrants,Croatia,191,55533,30043,25490,54.10%,Europe
+Immigrants,India,356,54882,30679,24203,55.90%,Asia
+Immigrants,Malta,470,54087,28558,25529,52.80%,Europe
+Immigrants,Ireland,372,51489,26671,24818,51.80%,Europe
+Immigrants,TFYR Macedonia,807,49301,25982,23319,52.70%,Europe
+Immigrants,United States of America,840,48950,26286,22664,53.70%,North America
+Immigrants,South Africa,710,46167,22853,23314,49.50%,Africa
+Immigrants,Sri Lanka,144,42523,21389,21134,50.30%,Asia
+Immigrants,Indonesia,360,41797,21191,20606,50.70%,Asia
+Immigrants,Egypt,818,37470,19147,18323,51.10%,Africa
+Immigrants,Fiji,242,33513,15718,17795,46.90%,Oceania
+Immigrants,Hungary,348,30211,16707,13504,55.30%,Europe
+Immigrants,Turkey,792,29111,14934,14177,51.30%,Asia
+Immigrants,Chile,152,26408,12808,13600,48.50%,South America
+Immigrants,Papua New Guinea,598,24941,11722,13219,47.00%,Oceania
+Immigrants,Singapore,702,24824,11791,13033,47.50%,Asia
+Immigrants,Austria,40,24364,13278,11086,54.50%,Europe
+Immigrants,Cyprus,196,24057,12413,11644,51.60%,Asia
+Immigrants,Canada,124,23243,11691,11552,50.30%,North America
+Immigrants,Republic of Korea,410,21362,10190,11172,47.70%,Asia
+Immigrants,Japan,392,21286,8749,12537,41.10%,Asia
+Immigrants,Cambodia,116,21140,10570,10570,50.00%,Asia
+Immigrants,Portugal,620,18619,9812,8807,52.70%,Europe
+Immigrants,Ukraine,804,17544,8316,9228,47.40%,Europe
+Immigrants,Mauritius,480,17128,8376,8752,48.90%,Africa
+Immigrants,Russian Federation,643,15589,6563,9026,42.10%,Europe
+Immigrants,Iran,364,14854,8036,6818,54.10%,Asia
+Immigrants,Spain,724,14752,7996,6756,54.20%,Europe
+Immigrants,Taiwan,158,14440,7018,7422,48.60%,Asia
+Immigrants,Bosnia and Herzegovina,70,13992,7318,6674,52.30%,Europe
+Immigrants,Czech Republic,203,13964,7904,6060,56.60%,Europe
+Immigrants,Thailand,764,13659,5518,8141,40.40%,Asia
+Immigrants,France,250,13349,6715,6634,50.30%,Europe
+Immigrants,Romania,642,11598,6124,5474,52.80%,Europe
+Immigrants,Argentina,32,11476,5681,5795,49.50%,South America
+Immigrants,Latvia,428,11447,5918,5529,51.70%,Europe
+Immigrants,Uruguay,858,11124,5451,5673,49.00%,South America
+Immigrants,Laos,418,11064,5742,5322,51.90%,Asia
+Immigrants,El Salvador,222,10849,5359,5490,49.40%,Central America
+Immigrants,Slovenia,705,10038,5481,4557,54.60%,Europe
+Immigrants,Switzerland,756,9845,5385,4460,54.70%,Europe
+Immigrants,Finland,246,9389,4732,4657,50.40%,Europe
+Immigrants,Denmark,208,9385,5265,4120,56.10%,Europe
+Immigrants,Iraq,368,9359,5344,4015,57.10%,Asia
+Immigrants,Myanmar,104,8763,4250,4513,48.50%,Asia
+Immigrants,Samoa,882,7863,3656,4207,46.50%,Oceania
+Immigrants,Tonga,776,7089,3261,3828,46.00%,Oceania
+Immigrants,Montenegro,499,6958,3743,3215,53.80%,Europe
+Immigrants,Zimbabwe,716,6744,3453,3291,51.20%,Africa
+Immigrants,Israel,376,6191,3386,2805,54.70%,Asia
+Immigrants,Lithuania,440,5750,3162,2588,55.00%,Europe
+Immigrants,Syrian Arab Republic,760,5630,2809,2821,49.90%,Asia
+Immigrants,Slovakia,703,5576,3189,2387,57.20%,Europe
+Immigrants,Sweden,752,5265,2864,2401,54.40%,Europe
+Immigrants,Pakistan,586,5079,2926,2153,57.60%,Asia
+Immigrants,Belgium,56,4565,2205,2360,48.30%,Europe
+Immigrants,Peru,604,4190,1869,2321,44.60%,South America
+Immigrants,Kenya,404,4190,2296,1894,54.80%,Africa
+Immigrants,Afghanistan,4,3929,2208,1721,56.20%,Asia
+Immigrants,Bangladesh,50,3071,1987,1084,64.70%,Asia
+Immigrants,State of Palestine,275,3057,1767,1290,57.80%,Asia
+Immigrants,Seychelles,690,2894,1395,1499,48.20%,Africa
+Immigrants,Estonia,233,2805,1304,1501,46.50%,Europe
+Immigrants,Norway,578,2299,1333,966,58.00%,Europe
+Immigrants,Jordan,400,2294,1305,989,56.90%,Asia
+Immigrants,Zambia,894,2262,1147,1115,50.70%,Africa
+Immigrants,Bulgaria,100,2196,1291,905,58.80%,Europe
+Immigrants,Brazil,76,2122,985,1137,46.40%,South America
+Immigrants,"China, Macao SAR",446,1753,806,947,46.00%,Asia
+Immigrants,Colombia,170,1610,755,855,46.90%,South America
+Immigrants,Brunei Darussalam,96,1545,802,743,51.90%,Asia
+Immigrants,Ethiopia,231,1491,805,686,54.00%,Africa
+Immigrants,Sudan,729,1375,785,590,57.10%,Africa
+Immigrants,Tanzania,834,1358,785,573,57.80%,Africa
+Immigrants,Somalia,706,1273,673,600,52.90%,Africa
+Immigrants,Trinidad and Tobago,780,1220,617,603,50.60%,North America
+Immigrants,Ecuador,218,1183,599,584,50.60%,South America
+Immigrants,Kuwait,414,1159,617,542,53.20%,Asia
+Immigrants,Ghana,288,1114,648,466,58.20%,Africa
+Immigrants,New Caledonia,540,1076,450,626,41.80%,Oceania
+Immigrants,Belarus,112,1075,510,565,47.40%,Europe
+Immigrants,Solomon Islands,90,1067,366,701,34.30%,Oceania
+Immigrants,Morocco,504,1029,691,338,67.20%,Africa
+Immigrants,Libya,434,1021,568,453,55.60%,Africa
+Immigrants,Uganda,800,995,556,439,55.90%,Africa
+Immigrants,Nigeria,566,927,580,347,62.60%,Africa
+Immigrants,Vanuatu,548,921,284,637,30.80%,Oceania
+Immigrants,Eritrea,232,865,457,408,52.80%,Africa
+Immigrants,Nicaragua,558,858,412,446,48.00%,Central America
+Immigrants,Jamaica,388,835,428,407,51.30%,North America
+Immigrants,Albania,8,822,478,344,58.20%,Europe
+Immigrants,Nepal,524,799,558,241,69.80%,Asia
+Immigrants,Armenia,51,797,402,395,50.40%,Asia
+Immigrants,Algeria,12,696,454,242,65.20%,Africa
+Immigrants,Mexico,484,632,301,331,47.60%,North America
+Immigrants,Saudi Arabia,682,599,379,220,63.30%,Asia
+Immigrants,United Arab Emirates,784,545,318,227,58.30%,Asia
+Immigrants,Bolivia,68,534,264,270,49.40%,South America
+Immigrants,Venezuela,862,501,236,265,47.10%,South America
+Immigrants,Bahrain,48,483,266,217,55.10%,Asia
+Immigrants,Guyana,328,480,215,265,44.80%,South America
+Immigrants,Tunisia,788,461,283,178,61.40%,Africa
+Immigrants,Cuba,192,423,216,207,51.10%,North America
+Immigrants,Mozambique,508,397,218,179,54.90%,Africa
+Immigrants,Angola,24,359,190,169,52.90%,Africa
+Immigrants,Kiribati,296,350,105,245,30.00%,Oceania
+Immigrants,Barbados,52,341,194,147,56.90%,North America
+Immigrants,Malawi,454,329,171,158,52.00%,Africa
+Immigrants,Costa Rica,188,323,185,138,57.30%,Central America
+Immigrants,Iceland,352,289,159,130,55.00%,Europe
+Immigrants,Republic of Moldova,498,285,143,142,50.20%,Europe
+Immigrants,Paraguay,600,272,130,142,47.80%,South America
+Immigrants,Bahamas,44,218,100,118,45.90%,North America
+Immigrants,Guatemala,320,218,105,113,48.20%,Central America
+Immigrants,French Polynesia,258,212,86,126,40.60%,Oceania
+Immigrants,Namibia,516,207,106,101,51.20%,Africa
+Immigrants,Yemen,887,203,118,85,58.10%,Asia
+Immigrants,Uzbekistan,860,193,98,95,50.80%,Asia
+Immigrants,D.R. Congo,180,183,92,91,50.30%,Africa
+Immigrants,Senegal,686,156,100,56,64.10%,Africa
+Immigrants,Honduras,340,141,73,68,51.80%,Central America
+Immigrants,Georgia,268,130,64,66,49.20%,Asia
+Immigrants,Maldives,462,128,51,77,39.80%,Asia
+Immigrants,Botswana,72,115,69,46,60.00%,Africa
+Immigrants,Swaziland,748,114,59,55,51.80%,Africa
+Immigrants,Madagascar,450,114,58,56,50.90%,Africa
+Immigrants,Panama,591,106,62,44,58.50%,Central America
+Immigrants,Luxembourg,442,103,49,54,47.60%,Europe
+Immigrants,Sierra Leone,694,97,52,45,53.60%,Africa
+Immigrants,Mongolia,496,97,39,58,40.20%,Asia
+Immigrants,Qatar,634,94,58,36,61.70%,Asia
+Immigrants,Kazakhstan,398,94,38,56,40.40%,Asia
+Immigrants,Grenada,308,87,41,46,47.10%,North America
+Immigrants,Curaçao,531,81,36,45,44.40%,America
+Immigrants,Oman,512,74,46,28,62.20%,Asia
+Immigrants,Haiti,332,72,29,43,40.30%,North America
+Immigrants,Puerto Rico,630,72,26,46,36.10%,North America
+Immigrants,Suriname,740,67,31,36,46.30%,South America
+Immigrants,Aruba,533,60,37,23,61.70%,North America
+Immigrants,Djibouti,262,53,18,35,34.00%,Africa
+Immigrants,Saint Vincent and the Grenadines,670,53,30,23,56.60%,North America
+Immigrants,Liberia,430,50,26,24,52.00%,Africa
+Immigrants,Lesotho,426,46,27,19,58.70%,Africa
+Immigrants,Réunion,638,44,17,27,38.60%,Africa
+Immigrants,Azerbaijan,31,44,18,26,40.90%,Asia
+Immigrants,Belize,84,33,13,20,39.40%,Central America
+Immigrants,Dominican Republic,214,29,15,14,51.70%,North America
+Immigrants,Bhutan,64,29,17,12,58.60%,Asia
+Immigrants,Guam,316,29,12,17,41.40%,Oceania
+Immigrants,Côte d'Ivoire,384,21,12,9,57.10%,Africa
+Immigrants,Tajikistan,762,19,8,11,42.10%,Asia
+Immigrants,Burundi,108,18,10,8,55.60%,Africa
+Immigrants,Cameroon,120,12,8,4,66.70%,Africa
+Immigrants,Antigua and Barbuda,28,12,4,8,33.30%,North America
+Immigrants,Kyrgyzstan,417,12,6,6,50.00%,Asia
+Immigrants,Gambia,270,12,7,5,58.30%,Africa
+Immigrants,Saint Lucia,662,11,8,3,72.70%,North America
+Immigrants,Monaco,492,10,5,5,50.00%,Europe
+Immigrants,Central African Republic,140,8,7,1,87.50%,Africa
+Immigrants,Chad,148,7,5,2,71.40%,Africa
+Immigrants,Turkmenistan,795,6,2,4,33.30%,Asia
+Immigrants,Burkina Faso,854,6,5,1,83.30%,Africa
+Immigrants,Rwanda,646,3,2,1,66.70%,Africa
+Immigrants,Gabon,266,3,2,1,66.70%,Africa
+Immigrants,Togo,768,3,2,1,66.70%,Africa
+Immigrants,Guinea,324,3,2,1,66.70%,Africa
+Immigrants,Benin,204,3,2,1,66.70%,Africa
+Emigrants,United Kingdom,826,71717,32201,39516,44.90%,Europe
+Emigrants,New Zealand,554,48723,22802,25921,46.80%,Australia
+Emigrants,Greece,300,19643,10489,9154,53.40%,Europe
+Emigrants,Italy,380,16050,6902,9148,43.00%,Europe
+Emigrants,Papua New Guinea,598,13916,8113,5803,58.30%,Oceania
+Emigrants,Canada,124,13712,6116,7596,44.60%,North America
+Emigrants,China,156,6495,3715,2780,57.20%,Asia
+Emigrants,"China, Hong Kong SAR",344,6092,3509,2583,57.60%,Asia
+Emigrants,Indonesia,360,6047,3169,2878,52.40%,Asia
+Emigrants,Singapore,702,4549,2384,2165,52.40%,Asia
+Emigrants,Ireland,372,4510,2142,2368,47.50%,Europe
+Emigrants,South Africa,710,4309,2103,2206,48.80%,Africa
+Emigrants,Japan,392,3687,2131,1556,57.80%,Asia
+Emigrants,Malta,470,3435,1618,1817,47.10%,Europe
+Emigrants,India,356,2632,1121,1511,42.60%,Asia
+Emigrants,Malaysia,458,2426,1339,1087,55.20%,Asia
+Emigrants,Argentina,32,2234,1099,1135,49.20%,South America
+Emigrants,Israel,376,1852,815,1037,44.00%,Asia
+Emigrants,Serbia,688,1519,822,697,54.10%,Europe
+Emigrants,Libya,434,1499,809,690,54.00%,Africa
+Emigrants,Fiji,242,1306,687,619,52.60%,Oceania
+Emigrants,Philippines,608,1058,655,403,61.90%,Asia
+Emigrants,Denmark,208,1036,487,549,47.00%,Europe
+Emigrants,Hungary,348,832,419,413,50.40%,Europe
+Emigrants,Norway,578,797,355,442,44.50%,Europe
+Emigrants,Namibia,516,793,304,489,38.30%,Africa
+Emigrants,Cyprus,196,741,378,363,51.00%,Asia
+Emigrants,Peru,604,737,411,326,55.80%,South America
+Emigrants,Croatia,191,694,266,428,38.30%,Europe
+Emigrants,Chile,152,582,295,287,50.70%,South America
+Emigrants,Brazil,76,458,225,233,49.10%,South America
+Emigrants,Finland,246,452,233,219,51.50%,Europe
+Emigrants,Vanuatu,548,442,262,180,59.30%,Oceania
+Emigrants,Timor-Leste,626,425,201,224,47.30%,Asia
+Emigrants,Solomon Islands,90,360,204,156,56.70%,Oceania
+Emigrants,Portugal,620,348,158,190,45.40%,Europe
+Emigrants,Poland,616,304,155,149,51.00%,Europe
+Emigrants,Taiwan,158,278,109,169,39.20%,Asia
+Emigrants,Egypt,818,269,152,117,56.50%,Africa
+Emigrants,Brunei Darussalam,96,262,140,122,53.40%,Asia
+Emigrants,Samoa,882,236,135,101,57.20%,Oceania
+Emigrants,Slovenia,705,226,103,123,45.60%,Europe
+Emigrants,New Caledonia,540,226,102,124,45.10%,Oceania
+Emigrants,Azerbaijan,31,210,98,112,46.70%,Asia
+Emigrants,Colombia,170,192,94,98,49.00%,South America
+Emigrants,Mexico,484,189,77,112,40.70%,North America
+Emigrants,Uganda,800,137,63,74,46.00%,Africa
+Emigrants,Venezuela,862,131,68,63,51.90%,South America
+Emigrants,Montenegro,499,130,43,87,33.10%,Europe
+Emigrants,Botswana,72,120,61,59,50.80%,Africa
+Emigrants,Panama,591,115,67,48,58.30%,Central America
+Emigrants,Dem. People's Republic of Korea,408,96,53,43,55.20%,Asia
+Emigrants,Zambia,894,81,39,42,48.10%,Africa
+Emigrants,Luxembourg,442,74,35,39,47.30%,Europe
+Emigrants,Bolivia,68,74,33,41,44.60%,South America
+Emigrants,Costa Rica,188,73,31,42,42.50%,Central America
+Emigrants,Dominican Republic,214,67,47,20,70.10%,North America
+Emigrants,Seychelles,690,67,30,37,44.80%,Africa
+Emigrants,Kiribati,296,64,40,24,62.50%,Oceania
+Emigrants,French Polynesia,258,63,31,32,49.20%,Oceania
+Emigrants,Iceland,352,60,23,37,38.30%,Europe
+Emigrants,Cambodia,116,54,34,20,63.00%,Asia
+Emigrants,Sri Lanka,144,51,32,19,62.70%,Asia
+Emigrants,Guatemala,320,47,19,28,40.40%,Central America
+Emigrants,Latvia,428,45,26,19,57.80%,Europe
+Emigrants,Maldives,462,37,20,17,54.10%,Asia
+Emigrants,El Salvador,222,33,13,20,39.40%,Central America
+Emigrants,Bahamas,44,27,14,13,51.90%,North America
+Emigrants,Barbados,52,24,12,12,50.00%,North America
+Emigrants,Lithuania,440,22,13,9,59.10%,Europe
+Emigrants,Belarus,112,21,12,9,57.10%,Europe
+Emigrants,Slovakia,703,18,8,10,44.40%,Europe
+Emigrants,Laos,418,18,10,8,55.60%,Asia
+Emigrants,Ghana,288,17,5,12,29.40%,Africa
+Emigrants,Bulgaria,100,13,9,4,69.20%,Europe
+Emigrants,Bhutan,64,12,10,2,83.30%,Asia
+Emigrants,Central African Republic,140,9,9,0,100.00%,Africa
+Emigrants,Swaziland,748,8,8,0,100.00%,Africa
+Emigrants,Ecuador,218,8,5,3,62.50%,South America
+Emigrants,Antigua and Barbuda,28,7,3,4,42.90%,North America
+Emigrants,Saint Lucia,662,7,2,5,28.60%,North America
+Emigrants,Mongolia,496,3,2,1,66.70%,Asia
