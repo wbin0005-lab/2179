@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "An interactive population pyramid where percentage labels are hidden by default and only appear on hover.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/Australia-1980-2025.csv"
+  },
+  "width": 600,
+  "height": 450,
+  "params": [
+    {
+      "name": "Select_Year",
+      "value": 1980,
+      "bind": {
+        "input": "range",
+        "min": 1980,
+        "max": 2025,
+        "step": 5,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.Year == Select_Year"},
+    {"fold": ["M", "F"], "as": ["Gender", "Population"]},
+    {
+      "joinaggregate": [
+        {"op": "sum", "field": "Population", "as": "TotalPopulation"}
+      ]
+    },
+    {
+      "calculate": "(datum.Population / datum.TotalPopulation) * 100",
+      "as": "PercentPopulation"
+    },
+    {
+      "calculate": "datum.Gender == 'M' ? -datum.PercentPopulation : datum.PercentPopulation",
+      "as": "SignedPercentPopulation"
+    },
+    {
+      "calculate": "datum.Gender == 'M' ? 'Male' : 'Female'",
+      "as": "GenderLabel"
+    },
+    {
+      "calculate": "format(datum.PercentPopulation, '.1f') + '%'",
+      "as": "PercentTextLabel"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "Age",
+      "type": "nominal",
+      "title": "Age Group",
+      "sort": [
+        "100+",
+        "95-99",
+        "90-94",
+        "85-89",
+        "80-84",
+        "75-79",
+        "70-74",
+        "65-69",
+        "60-64",
+        "55-59",
+        "50-54",
+        "45-49",
+        "40-44",
+        "35-39",
+        "30-34",
+        "25-29",
+        "20-24",
+        "15-19",
+        "10-14",
+        "5-9",
+        "0-4"
+      ]
+    },
+    "color": {
+      "field": "GenderLabel",
+      "type": "nominal",
+      "scale": {"domain": ["Male", "Female"], "range": ["#1f77b4", "#e377c2"]},
+      "title": "Gender"
+    }
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "hover_bar",
+          "select": {
+            "type": "point",
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "SignedPercentPopulation",
+          "type": "quantitative",
+          "title": "Percentage of Total Population (%)",
+          "scale": {"domain": [-5.5, 5.5]},
+          "axis": {"labelExpr": "format(abs(datum.value), '.1f') + '%'"}
+        },
+        "tooltip": [
+          {"field": "Age", "type": "nominal", "title": "Age Group"},
+          {"field": "GenderLabel", "type": "nominal", "title": "Gender"},
+          {
+            "field": "PercentPopulation",
+            "type": "quantitative",
+            "title": "Percentage",
+            "format": ".2f"
+          },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "title": "Raw Count",
+            "format": ","
+          },
+          {"field": "Year", "type": "quantitative", "title": "Year"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": {"expr": "datum.Gender == 'M' ? 'right' : 'left'"},
+        "dx": {"expr": "datum.Gender == 'M' ? -5 : 5"},
+        "fontSize": 10
+      },
+      "encoding": {
+        "x": {"field": "SignedPercentPopulation", "type": "quantitative"},
+        "text": {"field": "PercentTextLabel", "type": "nominal"},
+        "opacity": {
+          "condition": {"param": "hover_bar", "empty": false, "value": 1},
+          "value": 0
+        }
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+}
