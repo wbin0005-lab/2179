@@ -1,4 +1,4 @@
-Flow Type,Country,Country Code,Total Migrants,Male,Female,Male %,Continent,Year
+FlowType,Country,CountryCode,TotalMigrants,Male,Female,MalePct,Continent,Year
 Immigrants,United Kingdom,826,"1,119,737","566,587","553,150",50.60%,Europe,1990
 Immigrants,New Zealand,554,"263,301","134,810","128,491",51.20%,Australia,1990
 Immigrants,Italy,380,"256,923","138,481","118,442",53.90%,Europe,1990
@@ -146,7 +146,7 @@ Immigrants,Mongolia,496,97,39,58,40.20%,Asia,1990
 Immigrants,Qatar,634,94,58,36,61.70%,Asia,1990
 Immigrants,Kazakhstan,398,94,38,56,40.40%,Asia,1990
 Immigrants,Grenada,308,87,41,46,47.10%,North America,1990
-Immigrants,Curaçao,531,81,36,45,44.40%,America,1990
+Immigrants,Curaï¿½ao,531,81,36,45,44.40%,America,1990
 Immigrants,Oman,512,74,46,28,62.20%,Asia,1990
 Immigrants,Haiti,332,72,29,43,40.30%,North America,1990
 Immigrants,Puerto Rico,630,72,26,46,36.10%,North America,1990
@@ -156,13 +156,13 @@ Immigrants,Djibouti,262,53,18,35,34.00%,Africa,1990
 Immigrants,Saint Vincent and the Grenadines,670,53,30,23,56.60%,North America,1990
 Immigrants,Liberia,430,50,26,24,52.00%,Africa,1990
 Immigrants,Lesotho,426,46,27,19,58.70%,Africa,1990
-Immigrants,Réunion,638,44,17,27,38.60%,Africa,1990
+Immigrants,Rï¿½union,638,44,17,27,38.60%,Africa,1990
 Immigrants,Azerbaijan,31,44,18,26,40.90%,Asia,1990
 Immigrants,Belize,84,33,13,20,39.40%,Central America,1990
 Immigrants,Dominican Republic,214,29,15,14,51.70%,North America,1990
 Immigrants,Bhutan,64,29,17,12,58.60%,Asia,1990
 Immigrants,Guam,316,29,12,17,41.40%,Oceania,1990
-Immigrants,Côte d'Ivoire,384,21,12,9,57.10%,Africa,1990
+Immigrants,Cï¿½te d'Ivoire,384,21,12,9,57.10%,Africa,1990
 Immigrants,Tajikistan,762,19,8,11,42.10%,Asia,1990
 Immigrants,Burundi,108,18,10,8,55.60%,Africa,1990
 Immigrants,Cameroon,120,12,8,4,66.70%,Africa,1990
@@ -410,14 +410,14 @@ Immigrants,Panama,591,128,62,66,48.4,Central America,1990
 Immigrants,Luxembourg,442,123,59,64,48,Europe,1990
 Immigrants,Oman,512,119,69,50,58,Asia,1990
 Immigrants,Grenada,308,94,45,49,47.9,North America,1990
-Immigrants,Curaçao,531,89,39,50,43.8,America,1990
+Immigrants,Curaï¿½ao,531,89,39,50,43.8,America,1990
 Immigrants,Puerto Rico,630,88,34,54,38.6,North America,1990
 Immigrants,Liberia,430,81,49,32,60.5,Africa,1990
 Immigrants,Suriname,740,79,31,48,39.2,South America,1990
 Immigrants,Haiti,332,79,33,46,41.8,North America,1990
 Immigrants,Azerbaijan,31,71,33,38,46.5,Asia,1990
 Immigrants,Djibouti,262,69,21,48,30.4,Africa,1990
-Immigrants,Réunion,638,63,25,38,39.7,Africa,1990
+Immigrants,Rï¿½union,638,63,25,38,39.7,Africa,1990
 Immigrants,Aruba,533,60,34,26,56.7,North America,1990
 Immigrants,Lesotho,426,59,31,28,52.5,Africa,1990
 Immigrants,Saint Vincent and the Grenadines,670,55,27,28,49.1,North America,1990
@@ -425,7 +425,7 @@ Immigrants,Bhutan,64,48,36,12,75,Asia,1990
 Immigrants,Dominican Republic,214,43,22,21,51.2,North America,1990
 Immigrants,Belize,84,39,11,28,28.2,Central America,1990
 Immigrants,Guam,316,39,17,22,43.6,Oceania,1990
-Immigrants,Côte d'Ivoire,384,33,19,14,57.6,Africa,1990
+Immigrants,Cï¿½te d'Ivoire,384,33,19,14,57.6,Africa,1990
 Immigrants,Tajikistan,762,29,12,17,41.4,Asia,1990
 Immigrants,Burundi,108,29,18,11,62.1,Africa,1990
 Immigrants,Gambia,270,19,11,8,57.9,Africa,1990
@@ -680,16 +680,16 @@ Immigrants,Mongolia,496,118,64,54,54.2,Asia,1990
 Immigrants,Liberia,430,115,73,42,63.5,Africa,1990
 Immigrants,Kyrgyzstan,417,97,37,60,38.1,Asia,1990
 Immigrants,Haiti,332,90,38,52,42.2,North America,1990
-Immigrants,Curaçao,531,90,40,50,44.4,America,1990
+Immigrants,Curaï¿½ao,531,90,40,50,44.4,America,1990
 Immigrants,Suriname,740,87,40,47,46,South America,1990
-Immigrants,Réunion,638,87,32,55,36.8,Africa,1990
+Immigrants,Rï¿½union,638,87,32,55,36.8,Africa,1990
 Immigrants,Djibouti,262,82,35,47,42.7,Africa,1990
 Immigrants,Saint Vincent and the Grenadines,670,80,59,21,73.8,North America,1990
 Immigrants,Bhutan,64,70,48,22,68.6,Asia,1990
 Immigrants,Dominican Republic,214,70,38,32,54.3,North America,1990
 Immigrants,Lesotho,426,67,37,30,55.2,Africa,1990
 Immigrants,Cameroon,120,67,42,25,62.7,Africa,1990
-Immigrants,Côte d'Ivoire,384,62,35,27,56.5,Africa,1990
+Immigrants,Cï¿½te d'Ivoire,384,62,35,27,56.5,Africa,1990
 Immigrants,Aruba,533,57,30,27,52.6,North America,1990
 Immigrants,Guam,316,50,20,30,40,Oceania,1990
 Immigrants,Rwanda,646,50,28,22,56,Africa,1990
@@ -946,15 +946,15 @@ Immigrants,Guinea,324,194,105,89,54.1,Africa,1990
 Immigrants,Rwanda,646,179,78,101,43.6,Africa,1990
 Immigrants,Luxembourg,442,174,82,92,47.1,Europe,1990
 Immigrants,Panama,591,172,100,72,58.1,Central America,1990
-Immigrants,Côte d'Ivoire,384,171,93,78,54.4,Africa,1990
+Immigrants,Cï¿½te d'Ivoire,384,171,93,78,54.4,Africa,1990
 Immigrants,Puerto Rico,630,166,72,94,43.4,North America,1990
-Immigrants,Réunion,638,142,54,88,38,Africa,1990
+Immigrants,Rï¿½union,638,142,54,88,38,Africa,1990
 Immigrants,Cameroon,120,130,77,53,59.2,Africa,1990
 Immigrants,Bhutan,64,129,78,51,60.5,Asia,1990
 Immigrants,Grenada,308,128,68,60,53.1,North America,1990
 Immigrants,Djibouti,262,113,45,68,39.8,Africa,1990
 Immigrants,Dominican Republic,214,108,50,58,46.3,North America,1990
-Immigrants,Curaçao,531,102,42,60,41.2,America,1990
+Immigrants,Curaï¿½ao,531,102,42,60,41.2,America,1990
 Immigrants,Suriname,740,102,50,52,49,South America,1990
 Immigrants,Haiti,332,94,42,52,44.7,North America,1990
 Immigrants,Lesotho,426,92,50,42,54.3,Africa,1990
@@ -1199,7 +1199,7 @@ Immigrants,Yemen,887,595,326,269,54.8,Asia,1990
 Immigrants,Tunisia,788,572,333,239,58.2,Africa,1990
 Immigrants,Angola,24,528,281,247,53.2,Africa,1990
 Immigrants,Georgia,268,487,227,260,46.6,Asia,1990
-Immigrants,Côte d'Ivoire,384,467,238,229,51,Africa,1990
+Immigrants,Cï¿½te d'Ivoire,384,467,238,229,51,Africa,1990
 Immigrants,French Polynesia,258,465,186,279,40,Oceania,1990
 Immigrants,Paraguay,600,443,205,238,46.3,South America,1990
 Immigrants,Costa Rica,188,437,229,208,52.4,Central America,1990
@@ -1217,13 +1217,13 @@ Immigrants,Madagascar,450,263,112,151,42.6,Africa,1990
 Immigrants,Honduras,340,240,120,120,50,Central America,1990
 Immigrants,Panama,591,218,128,90,58.7,Central America,1990
 Immigrants,Luxembourg,442,212,100,112,47.2,Europe,1990
-Immigrants,Réunion,638,210,90,120,42.9,Africa,1990
+Immigrants,Rï¿½union,638,210,90,120,42.9,Africa,1990
 Immigrants,Puerto Rico,630,145,67,78,46.2,North America,1990
 Immigrants,Dominican Republic,214,141,60,81,42.6,North America,1990
 Immigrants,Djibouti,262,134,64,70,47.8,Africa,1990
 Immigrants,Grenada,308,130,79,51,60.8,North America,1990
 Immigrants,Suriname,740,120,50,70,41.7,South America,1990
-Immigrants,Curaçao,531,117,50,67,42.7,America,1990
+Immigrants,Curaï¿½ao,531,117,50,67,42.7,America,1990
 Immigrants,Lesotho,426,112,54,58,48.2,Africa,1990
 Immigrants,Haiti,332,102,44,58,43.1,North America,1990
 Immigrants,Gambia,270,102,62,40,60.8,Africa,1990
@@ -1468,7 +1468,7 @@ Immigrants,Kiribati,296,645,244,401,37.8,Oceania,1990
 Immigrants,Georgia,268,624,290,334,46.5,Asia,1990
 Immigrants,Iceland,352,608,324,284,53.3,Europe,1990
 Immigrants,Maldives,462,599,277,322,46.2,Asia,1990
-Immigrants,Côte d'Ivoire,384,595,306,289,51.4,Africa,1990
+Immigrants,Cï¿½te d'Ivoire,384,595,306,289,51.4,Africa,1990
 Immigrants,Angola,24,560,292,268,52.1,Africa,1990
 Immigrants,Guatemala,320,536,250,286,46.6,Central America,1990
 Immigrants,French Polynesia,258,535,234,301,43.7,Oceania,1990
@@ -1485,14 +1485,14 @@ Immigrants,Bahamas,44,308,140,168,45.5,North America,1990
 Immigrants,Madagascar,450,295,114,181,38.6,Africa,1990
 Immigrants,Panama,591,255,131,124,51.4,Central America,1990
 Immigrants,Luxembourg,442,252,112,140,44.4,Europe,1990
-Immigrants,Réunion,638,222,100,122,45,Africa,1990
+Immigrants,Rï¿½union,638,222,100,122,45,Africa,1990
 Immigrants,Dominican Republic,214,208,83,125,39.9,North America,1990
 Immigrants,Djibouti,262,190,98,92,51.6,Africa,1990
 Immigrants,Puerto Rico,630,172,92,80,53.5,North America,1990
 Immigrants,Suriname,740,165,67,98,40.6,South America,1990
 Immigrants,Tajikistan,762,158,57,101,36.1,Asia,1990
 Immigrants,Lesotho,426,150,80,70,53.3,Africa,1990
-Immigrants,Curaçao,531,148,66,82,44.6,America,1990
+Immigrants,Curaï¿½ao,531,148,66,82,44.6,America,1990
 Immigrants,Grenada,308,140,70,70,50,North America,1990
 Immigrants,Gambia,270,128,72,56,56.2,Africa,1990
 Immigrants,Haiti,332,120,60,60,50,North America,1990
@@ -1733,7 +1733,7 @@ Immigrants,Nicaragua,558,895,424,471,47.4,Central America,1990
 Immigrants,Georgia,268,763,355,408,46.5,Asia,1990
 Immigrants,Tunisia,788,762,412,350,54.1,Africa,1990
 Immigrants,Azerbaijan,31,745,320,425,43,Asia,1990
-Immigrants,Côte d'Ivoire,384,657,337,320,51.3,Africa,1990
+Immigrants,Cï¿½te d'Ivoire,384,657,337,320,51.3,Africa,1990
 Immigrants,Guatemala,320,640,303,337,47.3,Central America,1990
 Immigrants,Kyrgyzstan,417,638,225,413,35.3,Asia,1990
 Immigrants,Maldives,462,636,293,343,46.1,Asia,1990
@@ -1755,13 +1755,13 @@ Immigrants,Luxembourg,442,308,150,158,48.7,Europe,1990
 Immigrants,Bahamas,44,307,142,165,46.3,North America,1990
 Immigrants,Dominican Republic,214,260,94,166,36.2,North America,1990
 Immigrants,Puerto Rico,630,220,112,108,50.9,North America,1990
-Immigrants,Réunion,638,218,98,120,45,Africa,1990
+Immigrants,Rï¿½union,638,218,98,120,45,Africa,1990
 Immigrants,Tajikistan,762,208,80,128,38.5,Asia,1990
 Immigrants,Djibouti,262,200,100,100,50,Africa,1990
 Immigrants,Suriname,740,160,62,98,38.8,South America,1990
 Immigrants,Lesotho,426,150,70,80,46.7,Africa,1990
 Immigrants,Grenada,308,150,78,72,52,North America,1990
-Immigrants,Curaçao,531,150,62,88,41.3,America,1990
+Immigrants,Curaï¿½ao,531,150,62,88,41.3,America,1990
 Immigrants,Central African Republic,140,141,74,67,52.5,Africa,1990
 Immigrants,Turkmenistan,795,135,40,95,29.6,Asia,1990
 Immigrants,Gambia,270,130,82,48,63.1,Africa,1990
@@ -2006,7 +2006,7 @@ Immigrants,Tunisia,788,788,438,350,55.6,Africa,1990
 Immigrants,Kyrgyzstan,417,731,247,484,33.8,Asia,1990
 Immigrants,Maldives,462,712,333,379,46.8,Asia,1990
 Immigrants,Cameroon,120,695,397,298,57.1,Africa,1990
-Immigrants,Côte d'Ivoire,384,682,337,345,49.4,Africa,1990
+Immigrants,Cï¿½te d'Ivoire,384,682,337,345,49.4,Africa,1990
 Immigrants,Costa Rica,188,674,320,354,47.5,Central America,1990
 Immigrants,Paraguay,600,635,273,362,43,South America,1990
 Immigrants,Guyana,328,568,273,295,48.1,South America,1990
@@ -2025,11 +2025,11 @@ Immigrants,Dominican Republic,214,313,111,202,35.5,North America,1990
 Immigrants,Bahamas,44,305,139,166,45.6,North America,1990
 Immigrants,Tajikistan,762,241,89,152,36.9,Asia,1990
 Immigrants,Puerto Rico,630,220,120,100,54.5,North America,1990
-Immigrants,Réunion,638,211,95,116,45,Africa,1990
+Immigrants,Rï¿½union,638,211,95,116,45,Africa,1990
 Immigrants,Djibouti,262,204,109,95,53.4,Africa,1990
 Immigrants,Central African Republic,140,191,91,100,47.6,Africa,1990
 Immigrants,Lesotho,426,157,75,82,47.8,Africa,1990
-Immigrants,Curaçao,531,157,66,91,42,America,1990
+Immigrants,Curaï¿½ao,531,157,66,91,42,America,1990
 Immigrants,Suriname,740,156,62,94,39.7,South America,1990
 Immigrants,Turkmenistan,795,153,46,107,30.1,Asia,1990
 Immigrants,Grenada,308,143,75,68,52.4,North America,1990
