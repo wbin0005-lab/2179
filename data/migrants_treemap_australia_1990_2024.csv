@@ -1,102 +1,102 @@
 FlowType,Country,CountryCode,TotalMigrants,Male,Female,MalePct,Continent,Year
-Immigrants,United Kingdom,826,"1,119,737","566,587","553,150",50.60%,Europe,1990
-Immigrants,New Zealand,554,"263,301","134,810","128,491",51.20%,Australia,1990
-Immigrants,Italy,380,"256,923","138,481","118,442",53.90%,Europe,1990
-Immigrants,Greece,300,"137,306","70,301","67,005",51.20%,Europe,1990
-Immigrants,Viet Nam,704,"121,046","62,702","58,344",51.80%,Asia,1990
-Immigrants,Germany,276,"114,446","55,964","58,482",48.90%,Europe,1990
-Immigrants,Netherlands,528,"95,745","50,936","44,809",53.20%,Europe,1990
-Immigrants,China,156,"73,079","35,443","37,636",48.50%,Asia,1990
-Immigrants,Philippines,608,"71,142","23,761","47,381",33.40%,Asia,1990
-Immigrants,Malaysia,458,"70,262","32,812","37,450",46.70%,Asia,1990
-Immigrants,Poland,616,"67,785","34,841","32,944",51.40%,Europe,1990
-Immigrants,Lebanon,422,"66,656","35,461","31,195",53.20%,Asia,1990
-Immigrants,"China, Hong Kong SAR",344,"59,104","29,552","29,552",50.00%,Asia,1990
-Immigrants,Serbia,688,"57,213","30,666","26,547",53.60%,Europe,1990
-Immigrants,Croatia,191,"55,533","30,043","25,490",54.10%,Europe,1990
-Immigrants,India,356,"54,882","30,679","24,203",55.90%,Asia,1990
-Immigrants,Malta,470,"54,087","28,558","25,529",52.80%,Europe,1990
-Immigrants,Ireland,372,"51,489","26,671","24,818",51.80%,Europe,1990
-Immigrants,TFYR Macedonia,807,"49,301","25,982","23,319",52.70%,Europe,1990
-Immigrants,United States of America,840,"48,950","26,286","22,664",53.70%,North America,1990
-Immigrants,South Africa,710,"46,167","22,853","23,314",49.50%,Africa,1990
-Immigrants,Sri Lanka,144,"42,523","21,389","21,134",50.30%,Asia,1990
-Immigrants,Indonesia,360,"41,797","21,191","20,606",50.70%,Asia,1990
-Immigrants,Egypt,818,"37,470","19,147","18,323",51.10%,Africa,1990
-Immigrants,Fiji,242,"33,513","15,718","17,795",46.90%,Oceania,1990
-Immigrants,Hungary,348,"30,211","16,707","13,504",55.30%,Europe,1990
-Immigrants,Turkey,792,"29,111","14,934","14,177",51.30%,Asia,1990
-Immigrants,Chile,152,"26,408","12,808","13,600",48.50%,South America,1990
-Immigrants,Papua New Guinea,598,"24,941","11,722","13,219",47.00%,Oceania,1990
-Immigrants,Singapore,702,"24,824","11,791","13,033",47.50%,Asia,1990
-Immigrants,Austria,40,"24,364","13,278","11,086",54.50%,Europe,1990
-Immigrants,Cyprus,196,"24,057","12,413","11,644",51.60%,Asia,1990
-Immigrants,Canada,124,"23,243","11,691","11,552",50.30%,North America,1990
-Immigrants,Republic of Korea,410,"21,362","10,190","11,172",47.70%,Asia,1990
-Immigrants,Japan,392,"21,286","8,749","12,537",41.10%,Asia,1990
-Immigrants,Cambodia,116,"21,140","10,570","10,570",50.00%,Asia,1990
-Immigrants,Portugal,620,"18,619","9,812","8,807",52.70%,Europe,1990
-Immigrants,Ukraine,804,"17,544","8,316","9,228",47.40%,Europe,1990
-Immigrants,Mauritius,480,"17,128","8,376","8,752",48.90%,Africa,1990
-Immigrants,Russian Federation,643,"15,589","6,563","9,026",42.10%,Europe,1990
-Immigrants,Iran,364,"14,854","8,036","6,818",54.10%,Asia,1990
-Immigrants,Spain,724,"14,752","7,996","6,756",54.20%,Europe,1990
-Immigrants,Taiwan,158,"14,440","7,018","7,422",48.60%,Asia,1990
-Immigrants,Bosnia and Herzegovina,70,"13,992","7,318","6,674",52.30%,Europe,1990
-Immigrants,Czech Republic,203,"13,964","7,904","6,060",56.60%,Europe,1990
-Immigrants,Thailand,764,"13,659","5,518","8,141",40.40%,Asia,1990
-Immigrants,France,250,"13,349","6,715","6,634",50.30%,Europe,1990
-Immigrants,Romania,642,"11,598","6,124","5,474",52.80%,Europe,1990
-Immigrants,Argentina,32,"11,476","5,681","5,795",49.50%,South America,1990
-Immigrants,Latvia,428,"11,447","5,918","5,529",51.70%,Europe,1990
-Immigrants,Uruguay,858,"11,124","5,451","5,673",49.00%,South America,1990
-Immigrants,Laos,418,"11,064","5,742","5,322",51.90%,Asia,1990
-Immigrants,El Salvador,222,"10,849","5,359","5,490",49.40%,Central America,1990
-Immigrants,Slovenia,705,"10,038","5,481","4,557",54.60%,Europe,1990
-Immigrants,Switzerland,756,"9,845","5,385","4,460",54.70%,Europe,1990
-Immigrants,Finland,246,"9,389","4,732","4,657",50.40%,Europe,1990
-Immigrants,Denmark,208,"9,385","5,265","4,120",56.10%,Europe,1990
-Immigrants,Iraq,368,"9,359","5,344","4,015",57.10%,Asia,1990
-Immigrants,Myanmar,104,"8,763","4,250","4,513",48.50%,Asia,1990
-Immigrants,Samoa,882,"7,863","3,656","4,207",46.50%,Oceania,1990
-Immigrants,Tonga,776,"7,089","3,261","3,828",46.00%,Oceania,1990
-Immigrants,Montenegro,499,"6,958","3,743","3,215",53.80%,Europe,1990
-Immigrants,Zimbabwe,716,"6,744","3,453","3,291",51.20%,Africa,1990
-Immigrants,Israel,376,"6,191","3,386","2,805",54.70%,Asia,1990
-Immigrants,Lithuania,440,"5,750","3,162","2,588",55.00%,Europe,1990
-Immigrants,Syrian Arab Republic,760,"5,630","2,809","2,821",49.90%,Asia,1990
-Immigrants,Slovakia,703,"5,576","3,189","2,387",57.20%,Europe,1990
-Immigrants,Sweden,752,"5,265","2,864","2,401",54.40%,Europe,1990
-Immigrants,Pakistan,586,"5,079","2,926","2,153",57.60%,Asia,1990
-Immigrants,Belgium,56,"4,565","2,205","2,360",48.30%,Europe,1990
-Immigrants,Peru,604,"4,190","1,869","2,321",44.60%,South America,1990
-Immigrants,Kenya,404,"4,190","2,296","1,894",54.80%,Africa,1990
-Immigrants,Afghanistan,4,"3,929","2,208","1,721",56.20%,Asia,1990
-Immigrants,Bangladesh,50,"3,071","1,987","1,084",64.70%,Asia,1990
-Immigrants,State of Palestine,275,"3,057","1,767","1,290",57.80%,Asia,1990
-Immigrants,Seychelles,690,"2,894","1,395","1,499",48.20%,Africa,1990
-Immigrants,Estonia,233,"2,805","1,304","1,501",46.50%,Europe,1990
-Immigrants,Norway,578,"2,299","1,333",966,58.00%,Europe,1990
-Immigrants,Jordan,400,"2,294","1,305",989,56.90%,Asia,1990
-Immigrants,Zambia,894,"2,262","1,147","1,115",50.70%,Africa,1990
-Immigrants,Bulgaria,100,"2,196","1,291",905,58.80%,Europe,1990
-Immigrants,Brazil,76,"2,122",985,"1,137",46.40%,South America,1990
-Immigrants,"China, Macao SAR",446,"1,753",806,947,46.00%,Asia,1990
-Immigrants,Colombia,170,"1,610",755,855,46.90%,South America,1990
-Immigrants,Brunei Darussalam,96,"1,545",802,743,51.90%,Asia,1990
-Immigrants,Ethiopia,231,"1,491",805,686,54.00%,Africa,1990
-Immigrants,Sudan,729,"1,375",785,590,57.10%,Africa,1990
-Immigrants,Tanzania,834,"1,358",785,573,57.80%,Africa,1990
-Immigrants,Somalia,706,"1,273",673,600,52.90%,Africa,1990
-Immigrants,Trinidad and Tobago,780,"1,220",617,603,50.60%,North America,1990
-Immigrants,Ecuador,218,"1,183",599,584,50.60%,South America,1990
-Immigrants,Kuwait,414,"1,159",617,542,53.20%,Asia,1990
-Immigrants,Ghana,288,"1,114",648,466,58.20%,Africa,1990
-Immigrants,New Caledonia,540,"1,076",450,626,41.80%,Oceania,1990
-Immigrants,Belarus,112,"1,075",510,565,47.40%,Europe,1990
-Immigrants,Solomon Islands,90,"1,067",366,701,34.30%,Oceania,1990
-Immigrants,Morocco,504,"1,029",691,338,67.20%,Africa,1990
-Immigrants,Libya,434,"1,021",568,453,55.60%,Africa,1990
+Immigrants,United Kingdom,826,1119737,566587,553150,50.60%,Europe,1990
+Immigrants,New Zealand,554,263301,134810,128491,51.20%,Australia,1990
+Immigrants,Italy,380,256923,138481,118442,53.90%,Europe,1990
+Immigrants,Greece,300,137306,70301,67005,51.20%,Europe,1990
+Immigrants,Viet Nam,704,121046,62702,58344,51.80%,Asia,1990
+Immigrants,Germany,276,114446,55964,58482,48.90%,Europe,1990
+Immigrants,Netherlands,528,95745,50936,44809,53.20%,Europe,1990
+Immigrants,China,156,73079,35443,37636,48.50%,Asia,1990
+Immigrants,Philippines,608,71142,23761,47381,33.40%,Asia,1990
+Immigrants,Malaysia,458,70262,32812,37450,46.70%,Asia,1990
+Immigrants,Poland,616,67785,34841,32944,51.40%,Europe,1990
+Immigrants,Lebanon,422,66656,35461,31195,53.20%,Asia,1990
+Immigrants,"China, Hong Kong SAR",344,59104,29552,29552,50.00%,Asia,1990
+Immigrants,Serbia,688,57213,30666,26547,53.60%,Europe,1990
+Immigrants,Croatia,191,55533,30043,25490,54.10%,Europe,1990
+Immigrants,India,356,54882,30679,24203,55.90%,Asia,1990
+Immigrants,Malta,470,54087,28558,25529,52.80%,Europe,1990
+Immigrants,Ireland,372,51489,26671,24818,51.80%,Europe,1990
+Immigrants,TFYR Macedonia,807,49301,25982,23319,52.70%,Europe,1990
+Immigrants,United States of America,840,48950,26286,22664,53.70%,North America,1990
+Immigrants,South Africa,710,46167,22853,23314,49.50%,Africa,1990
+Immigrants,Sri Lanka,144,42523,21389,21134,50.30%,Asia,1990
+Immigrants,Indonesia,360,41797,21191,20606,50.70%,Asia,1990
+Immigrants,Egypt,818,37470,19147,18323,51.10%,Africa,1990
+Immigrants,Fiji,242,33513,15718,17795,46.90%,Oceania,1990
+Immigrants,Hungary,348,30211,16707,13504,55.30%,Europe,1990
+Immigrants,Turkey,792,29111,14934,14177,51.30%,Asia,1990
+Immigrants,Chile,152,26408,12808,13600,48.50%,South America,1990
+Immigrants,Papua New Guinea,598,24941,11722,13219,47.00%,Oceania,1990
+Immigrants,Singapore,702,24824,11791,13033,47.50%,Asia,1990
+Immigrants,Austria,40,24364,13278,11086,54.50%,Europe,1990
+Immigrants,Cyprus,196,24057,12413,11644,51.60%,Asia,1990
+Immigrants,Canada,124,23243,11691,11552,50.30%,North America,1990
+Immigrants,Republic of Korea,410,21362,10190,11172,47.70%,Asia,1990
+Immigrants,Japan,392,21286,8749,12537,41.10%,Asia,1990
+Immigrants,Cambodia,116,21140,10570,10570,50.00%,Asia,1990
+Immigrants,Portugal,620,18619,9812,8807,52.70%,Europe,1990
+Immigrants,Ukraine,804,17544,8316,9228,47.40%,Europe,1990
+Immigrants,Mauritius,480,17128,8376,8752,48.90%,Africa,1990
+Immigrants,Russian Federation,643,15589,6563,9026,42.10%,Europe,1990
+Immigrants,Iran,364,14854,8036,6818,54.10%,Asia,1990
+Immigrants,Spain,724,14752,7996,6756,54.20%,Europe,1990
+Immigrants,Taiwan,158,14440,7018,7422,48.60%,Asia,1990
+Immigrants,Bosnia and Herzegovina,70,13992,7318,6674,52.30%,Europe,1990
+Immigrants,Czech Republic,203,13964,7904,6060,56.60%,Europe,1990
+Immigrants,Thailand,764,13659,5518,8141,40.40%,Asia,1990
+Immigrants,France,250,13349,6715,6634,50.30%,Europe,1990
+Immigrants,Romania,642,11598,6124,5474,52.80%,Europe,1990
+Immigrants,Argentina,32,11476,5681,5795,49.50%,South America,1990
+Immigrants,Latvia,428,11447,5918,5529,51.70%,Europe,1990
+Immigrants,Uruguay,858,11124,5451,5673,49.00%,South America,1990
+Immigrants,Laos,418,11064,5742,5322,51.90%,Asia,1990
+Immigrants,El Salvador,222,10849,5359,5490,49.40%,Central America,1990
+Immigrants,Slovenia,705,10038,5481,4557,54.60%,Europe,1990
+Immigrants,Switzerland,756,9845,5385,4460,54.70%,Europe,1990
+Immigrants,Finland,246,9389,4732,4657,50.40%,Europe,1990
+Immigrants,Denmark,208,9385,5265,4120,56.10%,Europe,1990
+Immigrants,Iraq,368,9359,5344,4015,57.10%,Asia,1990
+Immigrants,Myanmar,104,8763,4250,4513,48.50%,Asia,1990
+Immigrants,Samoa,882,7863,3656,4207,46.50%,Oceania,1990
+Immigrants,Tonga,776,7089,3261,3828,46.00%,Oceania,1990
+Immigrants,Montenegro,499,6958,3743,3215,53.80%,Europe,1990
+Immigrants,Zimbabwe,716,6744,3453,3291,51.20%,Africa,1990
+Immigrants,Israel,376,6191,3386,2805,54.70%,Asia,1990
+Immigrants,Lithuania,440,5750,3162,2588,55.00%,Europe,1990
+Immigrants,Syrian Arab Republic,760,5630,2809,2821,49.90%,Asia,1990
+Immigrants,Slovakia,703,5576,3189,2387,57.20%,Europe,1990
+Immigrants,Sweden,752,5265,2864,2401,54.40%,Europe,1990
+Immigrants,Pakistan,586,5079,2926,2153,57.60%,Asia,1990
+Immigrants,Belgium,56,4565,2205,2360,48.30%,Europe,1990
+Immigrants,Peru,604,4190,1869,2321,44.60%,South America,1990
+Immigrants,Kenya,404,4190,2296,1894,54.80%,Africa,1990
+Immigrants,Afghanistan,4,3929,2208,1721,56.20%,Asia,1990
+Immigrants,Bangladesh,50,3071,1987,1084,64.70%,Asia,1990
+Immigrants,State of Palestine,275,3057,1767,1290,57.80%,Asia,1990
+Immigrants,Seychelles,690,2894,1395,1499,48.20%,Africa,1990
+Immigrants,Estonia,233,2805,1304,1501,46.50%,Europe,1990
+Immigrants,Norway,578,2299,1333,966,58.00%,Europe,1990
+Immigrants,Jordan,400,2294,1305,989,56.90%,Asia,1990
+Immigrants,Zambia,894,2262,1147,1115,50.70%,Africa,1990
+Immigrants,Bulgaria,100,2196,1291,905,58.80%,Europe,1990
+Immigrants,Brazil,76,2122,985,1137,46.40%,South America,1990
+Immigrants,"China, Macao SAR",446,1753,806,947,46.00%,Asia,1990
+Immigrants,Colombia,170,1610,755,855,46.90%,South America,1990
+Immigrants,Brunei Darussalam,96,1545,802,743,51.90%,Asia,1990
+Immigrants,Ethiopia,231,1491,805,686,54.00%,Africa,1990
+Immigrants,Sudan,729,1375,785,590,57.10%,Africa,1990
+Immigrants,Tanzania,834,1358,785,573,57.80%,Africa,1990
+Immigrants,Somalia,706,1273,673,600,52.90%,Africa,1990
+Immigrants,Trinidad and Tobago,780,1220,617,603,50.60%,North America,1990
+Immigrants,Ecuador,218,1183,599,584,50.60%,South America,1990
+Immigrants,Kuwait,414,1159,617,542,53.20%,Asia,1990
+Immigrants,Ghana,288,1114,648,466,58.20%,Africa,1990
+Immigrants,New Caledonia,540,1076,450,626,41.80%,Oceania,1990
+Immigrants,Belarus,112,1075,510,565,47.40%,Europe,1990
+Immigrants,Solomon Islands,90,1067,366,701,34.30%,Oceania,1990
+Immigrants,Morocco,504,1029,691,338,67.20%,Africa,1990
+Immigrants,Libya,434,1021,568,453,55.60%,Africa,1990
 Immigrants,Uganda,800,995,556,439,55.90%,Africa,1990
 Immigrants,Nigeria,566,927,580,347,62.60%,Africa,1990
 Immigrants,Vanuatu,548,921,284,637,30.80%,Oceania,1990
@@ -180,29 +180,29 @@ Immigrants,Gabon,266,3,2,1,66.70%,Africa,1990
 Immigrants,Togo,768,3,2,1,66.70%,Africa,1990
 Immigrants,Guinea,324,3,2,1,66.70%,Africa,1990
 Immigrants,Benin,204,3,2,1,66.70%,Africa,1990
-Emigrants,United Kingdom,826,"71,717","32,201","39,516",44.90%,Europe,1990
-Emigrants,New Zealand,554,"48,723","22,802","25,921",46.80%,Australia,1990
-Emigrants,Greece,300,"19,643","10,489","9,154",53.40%,Europe,1990
-Emigrants,Italy,380,"16,050","6,902","9,148",43.00%,Europe,1990
-Emigrants,Papua New Guinea,598,"13,916","8,113","5,803",58.30%,Oceania,1990
-Emigrants,Canada,124,"13,712","6,116","7,596",44.60%,North America,1990
-Emigrants,China,156,"6,495","3,715","2,780",57.20%,Asia,1990
-Emigrants,"China, Hong Kong SAR",344,"6,092","3,509","2,583",57.60%,Asia,1990
-Emigrants,Indonesia,360,"6,047","3,169","2,878",52.40%,Asia,1990
-Emigrants,Singapore,702,"4,549","2,384","2,165",52.40%,Asia,1990
-Emigrants,Ireland,372,"4,510","2,142","2,368",47.50%,Europe,1990
-Emigrants,South Africa,710,"4,309","2,103","2,206",48.80%,Africa,1990
-Emigrants,Japan,392,"3,687","2,131","1,556",57.80%,Asia,1990
-Emigrants,Malta,470,"3,435","1,618","1,817",47.10%,Europe,1990
-Emigrants,India,356,"2,632","1,121","1,511",42.60%,Asia,1990
-Emigrants,Malaysia,458,"2,426","1,339","1,087",55.20%,Asia,1990
-Emigrants,Argentina,32,"2,234","1,099","1,135",49.20%,South America,1990
-Emigrants,Israel,376,"1,852",815,"1,037",44.00%,Asia,1990
-Emigrants,Serbia,688,"1,519",822,697,54.10%,Europe,1990
-Emigrants,Libya,434,"1,499",809,690,54.00%,Africa,1990
-Emigrants,Fiji,242,"1,306",687,619,52.60%,Oceania,1990
-Emigrants,Philippines,608,"1,058",655,403,61.90%,Asia,1990
-Emigrants,Denmark,208,"1,036",487,549,47.00%,Europe,1990
+Emigrants,United Kingdom,826,71717,32201,39516,44.90%,Europe,1990
+Emigrants,New Zealand,554,48723,22802,25921,46.80%,Australia,1990
+Emigrants,Greece,300,19643,10489,9154,53.40%,Europe,1990
+Emigrants,Italy,380,16050,6902,9148,43.00%,Europe,1990
+Emigrants,Papua New Guinea,598,13916,8113,5803,58.30%,Oceania,1990
+Emigrants,Canada,124,13712,6116,7596,44.60%,North America,1990
+Emigrants,China,156,6495,3715,2780,57.20%,Asia,1990
+Emigrants,"China, Hong Kong SAR",344,6092,3509,2583,57.60%,Asia,1990
+Emigrants,Indonesia,360,6047,3169,2878,52.40%,Asia,1990
+Emigrants,Singapore,702,4549,2384,2165,52.40%,Asia,1990
+Emigrants,Ireland,372,4510,2142,2368,47.50%,Europe,1990
+Emigrants,South Africa,710,4309,2103,2206,48.80%,Africa,1990
+Emigrants,Japan,392,3687,2131,1556,57.80%,Asia,1990
+Emigrants,Malta,470,3435,1618,1817,47.10%,Europe,1990
+Emigrants,India,356,2632,1121,1511,42.60%,Asia,1990
+Emigrants,Malaysia,458,2426,1339,1087,55.20%,Asia,1990
+Emigrants,Argentina,32,2234,1099,1135,49.20%,South America,1990
+Emigrants,Israel,376,1852,815,1037,44.00%,Asia,1990
+Emigrants,Serbia,688,1519,822,697,54.10%,Europe,1990
+Emigrants,Libya,434,1499,809,690,54.00%,Africa,1990
+Emigrants,Fiji,242,1306,687,619,52.60%,Oceania,1990
+Emigrants,Philippines,608,1058,655,403,61.90%,Asia,1990
+Emigrants,Denmark,208,1036,487,549,47.00%,Europe,1990
 Emigrants,Hungary,348,832,419,413,50.40%,Europe,1990
 Emigrants,Norway,578,797,355,442,44.50%,Europe,1990
 Emigrants,Namibia,516,793,304,489,38.30%,Africa,1990
