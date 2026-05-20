@@ -4,8 +4,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/Australia-1980-2025.csv"
   },
-  "width": 600,
-  "height": 450,
+  "width": 300,
+  "height": 350,
   "params": [
     {
       "name": "Select_Year",

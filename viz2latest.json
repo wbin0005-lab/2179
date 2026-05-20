@@ -1,0 +1,163 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Global Immigrant Origins to Australia",
+    "fontSize": 18,
+    "anchor": "middle"
+  },
+  "params": [
+    {
+      "name": "yearSelect",
+      "value": 1990,
+      "bind": {
+        "input": "select",
+        "options": [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2024],
+        "name": "Year: "
+      }
+    }
+  ],
+  "hconcat": [
+    {
+      "title": "Click a country to view gender distribution (Shift+click to compare two)",
+      "width": 560,
+      "height": 400,
+      "projection": {"type": "equalEarth"},
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "ne_110m_admin_0_countries"
+            }
+          },
+          "mark": {"type": "geoshape", "fill": "#e0e0e0", "stroke": "#ffffff"}
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/migrants_treemap_australia_1990_2024.csv"
+          },
+          "transform": [
+            {"filter": "datum.FlowType == 'Immigrants'"},
+            {"filter": "datum.Year == yearSelect"},
+            {
+              "lookup": "CountryCode",
+              "from": {
+                "data": {
+                  "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
+                  "format": {"type": "topojson", "feature": "countries"}
+                },
+                "key": "id"
+              },
+              "as": "geo"
+            }
+          ],
+          "params": [
+            {
+              "name": "countryClick",
+              "select": {
+                "type": "point",
+                "on": "click",
+                "fields": ["Country"],
+                "empty": "none",
+                "toggle": true
+              }
+            }
+          ],
+          "mark": {"type": "geoshape", "stroke": "#000", "strokeWidth": 0.5},
+          "encoding": {
+            "shape": {"field": "geo", "type": "geojson"},
+            "color": {
+              "field": "TotalMigrants",
+              "type": "quantitative",
+              "scale": {
+                "type": "log",
+                "domain": [1, 80000, 100000, 1000000],
+                "range": ["#F5FBFF", "#08519c"]
+              },
+              "legend": {"title": "Migrants to Australia"}
+            },
+            "stroke": {
+              "condition": {
+                "param": "countryClick",
+                "empty": false,
+                "value": "#ff7f00"
+              },
+              "value": "#ffffff"
+            },
+            "strokeWidth": {
+              "condition": {
+                "param": "countryClick",
+                "empty": false,
+                "value": 2.5
+              },
+              "value": 0.5
+            },
+            "tooltip": [
+              {"field": "Country", "type": "nominal"},
+              {
+                "field": "TotalMigrants",
+                "type": "quantitative",
+                "title": "Total Migrants",
+                "format": ","
+              },
+              {"field": "Year", "type": "ordinal"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Gender Distribution (%)",
+      "width": 220,
+      "height": 400,
+      "data": {
+        "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/migrants_treemap_australia_1990_2024.csv"
+      },
+      "transform": [
+        {"filter": "datum.FlowType == 'Immigrants'"},
+        {"filter": "datum.Year == yearSelect"},
+        {"filter": {"param": "countryClick", "empty": false}},
+        {"filter": "isValid(datum.Country)"},
+        {"fold": ["Male", "Female"], "as": ["Gender", "Count"]}
+      ],
+      "mark": {"type": "bar", "size": 50},
+      "encoding": {
+        "x": {
+          "field": "Country",
+          "type": "nominal",
+          "title": "Selected Country",
+          "axis": {"labelAngle": 0}
+        },
+        "y": {
+          "field": "Count",
+          "type": "quantitative",
+          "stack": "normalize",
+          "title": "Percentage of Total",
+          "axis": {"format": "%"}
+        },
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Male", "Female"],
+            "range": ["#4292c6", "#e377c2"]
+          },
+          "legend": {"title": "Gender"}
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "Gender", "type": "nominal"},
+          {
+            "field": "Count",
+            "type": "quantitative",
+            "title": "Count",
+            "format": ","
+          },
+          {"field": "Year", "type": "ordinal"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
