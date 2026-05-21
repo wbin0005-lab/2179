@@ -489,12 +489,21 @@
       <div class="wide-vis fade-in">
         <div id="vis2" class="vis-container" style="margin: 0;"></div>
       </div>
-      <div class="side-text fade-in" style="background: var(--white); border: 0.5px solid var(--rule); border-radius: 12px; padding: 1.5rem 2rem;">
-        <div><span class="description-tag">Overview</span></div>
-        <h2>Ramping up the migration</h2>
-        <p>The first and second columns are combined to give more space to the visualisation. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien
-          faucibus et molestie ac feugiat sed. Egestas purus viverra accumsan in nisl.</p>
+      
+      <div class="side-text fade-in" style="background: var(--white); border: 0.5px solid var(--rule); border-radius: 12px; padding: 2rem; display: flex; flex-direction: row; gap: 2rem; align-items: center;">
+        
+        <div style="flex: 1; min-width: 250px;">
+          <div><span class="description-tag">Overview</span></div>
+          <h2>Ramping up the migration</h2>
+          <p>The first and second columns are combined to give more space to the visualisation. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien
+            faucibus et molestie ac feugiat sed. Egestas purus viverra accumsan in nisl.</p>
+        </div>
+
+        <div style="flex: 1; min-width: 250px; display: flex; justify-content: center; align-items: center;">
+          <div id="vis3" style="width: 100%; max-width: 300px; min-height: 200px;"></div>
+        </div>
+
       </div>
     </div>
 
@@ -508,6 +517,7 @@
   <script type="text/javascript">
     var specVis1 = "./visualization.vl.json";
     var specVis2 = "./viz2latest.json";
+    var specVis3 = "/donut_chart.json";
     
 
     vegaEmbed('#vis1', specVis1, { "actions": false });

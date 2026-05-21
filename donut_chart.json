@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australia Population Composition",
+    "fontSize": 11,
+    "subtitleFontSize": 9,
+    "subtitleColor": "#888"
+  },
+  "width": 170,
+  "height": 170,
+  "data": {
+    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/australia_migration_donut_data.csv"
+  },
+  "params": [
+    {
+      "name": "yearFilter",
+      "value": 1990,
+      "bind": {
+        "input": "select",
+        "options": [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2024],
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [{"filter": "datum.year == yearFilter"}],
+  "mark": {
+    "type": "arc",
+    "innerRadius": 45,
+    "outerRadius": 80,
+    "cornerRadius": 3,
+    "padAngle": 0.018
+  },
+  "encoding": {
+    "theta": {"field": "pct", "type": "quantitative", "stack": true},
+    "color": {
+      "field": "category",
+      "title": null,
+      "type": "nominal",
+      "scale": {
+        "domain": ["Resident Population", "Immigrants", "Emigrants"],
+        "range": ["#185FA5", "#1D9E75", "#D85A30"]
+      },
+      "legend": {
+        "orient": "bottom",
+        "labelFontSize": 9,
+        "symbolSize": 50,
+        "columns": 1
+      }
+    },
+    "order": {"field": "pct", "type": "quantitative", "sort": "descending"},
+    "tooltip": [
+      {"field": "category", "type": "nominal", "title": "Group"},
+      {
+        "field": "pct",
+        "type": "quantitative",
+        "title": "Share (%)",
+        "format": ".2f"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Count",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "view": {"stroke": null},
+  "background": "white",
+  "config": {"font": "system-ui, sans-serif"}
+}
