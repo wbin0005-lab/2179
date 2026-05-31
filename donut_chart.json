@@ -2,15 +2,17 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Australia Population Composition",
-    "fontSize": 11,
-    "subtitleFontSize": 9,
-    "subtitleColor": "#888"
+    "subtitle": "Share of residents, immigrants and emigrants by year",
+    "fontSize": 13,
+    "subtitleFontSize": 10,
+    "subtitleColor": "#888",
+    "anchor": "start"
   },
-  "width": 170,
-  "height": 170,
-  "data": {
-    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/australia_migration_donut_data.csv"
-  },
+  "width": 260,
+  "height": 260,
+  "background": "white",
+  "config": { "font": "system-ui, sans-serif", "view": { "stroke": null } },
+
   "params": [
     {
       "name": "yearFilter",
@@ -22,49 +24,97 @@
       }
     }
   ],
-  "transform": [{"filter": "datum.year == yearFilter"}],
-  "mark": {
-    "type": "arc",
-    "innerRadius": 45,
-    "outerRadius": 80,
-    "cornerRadius": 3,
-    "padAngle": 0.018
-  },
-  "encoding": {
-    "theta": {"field": "pct", "type": "quantitative", "stack": true},
-    "color": {
-      "field": "category",
-      "title": null,
-      "type": "nominal",
-      "scale": {
-        "domain": ["Resident Population", "Immigrants", "Emigrants"],
-        "range": ["#185FA5", "#1D9E75", "#D85A30"]
+
+  "layer": [
+
+    {
+      "transform": [{ "filter": "datum.year == yearFilter" }],
+      "mark": {
+        "type": "arc",
+        "innerRadius": 60,
+        "outerRadius": 100,
+        "cornerRadius": 3,
+        "padAngle": 0.018
       },
-      "legend": {
-        "orient": "bottom",
-        "labelFontSize": 9,
-        "symbolSize": 50,
-        "columns": 1
+      "encoding": {
+        "theta": { "field": "pct", "type": "quantitative", "stack": true },
+        "color": {
+          "field": "category",
+          "title": null,
+          "type": "nominal",
+          "scale": {
+            "domain": ["Resident Population", "Immigrants", "Emigrants"],
+            "range": ["#185FA5", "#1D9E75", "#D85A30"]
+          },
+          "legend": {
+            "orient": "bottom",
+            "labelFontSize": 9,
+            "symbolSize": 50,
+            "columns": 1
+          }
+        },
+        "order": { "field": "pct", "type": "quantitative", "sort": "descending" },
+        "tooltip": [
+          { "field": "category", "type": "nominal",      "title": "Group" },
+          { "field": "pct",      "type": "quantitative", "title": "Share (%)",  "format": ".2f" },
+          { "field": "value",    "type": "quantitative", "title": "Count",      "format": ",.0f" }
+        ]
       }
     },
-    "order": {"field": "pct", "type": "quantitative", "sort": "descending"},
-    "tooltip": [
-      {"field": "category", "type": "nominal", "title": "Group"},
-      {
-        "field": "pct",
-        "type": "quantitative",
-        "title": "Share (%)",
-        "format": ".2f"
+
+    {
+      "_comment": "Centre label — Immigrants % (large)",
+      "transform": [
+        { "filter": "datum.year == yearFilter && datum.category == 'Immigrants'" }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 22,
+        "fontWeight": "bold",
+        "color": "#1D9E75",
+        "dy": -10
       },
-      {
-        "field": "value",
-        "type": "quantitative",
-        "title": "Count",
-        "format": ",.0f"
+      "encoding": {
+        "text": { "field": "pct", "type": "quantitative", "format": ".1f" }
       }
-    ]
-  },
-  "view": {"stroke": null},
-  "background": "white",
-  "config": {"font": "system-ui, sans-serif"}
+    },
+
+    {
+      "_comment": "Centre label — % symbol sub-label",
+      "transform": [
+        { "filter": "datum.year == yearFilter && datum.category == 'Immigrants'" }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "color": "#1D9E75",
+        "fontWeight": "normal",
+        "dy": 10
+      },
+      "encoding": {
+        "text": { "value": "% Immigrants" }
+      }
+    },
+
+    {
+      "_comment": "Centre label — raw count (small, below)",
+      "transform": [
+        { "filter": "datum.year == yearFilter && datum.category == 'Immigrants'" }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 9,
+        "color": "#888",
+        "dy": 26
+      },
+      "encoding": {
+        "text": { "field": "value", "type": "quantitative", "format": ",.0f" }
+      }
+    }
+
+  ],
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/australia_migration_donut_data.csv"
+  }
 }

@@ -1,155 +1,239 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "The Rise of Australian Household Debt (1995–2024)",
-    "subtitle": "Global rank based on household debt-to-income ratio among OECD nations.",
+    "text": "",
+    "subtitle": "Global rank based on household debt-to-income ratio among OECD nations. Click any Australia dot to update the panel.",
     "fontSize": 16,
+    "subtitleFontSize": 11,
+    "subtitleColor": "#666",
     "anchor": "start",
     "color": "#111111"
   },
-  "width": 700,
-  "height": 650,
-  "padding": {"left": 130, "right": 130, "top": 20, "bottom": 20},
-  "config": {"view": {"stroke": "transparent"}},
-  "data": {
-    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/cleaned_household_debt_bump_chart.csv",
-    "format": {"parse": {"Debt_Ratio": "number", "Year": "number"}}
-  },
-  "transform": [
+  "config": {"view": {"stroke": "transparent"}, "concat": {"spacing": 24}},
+  "hconcat": [
     {
-      "window": [{"op": "rank", "as": "rank"}],
-      "sort": [{"field": "Debt_Ratio", "order": "descending"}],
-      "groupby": ["Year"]
-    }
-  ],
-  "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "ordinal",
-      "title": null,
-      "scale": {"padding": 0.5},
-      "axis": {
-        "labelAngle": 0,
-        "labelFontSize": 12,
-        "grid": true,
-        "domain": false,
-        "ticks": false,
-        "offset": 10
-      }
-    },
-    "y": {
-      "field": "rank",
-      "type": "quantitative",
-      "scale": {"sort": "descending", "domain": [32, 1]},
-      "axis": null
-    }
-  },
-  "layer": [
-    {
-      "name": "Background Lines (Other Countries)",
-      "transform": [{"filter": "datum.Country != 'Australia'"}],
-      "mark": {"type": "line", "strokeWidth": 1.5, "interpolate": "monotone"},
-      "encoding": {
-        "color": {"value": "#e2e8f0"},
-        "detail": {"field": "Country"}
-      }
-    },
-    {
-      "name": "Background Points (All Other Countries)",
-      "transform": [{"filter": "datum.Country != 'Australia'"}],
-      "mark": {"type": "circle", "size": 50, "opacity": 0.7, "filled": true},
-      "encoding": {
-        "color": {"value": "#cbd5e1"},
-        "detail": {"field": "Country"},
-        "tooltip": [
-          {"field": "Country", "type": "nominal", "title": "Country"},
-          {"field": "Year", "type": "ordinal", "title": "Year"},
-          {"field": "rank", "type": "quantitative", "title": "Rank"},
-          {
-            "field": "Debt_Ratio",
-            "type": "quantitative",
-            "title": "Debt-to-Income (%)",
-            "format": ".1f"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Highlighted Line (Australia)",
-      "transform": [{"filter": "datum.Country == 'Australia'"}],
-      "mark": {
-        "type": "line",
-        "strokeWidth": 4.5,
-        "color": "#d62728",
-        "interpolate": "monotone"
-      }
-    },
-    {
-      "name": "Highlighted Points (Australia)",
-      "transform": [{"filter": "datum.Country == 'Australia'"}],
-      "mark": {
-        "type": "circle",
-        "size": 110,
-        "color": "#d62728",
-        "filled": true
+      "width": 700,
+      "height": 650,
+      "padding": {"left": 130, "right": 50, "top": 20, "bottom": 20},
+      "data": {
+        "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/cleaned_household_debt_bump_chart.csv",
+        "format": {"parse": {"Debt_Ratio": "number", "Year": "number"}}
       },
+      "transform": [
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"field": "Debt_Ratio", "order": "descending"}],
+          "groupby": ["Year"]
+        }
+      ],
       "encoding": {
-        "tooltip": [
-          {"field": "Country", "type": "nominal", "title": "Country"},
-          {"field": "Year", "type": "ordinal", "title": "Year"},
-          {"field": "rank", "type": "quantitative", "title": "Rank"},
-          {
-            "field": "Debt_Ratio",
-            "type": "quantitative",
-            "title": "Debt-to-Income (%)",
-            "format": ".1f"
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "title": null,
+          "scale": {"padding": 0.5},
+          "axis": {
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "grid": true,
+            "domain": false,
+            "ticks": false,
+            "offset": 10
           }
-        ]
-      }
-    },
-    {
-      "name": "Left Text Labels (All Countries in 1995)",
-      "transform": [{"filter": "datum.Year == 1995"}],
-      "mark": {"type": "text", "align": "right", "dx": -12, "fontSize": 10},
-      "encoding": {
-        "text": {"field": "Country"},
-        "color": {
-          "condition": {
-            "test": "datum.Country == 'Australia'",
-            "value": "#d62728"
-          },
-          "value": "#64748b"
         },
-        "fontWeight": {
-          "condition": {
-            "test": "datum.Country == 'Australia'",
-            "value": "bold"
-          },
-          "value": "normal"
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": {"sort": "descending", "domain": [32, 1]},
+          "axis": null
         }
-      }
-    },
-    {
-      "name": "Right Text Labels (All Countries in 2024)",
-      "transform": [{"filter": "datum.Year == 2024"}],
-      "mark": {"type": "text", "align": "left", "dx": 12, "fontSize": 10},
-      "encoding": {
-        "text": {"field": "Country"},
-        "color": {
-          "condition": {
-            "test": "datum.Country == 'Australia'",
-            "value": "#d62728"
-          },
-          "value": "#64748b"
+      },
+      "layer": [
+        {
+          "transform": [{"filter": "datum.Country != 'Australia'"}],
+          "mark": {"type": "line", "strokeWidth": 1.5, "interpolate": "monotone"},
+          "encoding": {
+            "color": {"value": "#e2e8f0"},
+            "detail": {"field": "Country"}
+          }
         },
-        "fontWeight": {
-          "condition": {
-            "test": "datum.Country == 'Australia'",
-            "value": "bold"
-          },
-          "value": "normal"
+        {
+          "transform": [{"filter": "datum.Country != 'Australia'"}],
+          "mark": {"type": "circle", "size": 50, "opacity": 0.7, "filled": true},
+          "encoding": {
+            "color": {"value": "#cbd5e1"},
+            "detail": {"field": "Country"},
+            "tooltip": [
+              {"field": "Country", "type": "nominal", "title": "Country"},
+              {"field": "Year", "type": "quantitative", "title": "Year", "format": "d"},
+              {"field": "rank", "type": "quantitative", "title": "Rank"},
+              {"field": "Debt_Ratio", "type": "quantitative", "title": "Debt-to-Income (%)", "format": ".1f"}
+            ]
+          }
+        },
+        {
+          "transform": [{"filter": "datum.Country == 'Australia'"}],
+          "mark": {"type": "line", "strokeWidth": 4.5, "color": "#d62728", "interpolate": "monotone"}
+        },
+        {
+          "transform": [{"filter": "datum.Country == 'Australia'"}],
+          "params": [
+            {
+              "name": "clickedYear",
+              "select": {
+                "type": "point",
+                "fields": ["Year"],
+                "on": "click",
+                "nearest": true
+              }
+            }
+          ],
+          "mark": {"type": "circle", "color": "#d62728", "filled": true, "cursor": "pointer"},
+          "encoding": {
+            "size": {
+              "condition": {"param": "clickedYear", "empty": false, "value": 260},
+              "value": 120
+            },
+            "tooltip": [
+              {"field": "Country", "type": "nominal", "title": "Country"},
+              {"field": "Year", "type": "quantitative", "title": "Year", "format": "d"},
+              {"field": "rank", "type": "quantitative", "title": "Rank"},
+              {"field": "Debt_Ratio", "type": "quantitative", "title": "Debt-to-Income (%)", "format": ".1f"}
+            ]
+          }
+        },
+        {
+          "transform": [{"filter": "datum.Year == 1995"}],
+          "mark": {"type": "text", "align": "right", "dx": -12, "fontSize": 10},
+          "encoding": {
+            "text": {"field": "Country"},
+            "color": {
+              "condition": {"test": "datum.Country == 'Australia'", "value": "#d62728"},
+              "value": "#64748b"
+            },
+            "fontWeight": {
+              "condition": {"test": "datum.Country == 'Australia'", "value": "bold"},
+              "value": "normal"
+            }
+          }
+        },
+        {
+          "transform": [{"filter": "datum.Year == 2024"}],
+          "mark": {"type": "text", "align": "left", "dx": 12, "fontSize": 10},
+          "encoding": {
+            "text": {"field": "Country"},
+            "color": {
+              "condition": {"test": "datum.Country == 'Australia'", "value": "#d62728"},
+              "value": "#64748b"
+            },
+            "fontWeight": {
+              "condition": {"test": "datum.Country == 'Australia'", "value": "bold"},
+              "value": "normal"
+            }
+          }
         }
-      }
+      ]
+    },
+
+    {
+      "width": 200,
+      "height": 650,
+      "padding": {"left": 16, "right": 16, "top": 20, "bottom": 20},
+      "view": {"fill": "#fafafa"},
+      "data": {
+        "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/cleaned_household_debt_bump_chart.csv",
+        "format": {"parse": {"Debt_Ratio": "number", "Year": "number"}}
+      },
+      "transform": [
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"field": "Debt_Ratio", "order": "descending"}],
+          "groupby": ["Year"]
+        },
+        {"filter": "datum.Country == 'Australia'"},
+        {"filter": {"param": "clickedYear", "empty": false}}
+      ],
+      "encoding": {
+        "x": {"value": 100},
+        "y": {"value": 325}
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "alphabetic",
+            "dy": -155,
+            "fontSize": 100,
+            "fontWeight": "bold",
+            "color": "#d62728"
+          },
+          "encoding": {
+            "text": {"field": "rank", "type": "quantitative", "format": "d"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "top",
+            "dy": -65,
+            "fontSize": 14,
+            "fontWeight": "600",
+            "color": "#d62728"
+          },
+          "encoding": {"text": {"value": "globally ranked"}}
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "top",
+            "dy": -40,
+            "fontSize": 13,
+            "color": "#555"
+          },
+          "encoding": {
+            "text": {"field": "Year", "type": "quantitative", "format": "d"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "top",
+            "dy": -10,
+            "fontSize": 10,
+            "color": "#999"
+          },
+          "encoding": {"text": {"value": "DEBT-TO-INCOME RATIO"}}
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "top",
+            "dy": 12,
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "color": "#333"
+          },
+          "encoding": {
+            "text": {"field": "Debt_Ratio", "type": "quantitative", "format": ".1f"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "top",
+            "dy": 52,
+            "fontSize": 11,
+            "color": "#888"
+          },
+          "encoding": {"text": {"value": "% of household income"}}
+        }
+      ]
     }
   ]
 }

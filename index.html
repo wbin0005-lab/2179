@@ -2,534 +2,935 @@
 <html lang="en">
 
 <head>
-  <title>Australian Economics News</title>
+  <title>Australian Economics Dashboard</title>
 
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* ── Reset & base ──────────────────────────────── */
+    /* ── Reset & Base Layout ───────────────────────── */
     *, *::before, *::after { box-sizing: border-box; }
 
     :root {
-      --navy:      #0d1b2a;
-      --navy-mid:  #1b2e42;
-      --ink:       #1e2a35;
-      --slate:     #4a5c6a;
-      --mist:      #8a9baa;
-      --cloud:     #e8ecef;
-      --paper:     #f4f2ed;
-      --white:     #ffffff;
-      --gold:      #c8963e;
-      --gold-lt:   #f5e6cc;
-      --teal:      #1a7a6e;
-      --teal-lt:   #d4f0ec;
-      --rule:      rgba(0,0,0,0.08);
-      --font-display: 'Playfair Display', Georgia, serif;
-      --font-body:    'Source Sans 3', system-ui, sans-serif;
+      /* Dashboard Palette */
+      --aus-navy:     #0F2537; /* Sidebar / Headers */
+      --aus-navy-hover: #163650;
+      --aus-bush:     #2C4A3E; /* Positive trends */
+      --aus-ochre:    #D47A3A; /* Accents / Warnings */
+      --aus-gold:     #DCA842; /* Highlights */
+      --bg-color:     #F4F7F9; /* Off-white background for contrast */
+      --ink:          #1A242B; /* Primary Text */
+      --slate:        #64748B; /* Secondary Text */
+      --white:        #ffffff;
+      --border:       #E2E8F0;
+      
+      --font-body:    'Inter', system-ui, sans-serif;
     }
-
-    html { scroll-behavior: smooth; }
 
     body {
       font-family: var(--font-body);
       font-weight: 400;
-      background: var(--paper);
+      background: var(--bg-color);
       color: var(--ink);
       margin: 0;
       padding: 0;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ── Page wrapper ──────────────────────────────── */
-    .page {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem 5rem;
-    }
-
-    /* ── Hero header ───────────────────────────────── */
-    .hero {
-      background: var(--navy);
-      margin: 0 -2rem 0;
-      padding: 1rem 2rem 1.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -120px; right: -100px;
-      width: 500px; height: 500px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(200,150,62,0.12) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--gold) 0%, transparent 60%);
-    }
-    .hero-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1rem;
-    }
-    .hero-eyebrow::before {
-      content: '';
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: var(--gold);
-    }
-    .hero h1 {
-      font-family: var(--font-display);
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      font-weight: 400;
+    /* ── Dashboard Shell ───────────────────────────── */
+    .sidebar {
+      width: 260px;
+      background: var(--aus-navy);
       color: var(--white);
-      line-height: 1.2;
-      margin: 0 0 0rem;
-      max-width: 700px;
-    }
-    .hero h1 em {
-      font-style: italic;
-      color: rgba(255,255,255,0.65);
-    }
-    .hero-desc {
-      font-size: 15px;
-      font-weight: 300;
-      color: rgba(255,255,255,0.55);
-      max-width: 520px;
-      line-height: 1.75;
-      margin: 0;
-    }
-
-    /* ── Section dividers ──────────────────────────── */
-    .section-divider {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin: 3rem 0 2rem;
-    }
-    .section-divider-line {
-      flex: 1;
-      height: 0.5px;
-      background: var(--rule);
-    }
-    .section-divider-label {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--mist);
-      white-space: nowrap;
-    }
-
-    /* ── Grid rows ─────────────────────────────────── */
-    .pure-g {
-      margin-bottom: 0;
-    }
-    .grid-row {
-      margin-bottom: 2rem;
-    }
-
-    /* ── Description blocks ────────────────────────── */
-    .description {
-      padding: 2rem 2rem 2rem 0;
-      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-    }
-    .description-right {
-      padding: 2rem 0 2rem 2.5rem;
-    }
-    .description h2 {
-      font-family: var(--font-display);
-      font-size: 1.45rem;
-      font-weight: 400;
-      color: var(--ink);
-      line-height: 1.3;
-      margin: 0 0 0.75rem;
-    }
-    .description h2::after {
-      content: '';
-      display: block;
-      width: 32px;
-      height: 2px;
-      background: var(--gold);
-      margin-top: 0.6rem;
-    }
-    .description p {
-      font-size: 14px;
-      font-weight: 300;
-      color: var(--slate);
-      line-height: 1.8;
-      margin: 0;
-    }
-    .description-tag {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--teal);
-      background: var(--teal-lt);
-      padding: 3px 10px;
-      border-radius: 99px;
-      margin-bottom: 0.75rem;
+      flex-shrink: 0;
+      z-index: 10;
     }
 
-    /* ── Vis containers ────────────────────────────── */
-    .vis-container {
-      background: var(--white);
-      border: 0.5px solid var(--rule);
-      border-radius: 12px;
-      padding: 1.25rem;
-      margin: 0.5rem;
-      overflow: hidden;
-      transition: box-shadow 0.2s ease;
-    }
-    .vis-container:hover {
-      box-shadow: 0 4px 24px rgba(13,27,42,0.07);
-    }
-    .vis-container .vis-label {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--mist);
-      margin-bottom: 0.75rem;
-    }
-
-    /* ── Two-column split ──────────────────────────── */
-    .split-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-      align-items: center;
-      background: var(--white);
-      border: 0.5px solid var(--rule);
-      border-radius: 12px;
-      overflow: hidden;
-      margin-bottom: 2rem;
-    }
-    .split-row .split-text {
-      padding: 2.5rem 2.5rem;
-      border-right: 0.5px solid var(--rule);
-    }
-    .split-row .split-text h2 {
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      font-weight: 400;
-      color: var(--ink);
-      margin: 0 0 0.75rem;
-      line-height: 1.3;
-    }
-    .split-row .split-text h2::after {
-      content: '';
-      display: block;
-      width: 28px;
-      height: 2px;
-      background: var(--gold);
-      margin-top: 0.55rem;
-    }
-    .split-row .split-text p {
-      font-size: 14px;
-      font-weight: 300;
-      color: var(--slate);
-      line-height: 1.8;
-      margin: 0;
-    }
-    .split-row .split-vis {
+    .brand {
       padding: 1.5rem;
-      background: var(--paper);
-    }
-
-    /* ── Three-col card row ────────────────────────── */
-    .card-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    .card-text {
-      background: var(--navy);
-      border-radius: 12px;
-      padding: 2rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .card-text h2 {
-      font-family: var(--font-display);
-      font-size: 1.3rem;
-      font-weight: 400;
-      color: var(--white);
-      margin: 0 0 0.75rem;
-      line-height: 1.3;
-    }
-    .card-text p {
-      font-size: 13px;
-      font-weight: 300;
-      color: rgba(255,255,255,0.55);
-      line-height: 1.8;
-      margin: 0;
-    }
-    .card-text .card-tag {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 0.75rem;
-    }
-    .card-vis {
-      background: var(--white);
-      border: 0.5px solid var(--rule);
-      border-radius: 12px;
-      padding: 1.25rem;
-      overflow: hidden;
-      transition: box-shadow 0.2s ease;
-    }
-    .card-vis:hover {
-      box-shadow: 0 4px 24px rgba(13,27,42,0.07);
+      align-items: center;
+      gap: 10px;
     }
 
-    /* ── Wide vis + side text row ──────────────────── */
-    .wide-row {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      margin-bottom: 2rem;
+    .brand-icon {
+      width: 12px;
+      height: 12px;
+      background: var(--aus-gold);
+      border-radius: 50%;
     }
 
-    .wide-vis {
-      background: var(--white);
-      border: 0.5px solid var(--rule);
-      border-radius: 12px;
-      padding: 1.25rem;
-      overflow: hidden;
-    }
-    .side-text {
-      background: var(--gold-lt);
-      border: 0.5px solid rgba(200,150,62,0.2);
-      border-radius: 12px;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .side-text h2 {
-      font-family: var(--font-display);
-      font-size: 1.3rem;
-      font-weight: 400;
-      color: var(--ink);
-      margin: 0 0 0.75rem;
-      line-height: 1.3;
-    }
-    .side-text h2::after {
-      content: '';
-      display: block;
-      width: 28px;
-      height: 2px;
-      background: var(--gold);
-      margin-top: 0.55rem;
-    }
-    .side-text p {
-      font-size: 13px;
-      font-weight: 300;
-      color: var(--slate);
-      line-height: 1.8;
-      margin: 0;
+    .nav-menu {
+      padding: 1.5rem 0;
+      flex: 1;
     }
 
-    /* ── Footer ────────────────────────────────────── */
-    .page-footer {
-      border-top: 0.5px solid var(--rule);
-      padding-top: 1.5rem;
-      margin-top: 1rem;
-    }
-    .page-footer p {
-      font-size: 12px;
-      color: var(--mist);
-      line-height: 1.7;
-      margin: 0;
-    }
-    .page-footer a {
-      color: var(--teal);
+    .nav-item {
+      padding: 0.75rem 1.5rem;
+      color: rgba(255,255,255,0.7);
       text-decoration: none;
-      border-bottom: 0.5px solid var(--teal);
-      padding-bottom: 1px;
-    }
-    .page-footer a:hover {
-      color: var(--ink);
-      border-color: var(--ink);
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      border-left: 3px solid transparent;
     }
 
-    /* ── Fade-in animation ─────────────────────────── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(16px); }
-      to   { opacity: 1; transform: translateY(0); }
+    .nav-item:hover, .nav-item.active {
+      background: var(--aus-navy-hover);
+      color: var(--white);
     }
-    .fade-in {
-      animation: fadeUp 0.5s ease both;
-    }
-    .fade-in:nth-child(1) { animation-delay: 0.05s; }
-    .fade-in:nth-child(2) { animation-delay: 0.15s; }
-    .fade-in:nth-child(3) { animation-delay: 0.25s; }
 
-    /* ── Responsive ────────────────────────────────── */
+    .nav-item.active {
+      border-left-color: var(--aus-gold);
+    }
+
+    /* CRITICAL FIX: Smooth scrolling attached directly to the scrolling container */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      scroll-behavior: smooth; 
+    }
+
+    .topbar {
+      height: 70px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+
+    .topbar-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--aus-navy);
+      margin: 0;
+    }
+
+    .topbar-actions {
+      font-size: 0.85rem;
+      color: var(--slate);
+    }
+
+    /* ── Dashboard Grid System ─────────────────────── */
+    .dashboard-container {
+      padding: 2rem;
+      max-width: 1600px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* ── SECTION SEPARATOR STYLES ───────────────────── */
+    .section-separator {
+      margin-top: 35px;
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      /* Padding cushion so the header doesn't slam completely against the top roof */
+      scroll-margin-top: 25px; 
+    }
+    
+    .section-separator h2 {
+      font-size: 1.35rem;
+      color: var(--aus-navy);
+      font-weight: 600;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+    
+    .section-separator .separator-line {
+      height: 2px;
+      background-color: var(--border);
+      width: 100%;
+      border-radius: 2px;
+    }
+
+    /* Introduction Card Styling */
+    .intro-text-card {
+      margin-bottom: 1.5rem;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    
+    .intro-text-card h2 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: var(--aus-navy);
+    }
+    
+    .intro-text-card p {
+      margin: 0;
+      color: var(--slate);
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    /* KPI Row */
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .kpi-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .kpi-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--slate);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .kpi-value {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--aus-navy);
+    }
+
+    .kpi-trend {
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .trend-up { color: var(--aus-bush); }
+    .trend-down { color: var(--aus-ochre); }
+
+    /* Main Chart Grid */
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .dashboard-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-header {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--aus-navy);
+      margin: 0;
+    }
+
+    .card-subtitle {
+      font-size: 0.8rem;
+      color: var(--slate);
+      margin-top: 0.25rem;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Grid Spans */
+    .span-8 { grid-column: span 8; }
+    .span-4 { grid-column: span 4; }
+    .span-6 { grid-column: span 6; }
+    .span-12 { grid-column: span 12; }
+
+    /* Informational Text Card */
+    .info-card {
+      background: var(--aus-navy);
+      color: var(--white);
+    }
+    .info-card .card-header {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .info-card .card-title {
+      color: var(--white);
+    }
+    .info-card .card-body {
+      display: block;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Footer Styling */
+    .dashboard-footer {
+      margin-top: 3rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--border);
+      color: var(--slate);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer-left {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .footer-right {
+      flex: 1;
+      min-width: 280px;
+      text-align: right;
+    }
+
+    /* ── Responsive Adaptations ────────────────────── */
+    @media (max-width: 1200px) {
+      .span-8, .span-4, .span-6 { grid-column: span 12; }
+    }
     @media (max-width: 768px) {
-      .split-row,
-      .card-row,
-      .wide-row { grid-template-columns: 1fr; }
-      .split-row .split-text { border-right: none; border-bottom: 0.5px solid var(--rule); }
-      .hero { padding: 2.5rem 1.5rem 2rem; }
-      .page { padding: 0 1rem 3rem; }
+      .sidebar { display: none; }
+      .dashboard-footer { flex-direction: column; gap: 1rem; }
+      .footer-right { text-align: left; }
+    }
+
+    .custom-donut-card { align-self: start; height: auto; }
+    .side-by-side-body {
+      display: flex; flex-direction: row; align-items: center;
+      justify-content: space-between; gap: 1.5rem;
+    }
+    .chart-side-text {
+      flex: 1; font-size: 0.9rem; color: var(--slate); line-height: 1.6; max-width: 250px;min-width: 220px;
+    }
+
+    /* ========================================== */
+    /* NEW CSS: PRETTY BUTTON & MODAL POPUP       */
+    /* ========================================== */
+
+    .pretty-btn {
+      background-color: var(--aus-navy);
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      font-size: 11px;             
+      font-weight: 700;             
+      text-transform: uppercase;    
+      letter-spacing: 0.05em;       
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      transition: all 0.2s ease;
+      font-family: var(--font-body);
+      white-space: nowrap;          
+    }
+
+    .pretty-btn:hover {
+      background-color: var(--aus-gold); 
+      color: var(--aus-navy);
+    }
+
+    .pretty-btn:active {
+      transform: scale(0.97);
+    }
+
+    .modal-overlay {
+      display: none; 
+      position: fixed;
+      top: 0; left: 0; 
+      width: 100%; height: 100%;
+      background-color: rgba(15, 37, 55, 0.85); 
+      z-index: 9999; 
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(4px); 
+    }
+
+    .modal-content {
+      background-color: #ffffff;
+      padding: 40px;            
+      border-radius: 12px;
+      width: 95%;               
+      max-width: 1400px;        
+      position: relative;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      max-height: 90vh;         
+      overflow-y: auto;         
+    }
+
+    .modal-body {
+      display: flex;
+      flex-direction: row;      
+      flex-wrap: nowrap;        
+      gap: 40px;                
+      margin-top: 15px;
+      align-items: stretch;     
+    }
+
+    .modal-viz-container {
+      flex: 3;                  
+      min-width: 0;             
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-text-container {
+      flex: 2;                  
+      min-width: 380px;         
+      color: var(--ink);
+      border-left: 1px solid var(--border); 
+      padding-left: 40px;       
+    }
+
+    .modal-text-container h3 {
+      margin-top: 0;
+      color: var(--aus-navy);
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+
+    .modal-text-container p {
+      color: var(--slate);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #94a3b8;
+      line-height: 1;
+      transition: color 0.2s;
+      z-index: 10;
+    }
+
+    .close-btn:hover {
+      color: var(--aus-ochre); 
     }
   </style>
 </head>
 
 <body>
 
-  <!-- ── Hero ── -->
-  <div class="hero">
-    <div class="hero-inner">
-      <div class="hero-eyebrow">Data Visualisation II</div>
-      <h1 style="font-size: xx-large;">Australian Economics News<br><em>Discover History and Tax Structure</em></h1>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-icon"></div>
+      Data Visualization II
+    </div>
+    <nav class="nav-menu">
+      <a href="#overview-section" class="nav-item active">Overview</a>
+      <a href="#demographics-section" class="nav-item">Demographics & Wealth Distribution</a>
+      <a href="#taxation-section" class="nav-item">Quick Fix Solution: Migration and its Trends</a>
+      <a href="#housing-section" class="nav-item">Housing Market</a>
+      <a href="#discretionarycpi-section" class="nav-item">Discretionary vs Non-Discretionary</a>
+      <a href="#household-section" class="nav-item">Household Debt Ranking</a>
+      
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    
+    <header class="topbar">
+      <h1 class="topbar-title">Australian Economics: Cash Rate</h1>
+      <div class="topbar-actions">
+        
+      </div>
+    </header>
+
+    <div class="dashboard-container">
+
+      <div id="overview-section" class="section-separator">
+        <h2>Overview</h2>
+        <div class="separator-line"></div>
+      </div>
+
+      <div class="dashboard-card intro-text-card">
+        <div class="card-body" style="display: block;">
+          <h2>Punishing the Wrong People: How & Why Cash Rate is a <em>"blunt"</em> instrument?</h2>
+          <p>Right now, the conventional wisdom tells us that the RBA must keep raising interest rates because Australians are spending too much money. But the reality on the ground is completely different. Everyday people aren't inflation's cause—they are its victims. Over the next few minutes, we’re going to look past the headlines to show how a shrinking tax base, a decades-old migration quick-fix, and a rigged housing market have turned our primary economic tool into a blunt instrument that is punishing the wrong people.</p>
+        </div>
+      </div>
+      
+      <div class="kpi-row">
+        <div class="kpi-card">
+          <div class="kpi-title">RBA Cash Rate</div>
+          <div class="kpi-value">4.10%</div>
+          <div class="kpi-trend trend-up" style="color: maroon;">↑ +0.5% from last year</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-title">🇦🇺 ⦁ Inflation Rate</div>
+          <div class="kpi-value">4.10%</div>
+          <div class="kpi-trend trend-up" style="color: maroon;">↑ +1.1% vs target (3%)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-title">Net Overseas Migration (thousand)</div>
+          <div class="kpi-value">305.57</div>
+          <div class="kpi-trend trend-up"> constant from JUN 2025</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-title">🇦🇺 ⦁ Household Debt Ranking</div>
+          <div class="kpi-value">2nd</div>
+          <div class="kpi-trend trend-up">among OECD countries (2024)</div>
+        </div>
+      </div>
+
+      <div class="chart-grid">
+
+        <div class="dashboard-card span-12">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">RBA Cash Rate Trends (1990–2026)</h2>
+              <div class="card-subtitle">Drag the mouse over the bottom chart to zoom into specific periods.</div>
+            </div>
+            <button class="pretty-btn open-modal-btn" data-target="modal-vis4" data-spec="specVis4"> 💡 KNOW MORE </button>
+          </div>
+          <div class="card-body">
+            <div id="vis4" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <div class="dashboard-card span-12">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Australia Annual CPI Inflation (1960–2026)</h2>
+              <div class="card-subtitle">Tracking the inflation rate against the RBA Target Band</div>
+            </div>
+            <button class="pretty-btn open-modal-btn" data-target="modal-vis5" data-spec="specVis5"> 💡 KNOW MORE </button>
+          </div>
+          <div class="card-body">
+            <div id="vis5" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <div id="demographics-section" class="section-separator span-12">
+          <h2>Demographics & Wealth Distribution</h2>
+          <div class="separator-line"></div>
+        </div>
+
+        <div class="dashboard-card span-6">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Population Demographics</h2>
+              <div class="card-subtitle">Age and gender distribution pyramid</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div id="vis1"></div>
+          </div>
+        </div>
+
+        <div class="dashboard-card info-card span-6">
+          <div class="card-header">
+            <h2 class="card-title">Understanding How Demographic Shapes Macroeconomic</h2>
+          </div>
+          <div class="card-body">
+            <p style="margin-top: 0;">Australia's taxation system is <strong>increasingly unsustainable  </strong>
+              due to demographic shifts. Historically, the workforce supported a small retiree population, 
+              resembling a wide-bottomed pyramid (▲). However, as birth rates decline and life expectancy rises,
+               the demographic profile has transformed into a narrow, top-heavy bullet shape (🚀). 
+               This change reduces the tax base, leading to inefficiencies in funding public services as fewer workers bear 
+               the financial burden for an expanding aging population. The current tax structure, rooted in an outdated model, 
+               struggles to adapt to these demographic realities.</p>
+            <p>Ultimately, visualization visually proves that while Australia's demographics have shifted from a
+               stable pyramid to an inverted bullet, our tax structure remains anchored to an old framework—placing an
+               unsustainable weight on a shrinking workforce.</p>
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2); font-size: 0.85rem;">
+              <em>Datasource: Population Pyramids - PopulationPyramid.net</em>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-card info-card span-4">
+          <div class="card-header">
+            <h2 class="card-title">Widening Gap of Wealth in Age Distribution</h2>
+          </div>
+          <div class="card-body">
+            <p style="margin-top: 0;">The chart tracks household net worth distribution across age groups from 2002 to 2025, 
+              revealing a widening generational wealth divide in Australia. Australians aged 65 and over see their 
+              share of total wealth increase from about 20% in 2002 to over 32% by 2025, while those under 34 hold a
+               minimal and stagnant wealth slice. This disparity is exacerbated by older individuals being less affected by 
+               interest rate hikes, as they often own their homes outright and face fewer financial barriers. Consequently, 
+               wealth accumulation is concentrated among older demographics, placing a greater tax burden on the diminishing 
+               working-age population. </p>
+              <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2); font-size: 0.85rem;">
+              <em>Datasource: PLEASE ADD THEM LATER.</em>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-card span-8">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Wealth Distribution</h2>
+              <div class="card-subtitle">Shares of net worth by age group</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div id="vis6" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <div id="taxation-section" class="section-separator span-12">
+          <h2>Quick Fix Solution: Migration and its Trends</h2>
+          <div class="separator-line"></div>
+        </div>
+
+        <div class="dashboard-card span-12">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Global Immigrant Origins to Australia</h2>
+              <div class="card-subtitle">Click a country to view gender distribution (Shift+click to compare two)</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div id="vis2" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <div class="dashboard-card span-12 custom-donut-card">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Australian Population Composition</h2>
+              <div class="card-subtitle">Proportional distribution</div>
+            </div>
+          </div>
+          <div class="card-body side-by-side-body">
+            <div class="chart-side-text"> 
+              <p style="text-align: right;">Connecting these two pieces reveals the economic loop driving Australia's housing and tax issues. The concentration of wealth in older generations highlights a problem policymakers aimed to solve in the 1990s: an aging, wealthy population paying less tax, alongside a shrinking workforce. The migration strategy served as a quick fix, importing skilled immigrants to support the healthcare and retirement systems.</p>
+             </div>
+            <div id="vis3"></div>
+            <div class="chart-side-text">
+              <p>However, this influx created a housing demand that outpaced supply, intensifying competition for housing and transferring wealth to older property owners. Consequently, this approach inadvertently widened the generational wealth divide by escalating property prices and burdening younger workers and new migrants with high rents and debt.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="housing-section" class="section-separator span-12">
+          <h2>Housing Market Analysis</h2>
+          <div class="separator-line"></div>
+        </div>
+
+        <div class="dashboard-card info-card span-4">
+          <div class="card-header">
+            <h2 class="card-title">Understanding House Tenure</h2>
+          </div>
+          <div class="card-body">
+            <p style="margin-top: 0;">When analyzing the connection between migration and wealth in Australia, 
+              it becomes evident that the introduction of working-age taxpayers has contributed to a shrinking tax base.
+               Older generations dominate capital and real estate, while younger people and new migrants struggle in a tight rental 
+               market or accumulate significant debt. The Reserve Bank of Australia's interest rate hikes disproportionately affect 
+               those with heavy mortgages, as increasingly fewer people own homes outright. This creates a structural inequality where 
+               older cohorts benefit from monetary policy, while younger workers and migrants bear its consequences.</p>
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2); font-size: 0.85rem;">
+              <em>Datasource: Australian Bureau of Statistics (ABS)</em>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-card span-8">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Housing Tenure</h2>
+              <div class="card-subtitle">Legend has interactive feature to filter</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div id="vis7" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <div class="dashboard-card span-6">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Rent vs Nominal Inflation</h2>
+              <div class="card-subtitle">Comparative price indices</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div id="vis8" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <div class="dashboard-card info-card span-6">
+          <div class="card-header">
+            <h2 class="card-title">Understanding Rent and NOM correlation</h2>
+          </div>
+          <div class="card-body">
+            <p style="margin-top: 0;">The visualization highlights a direct correlation between Net Overseas Migration (NOM) and Rent Consumer Price Index (CPI) growth in Australia. During late 2023 and early 2024, NOM peaked at approximately 560,000, coinciding with a severe rental inflation rate of 7.5% to 7.8%, primarily driven by an overwhelming influx of people relative to limited housing availability.</p>
+            <p> However, as the government curtailed migration numbers to around 310,000 in 2024 and 2025, the rental market pressure diminished significantly, resulting in a drop of rent inflation to 3.5% by April 2026. This situation underscores the financial struggles faced by younger generations and migrants trapped in a high-demand rental market, possessing minimal national wealth. </p>
+            <p>Furthermore, it critiques the Reserve Bank of Australia's (RBA) reliance on high interest rates as a remedy for inflation, arguing that the actual cause of rental inflation was not consumer spending but the imbalance between population growth and housing supply. The eventual decrease in migration volumes, rather than interest rate hikes, was the primary factor that alleviated rental inflation by 2026.
+            </p>
+              <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2); font-size: 0.85rem;">
+              <em>Datasource: Australian Bureau of Statistics (ABS)</em>
+            </div>
+          </div>
+        </div>
+
+        <div id="discretionarycpi-section" class="section-separator span-12">
+          <h2>CPI rate (Discretionary vs Non-Discretionary)</h2>
+          <div class="separator-line"></div>
+        </div>
+
+        <div class="dashboard-card span-12">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Discretionary CPI</h2>
+              <div class="card-subtitle">Impact on household spending</div>
+            </div>
+            <button class="pretty-btn open-modal-btn" data-target="modal-vis9" data-spec="specVis9"> 💡 KNOW MORE </button>
+          </div>
+          <div class="card-body">
+            <div id="vis9" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <div id="household-section" class="section-separator span-12">
+          <h2>Household Debt Ranking</h2>
+          <div class="separator-line"></div>
+        </div>
+
+        <div class="dashboard-card span-12">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">The Rise of Australian Household Debt (1995–2024)</h2>
+              <div class="card-subtitle">Global rank based on household debt-to-income ratio among OECD nations. Click any Australia dot to update the panel.</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div id="vis10" style="width: 100%;"></div>
+          </div>
+          <div class="card-header" style="justify-content: center; border-top: 1px solid var(--border); border-bottom: none; padding: 1.5rem;">
+            <div class="card-subtitle" style="max-width: 650px; font-size: 0.92rem; text-align: center; margin: 0 auto; line-height: 1.6; color: var(--slate);">
+              The chart illustrates Australia's alarming rise in household debt-to-income ratios, positioning it as the <strong>second</strong> most indebted nation globally by 2024, trailing only the Netherlands. This trend began in the 1990s, as Australia transitioned from a sustainable debt environment to unprecedented levels of mortgage debt, driven by an influx of migrants and a housing supply crisis. The steep rise in debt coincided with changes in housing tenure, where owning with a mortgage became the norm. The Reserve Bank of Australia's interest rate hikes exacerbate this crisis, disproportionately affecting younger, working families who bear the brunt of mortgage debt, while older generations remain relatively unscathed.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="dashboard-footer">
+  <div class="footer-left">
+    <strong>Authorship & Metadata</strong><br>
+    Created by: Wan Nabil Husaini bin Wan Asri / 36851639<br>
+    Course Unit: FIT2179 Data Visualization<br>
+    Date: 31 May 2026
+    <div style="font-size: 0.8rem; line-height: 1.4; margin-top: 0.5rem; text-indent: -15px; padding-left: 15px;">
+      Bankwest Curtin Economics Centre. (2026, March 3). <em>The distribution of net wealth and wealth components by age in Australia, 1983 to 2025.</em> Curtin University. <a href="https://bcec.edu.au/publications/the-distribution-of-net-wealth-and-wealth-components-by-age-in-australia" target="_blank" style="color: inherit; text-decoration: underline;">https://bcec.edu.au/publications/the-distribution-of-net-wealth-and-wealth-components-by-age-in-australia</a>
+    </div>
+    <div style="font-size: 0.8rem; line-height: 1.4; margin-top: 0.5rem; text-indent: -15px; padding-left: 15px;">
+      InfoChoice. (n.d.). <em>History of RBA cash rate in Australia.</em> Retrieved May 31, 2026, from <a href="https://www.infochoice.com.au/rba/history-of-interest-rate-movements" target="_blank" style="color: inherit; text-decoration: underline;">https://www.infochoice.com.au/rba/history-of-interest-rate-movements</a>
+    </div>
+    <div style="font-size: 0.8rem; line-height: 1.4; margin-top: 0.5rem; text-indent: -15px; padding-left: 15px;">
+      Organisation for Economic Co-operation and Development. (n.d.). <em>Household debt </em> [Data set]. OECD Data. Retrieved April 30, 2026, from <a href="https://www.oecd.org/en/data/indicators/household-debt.html" target="_blank" style="color: inherit; text-decoration: underline;">https://www.oecd.org/en/data/indicators/household-debt.html</a>
+    </div>
+    <div style="font-size: 0.8rem; line-height: 1.4; margin-top: 0.5rem; text-indent: -15px; padding-left: 15px;">
+      PopulationPyramid.net. (2025). <em>Population pyramid of Australia, 2025 </em> [Interactive data visualisation]. Retrieved April 30, 2026, from  <a href="https://www.populationpyramid.net/australia/2025/" target="_blank" style="color: inherit; text-decoration: underline;">https://www.populationpyramid.net/australia/2025/</a>
+    </div>
+    <div style="font-size: 0.8rem; line-height: 1.4; margin-top: 0.5rem; text-indent: -15px; padding-left: 15px;">
+      PopulationPyramid.net. (2024). <em>Immigration statistics: Australia, 2024 </em> [Interactive data visualisation]. Retrieved April 30, 2026, from  <a href="https://www.populationpyramid.net/immigration-statistics/en/australia/2024/" target="_blank" style="color: inherit; text-decoration: underline;">https://www.populationpyramid.net/immigration-statistics/en/australia/2024/</a>
     </div>
   </div>
 
-  <div class="page">
-    <!--── Section 00 — Introduction ── -->
-    <div class="section-divider">
-      <div class="section-divider-line"></div>
-      <div class="section-divider-label">00 · Introduction</div>
-      <div class="section-divider-line"></div>
+  <div class="footer-right" style="text-align: left; max-width: 500px;">
+    <strong>Data References & Disclaimers</strong><br>
+    <div style="font-size: 0.8rem; line-height: 1.4; margin-top: 0.5rem; text-indent: -15px; padding-left: 15px;">
+      Australian Bureau of Statistics. (2020, November 11). <em>Non-discretionary and discretionary inflation.</em> <a href="https://www.abs.gov.au/statistics/research/non-discretionary-and-discretionary-inflation" target="_blank" style="color: inherit; text-decoration: underline;">https://www.abs.gov.au/statistics/research/non-discretionary-and-discretionary-inflation</a>
     </div>
-
-
-    <!-- ── Section 01 — Two column ── -->
-    <div class="section-divider">
-      <div class="section-divider-line"></div>
-      <div class="section-divider-label">01 · Two columns</div>
-      <div class="section-divider-line"></div>
+    <div style="font-size: 0.8rem; line-height: 1.4; margin-top: 0.5rem; text-indent: -15px; padding-left: 15px;">
+      Australian Bureau of Statistics. (2026, May 27). <em>Consumer Price Index, Australia, April 2026</em> <a href="https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release" target="_blank" style="color: inherit; text-decoration: underline;">https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release</a>
     </div>
-
-    <div class="split-row fade-in">
-      <div class="split-text">
-        <span class="description-tag">Overview</span>
-        <h2>Population Pyramid</h2>
-        <p>The first column contains text and the second column contains a visualisation.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="split-vis">
-        <div id="vis1" class="vis-container" style="margin: 0;"></div>
-      </div>
+    <div style="font-size: 0.8rem; line-height: 1.4; margin-top: 0.4rem; text-indent: -15px; padding-left: 15px;">
+      Australian Bureau of Statistics. (2022, May 25). <em>Housing occupancy and costs, 2019–20 financial year.</em> <a href="https://www.abs.gov.au/statistics/people/housing/housing-occupancy-and-costs/latest-release" target="_blank" style="color: inherit; text-decoration: underline;">https://www.abs.gov.au/statistics/people/housing/housing-occupancy-and-costs/latest-release</a>
     </div>
-
-    <!-- ── Section 02 — Three columns ── -->
-    <div class="section-divider">
-      <div class="section-divider-line"></div>
-      <div class="section-divider-label">02 · Three columns</div>
-      <div class="section-divider-line"></div>
+    <div style="font-size: 0.8rem; line-height: 1.4; margin-top: 0.5rem; text-indent: -15px; padding-left: 15px;">
+      Australian Bureau of Statistics. (2025, December 19). <em>Overseas migration, 2024–25 financial year.</em> <a href="https://www.abs.gov.au/statistics/people/population/overseas-migration/latest-release" target="_blank" style="color: inherit; text-decoration: underline;">https://www.abs.gov.au/statistics/people/population/overseas-migration/latest-release</a>
     </div>
-
-    <div class="card-row">
-      <div class="card-text fade-in">
-        <div class="card-tag">Deep dive</div>
-        <h2>Three Equal Columns</h2>
-        <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl.</p>
-      </div>
-      <div class="card-vis fade-in">
-        <div class="vis-container" style="margin: 0;"></div>
-      </div>
-      <div class="card-vis fade-in">
-        <div class="vis-container" style="margin: 0;"></div>
-      </div>
+    
+    <div style="margin-top: 0.75rem; font-size: 0.8rem; color: var(--slate);">
+      <em>Disclaimer: Certain chart contexts use simulated projections for structural layout testing.</em>
     </div>
+  </div>
+</footer>
 
-    <!-- ── Section 03 — Wide + side ── -->
-    <div class="section-divider">
-      <div class="section-divider-line"></div>
-      <div class="section-divider-label">03 · Wide visualisation</div>
-      <div class="section-divider-line"></div>
     </div>
+  </main>
 
-    <div class="wide-row">
-      <div class="wide-vis fade-in">
-        <div id="vis2" class="vis-container" style="margin: 0;"></div>
-      </div>
-      
-      <div class="side-text fade-in" style="background: var(--white); border: 0.5px solid var(--rule); border-radius: 12px; padding: 2rem; display: flex; flex-direction: row; gap: 2rem; align-items: center;">
-        
-        <div style="flex: 1; min-width: 250px;">
-          <div><span class="description-tag">Overview</span></div>
-          <h2>Ramping up the migration</h2>
-          <p>The first and second columns are combined to give more space to the visualisation. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien
-            faucibus et molestie ac feugiat sed. Egestas purus viverra accumsan in nisl.</p>
+  <div id="modal-vis4" class="modal-overlay">
+    <div class="modal-content">
+      <button class="close-btn close-modal-btn">&times;</button>
+      <div class="modal-body">
+        <div class="modal-viz-container" id="modal-render-vis4"></div>
+        <div class="modal-text-container">
+          <h3>The RBA Cash Rate Journey</h3>
+          <p>In terms of conventional economic theory, the main mechanism for combating high levels of inflation lies in 
+            increasing the cash rate. By deliberately making borrowing expensive, 
+            the RBA attempts to dampen aggregate demand by businesses and consumers and encourage saving, 
+            which should result in the return of inflation towards its desired (2-3%) range.
+          </p> 
+          <p>However, as shown in the visualization, after the fast period of consecutive increases, 
+            the curve became flat and stuck in a high level regime until 2026. Such persistence in keeping rates
+            high was caused by the high level of "stickiness" of the inflation rate. The domestic economy has had 
+            difficulties dealing with capacity constraints, a tight labor market, and supply chain shocks, leading to high prices.
+          </p>
+          <p><strong>Key Insight:</strong> Sticky inflation forced the RBA to maintain high cash rates until 2026. Impacted People: People with mortages</p>
         </div>
-
-        <div style="flex: 1; min-width: 250px; display: flex; justify-content: center; align-items: center;">
-          <div id="vis3" style="width: 100%; max-width: 300px; min-height: 200px;"></div>
-        </div>
-
       </div>
     </div>
+  </div>
 
-    <!-- ── Footer ── -->
-    <div class="page-footer">
-      <p>This visualisation is created by <a href="https://fit3179.github.io/Vega-Lite/" target="_blank">FIT3179 Teaching Team</a>. The datasource is <a href="#" target="_blank">some data repository online</a>.</p>
+  <div id="modal-vis5" class="modal-overlay">
+    <div class="modal-content">
+      <button class="close-btn close-modal-btn">&times;</button>
+      <div class="modal-body">
+        <div class="modal-viz-container" id="modal-render-vis5"></div>
+        <div class="modal-text-container">
+          <h3>Understanding Inflation Peaks</h3>
+          <p>The Consumer Price Index (CPI) tracks the cost of everyday goods. The green shaded area represents the RBA's target band of 2% to 3%.</p>
+          <p>As shown in visualization, while inflation stayed mostly stable within this target band for decades, 
+            the dramatic post-COVID surge completely shattered it, peaking at a massive 6.6%. Prompting RBA to raise cash rate to cool down local consumer spending (in previous chart).</p>
+          <p><strong>Key Insight:</strong> Notice the massive spike outside of this band following 2020. This was driven by global supply chain issues and domestic stimulus, 
+            It aggressively forces local mortgage holders to cut back, even though the root causes of the inflation are happening globally, completely out of their control.</p>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <div id="modal-vis9" class="modal-overlay">
+    <div class="modal-content">
+      <button class="close-btn close-modal-btn">&times;</button>
+      <div class="modal-body">
+        <div class="modal-viz-container" id="modal-render-vis9"></div>
+        <div class="modal-text-container">
+          <h3>Discretionary</h3>
+          <p>The chart analyzed reveals the limitations of conventional monetary policy in addressing inflation, particularly through interest rate hikes. It breaks down the Consumer Price Index into Discretionary (optional) and Non-Discretionary (essential) spending, highlighting that the recent inflation surge (2021-2022) is driven largely by Non-Discretionary essentials, like food and rent, due to supply chain issues and energy crises.</p>
+          <p>By 2026, Discretionary spending has significantly decreased, indicating consumers can no longer cut back on essentials. The reliance on interest rate increases, which suppress Discretionary spending, fails to alleviate the burden of essential costs, inflicting further pain on households. Additionally, the economic context is compounded by population changes leading to housing shortages, driving up rent inflation.</p>
+          <p>Ultimately, the chart illustrates that traditional interest rate strategies are ineffective in mitigating inflation linked to necessary expenditures for survival.
+          </p>
+          <p><strong>Key Insight:</strong> Conventional interest rate hikes are a blunt instrument failing to curb inflation because the problem is driven by survival, not luxury</p>
+          </div>
+      </div>
+    </div>
   </div>
 
   <script type="text/javascript">
+    // 1. Assign your JSON spec files
     var specVis1 = "./visualization.vl.json";
     var specVis2 = "./viz2latest.json";
     var specVis3 = "/donut_chart.json";
+    var specVis4 = "/cashrate_chart.json";
+    var specVis5 = "/cpi_chart.json";
+    var specVis6 = "/wealthdist.json";
+    var specVis7 = "/housetenure.json";
+    var specVis8 = "/rentvsnom.json";
+    var specVis9 = "/discretionarycpi.json";
+    var specVis10 = "/bumpchart.json";
     
+    var specDictionary = {
+      "specVis4": specVis4,
+      "specVis5": specVis5,
+      "specVis9" : specVis9
+    };
+    
+    // 2. Embed the charts
+    vegaEmbed('#vis1', specVis1, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis2', specVis2, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis3', specVis3, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis4', specVis4, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis5', specVis5, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis6', specVis6, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis7', specVis7, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis8', specVis8, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis9', specVis9, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis10', specVis10, { "actions": false }).catch(console.error);
 
-    vegaEmbed('#vis1', specVis1, { "actions": false });
+    // 3. Sidebar Active State Switch Indicator Logic
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+      item.addEventListener('click', function() {
+        navItems.forEach(i => i.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
 
-    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
-    }).catch(console.error);
+    // 4. Modal Logic
+    const openButtons = document.querySelectorAll('.open-modal-btn');
+    const closeButtons = document.querySelectorAll('.close-modal-btn');
+    const overlays = document.querySelectorAll('.modal-overlay');
 
-    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
-    }).catch(console.error);
+    openButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const targetModalId = this.getAttribute('data-target'); 
+        const specName = this.getAttribute('data-spec'); 
+        
+        document.getElementById(targetModalId).style.display = 'flex';
+        const renderTarget = '#modal-render-' + targetModalId.replace('modal-', '');
+        
+        if (specDictionary[specName]) {
+          vegaEmbed(renderTarget, specDictionary[specName], { "actions": false }).catch(console.error);
+        }
+      });
+    });
 
-    vegaEmbed('#vis4', specVis2, { "actions": false }).then(function (result) {
-    }).catch(console.error);
+    closeButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.closest('.modal-overlay').style.display = 'none';
+      });
+    });
+
+    overlays.forEach(overlay => {
+      overlay.addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.style.display = 'none';
+        }
+      });
+    });
   </script>
 
 </body>

@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Inflation CPI Analysis: View Toggle",
+  "title": "",
   "data": {
     "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/discretionary_vs_nondiscretionary_cpi_2020_2026.csv"
   },
-  "width": 650,
+  "width": "container",
   "height": 400,
   "params": [
     {

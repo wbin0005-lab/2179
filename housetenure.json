@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Housing Tenure (1999–2020) with Interactive Legend",
+  "title": "Housing Tenure (1999–2020)",
   "data": {
     "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/housing_tenure_1999_2020.csv"
   },
@@ -34,8 +34,9 @@
           "field": "category",
           "type": "nominal",
           "legend": {
-            "title": "Tenure Type (Click & Shift+Click)",
-            "orient": "right",
+            "title": "Tenure Type",
+            "orient": "bottom",
+            "direction": "horizontal",
             "titlePadding": 10
           }
         },

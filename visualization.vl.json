@@ -50,34 +50,22 @@
       "type": "nominal",
       "title": "Age Group",
       "sort": [
-        "100+",
-        "95-99",
-        "90-94",
-        "85-89",
-        "80-84",
-        "75-79",
-        "70-74",
-        "65-69",
-        "60-64",
-        "55-59",
-        "50-54",
-        "45-49",
-        "40-44",
-        "35-39",
-        "30-34",
-        "25-29",
-        "20-24",
-        "15-19",
-        "10-14",
-        "5-9",
-        "0-4"
+        "100+", "95-99", "90-94", "85-89", "80-84", "75-79", "70-74", 
+        "65-69", "60-64", "55-59", "50-54", "45-49", "40-44", "35-39", 
+        "30-34", "25-29", "20-24", "15-19", "10-14", "5-9", "0-4"
       ]
     },
     "color": {
       "field": "GenderLabel",
       "type": "nominal",
       "scale": {"domain": ["Male", "Female"], "range": ["#1f77b4", "#e377c2"]},
-      "title": "Gender"
+      "title": "Gender",
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal",
+        "titlePadding": 10,
+        "labelPadding": 8
+      }
     }
   },
   "layer": [
@@ -137,5 +125,8 @@
       }
     }
   ],
-  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+  "config": {
+    "view": {"stroke": null}, 
+    "axis": {"grid": false}
+  }
 }
