@@ -1,0 +1,486 @@
+date,category,type,yoy_pct_change
+2020-01-01,Holiday Travel,Discretionary,9.43
+2020-01-01,Automotive Fuel,Non-Discretionary,2.1
+2020-02-01,Holiday Travel,Discretionary,-7.88
+2020-02-01,Automotive Fuel,Non-Discretionary,-5.1
+2020-03-01,Holiday Travel,Discretionary,-0.04
+2020-03-01,Automotive Fuel,Non-Discretionary,-12.2
+2020-04-01,Holiday Travel,Discretionary,-10.42
+2020-04-01,Automotive Fuel,Non-Discretionary,-26.9
+2020-05-01,Holiday Travel,Discretionary,-11.17
+2020-05-01,Automotive Fuel,Non-Discretionary,-25.68
+2020-06-01,Holiday Travel,Discretionary,2.2
+2020-06-01,Automotive Fuel,Non-Discretionary,-16.04
+2020-07-01,Holiday Travel,Discretionary,6.34
+2020-07-01,Automotive Fuel,Non-Discretionary,-4.12
+2020-08-01,Holiday Travel,Discretionary,3.02
+2020-08-01,Automotive Fuel,Non-Discretionary,12.86
+2020-09-01,Holiday Travel,Discretionary,-4.47
+2020-09-01,Automotive Fuel,Non-Discretionary,12.5
+2020-10-01,Holiday Travel,Discretionary,-5.17
+2020-10-01,Automotive Fuel,Non-Discretionary,2.69
+2020-11-01,Holiday Travel,Discretionary,-11.27
+2020-11-01,Automotive Fuel,Non-Discretionary,-1.82
+2020-12-01,Holiday Travel,Discretionary,-0.53
+2020-12-01,Automotive Fuel,Non-Discretionary,3.77
+2021-01-01,Holiday Travel,Discretionary,6.55
+2021-01-01,Automotive Fuel,Non-Discretionary,4.86
+2021-02-01,Holiday Travel,Discretionary,-0.77
+2021-02-01,Automotive Fuel,Non-Discretionary,8.05
+2021-03-01,Holiday Travel,Discretionary,-1.51
+2021-03-01,Automotive Fuel,Non-Discretionary,16.8
+2021-04-01,Holiday Travel,Discretionary,-6.53
+2021-04-01,Automotive Fuel,Non-Discretionary,13.51
+2021-05-01,Holiday Travel,Discretionary,-9.95
+2021-05-01,Automotive Fuel,Non-Discretionary,10.78
+2021-06-01,Holiday Travel,Discretionary,2.02
+2021-06-01,Automotive Fuel,Non-Discretionary,7.61
+2021-07-01,Holiday Travel,Discretionary,2.22
+2021-07-01,Automotive Fuel,Non-Discretionary,7.73
+2021-08-01,Holiday Travel,Discretionary,-3.81
+2021-08-01,Automotive Fuel,Non-Discretionary,5.34
+2021-09-01,Holiday Travel,Discretionary,7.21
+2021-09-01,Automotive Fuel,Non-Discretionary,8.89
+2021-10-01,Holiday Travel,Discretionary,4.42
+2021-10-01,Automotive Fuel,Non-Discretionary,15.09
+2021-11-01,Holiday Travel,Discretionary,1.59
+2021-11-01,Automotive Fuel,Non-Discretionary,8.84
+2021-12-01,Holiday Travel,Discretionary,12.84
+2021-12-01,Automotive Fuel,Non-Discretionary,5.86
+2022-01-01,Holiday Travel,Discretionary,9.91
+2022-01-01,Automotive Fuel,Non-Discretionary,7.61
+2022-02-01,Holiday Travel,Discretionary,-5.2
+2022-02-01,Automotive Fuel,Non-Discretionary,8.17
+2022-02-01,Electricity,Non-Discretionary,0.88
+2022-02-01,Gas & Household Fuels,Non-Discretionary,7.66
+2022-03-01,Holiday Travel,Discretionary,1.19
+2022-03-01,Automotive Fuel,Non-Discretionary,20.12
+2022-03-01,Electricity,Non-Discretionary,-0.24
+2022-03-01,Gas & Household Fuels,Non-Discretionary,5.16
+2022-04-01,Holiday Travel,Discretionary,-0.32
+2022-04-01,Automotive Fuel,Non-Discretionary,7.15
+2022-04-01,Electricity,Non-Discretionary,-1.02
+2022-04-01,Gas & Household Fuels,Non-Discretionary,2.73
+2022-05-01,Holiday Travel,Discretionary,-9.48
+2022-05-01,Automotive Fuel,Non-Discretionary,14.09
+2022-05-01,Electricity,Non-Discretionary,-0.68
+2022-05-01,Gas & Household Fuels,Non-Discretionary,-1.07
+2022-06-01,Holiday Travel,Discretionary,8.82
+2022-06-01,Automotive Fuel,Non-Discretionary,15.07
+2022-06-01,Electricity,Non-Discretionary,2.19
+2022-06-01,Gas & Household Fuels,Non-Discretionary,0.37
+2022-07-01,Holiday Travel,Discretionary,10.2
+2022-07-01,Automotive Fuel,Non-Discretionary,-1.18
+2022-07-01,Electricity,Non-Discretionary,3.38
+2022-07-01,Gas & Household Fuels,Non-Discretionary,10.14
+2022-08-01,Holiday Travel,Discretionary,-3.99
+2022-08-01,Automotive Fuel,Non-Discretionary,1.37
+2022-08-01,Electricity,Non-Discretionary,5.33
+2022-08-01,Gas & Household Fuels,Non-Discretionary,11.63
+2022-09-01,Holiday Travel,Discretionary,13.17
+2022-09-01,Automotive Fuel,Non-Discretionary,-10.32
+2022-09-01,Electricity,Non-Discretionary,0.51
+2022-09-01,Gas & Household Fuels,Non-Discretionary,15.26
+2022-10-01,Holiday Travel,Discretionary,0.55
+2022-10-01,Automotive Fuel,Non-Discretionary,-10.13
+2022-10-01,Electricity,Non-Discretionary,8.55
+2022-10-01,Gas & Household Fuels,Non-Discretionary,8.42
+2022-11-01,Holiday Travel,Discretionary,1.07
+2022-11-01,Automotive Fuel,Non-Discretionary,-1.77
+2022-11-01,Electricity,Non-Discretionary,7.2
+2022-11-01,Gas & Household Fuels,Non-Discretionary,1.07
+2022-11-01,Rents,Non-Discretionary,1.76
+2022-12-01,Holiday Travel,Discretionary,35.17
+2022-12-01,Automotive Fuel,Non-Discretionary,2.03
+2022-12-01,Electricity,Non-Discretionary,9.93
+2022-12-01,Gas & Household Fuels,Non-Discretionary,3.46
+2022-12-01,Rents,Non-Discretionary,1.72
+2023-01-01,Holiday Travel,Discretionary,15.09
+2023-01-01,Automotive Fuel,Non-Discretionary,5.0
+2023-01-01,Electricity,Non-Discretionary,15.53
+2023-01-01,Gas & Household Fuels,Non-Discretionary,11.42
+2023-01-01,Rents,Non-Discretionary,1.87
+2023-02-01,Holiday Travel,Discretionary,4.98
+2023-02-01,Automotive Fuel,Non-Discretionary,2.06
+2023-02-01,Electricity,Non-Discretionary,4.3
+2023-02-01,Gas & Household Fuels,Non-Discretionary,15.64
+2023-02-01,Rents,Non-Discretionary,2.11
+2023-03-01,Holiday Travel,Discretionary,2.26
+2023-03-01,Automotive Fuel,Non-Discretionary,-5.47
+2023-03-01,Electricity,Non-Discretionary,4.36
+2023-03-01,Gas & Household Fuels,Non-Discretionary,13.38
+2023-03-01,Rents,Non-Discretionary,2.32
+2023-04-01,Holiday Travel,Discretionary,-13.8
+2023-04-01,Automotive Fuel,Non-Discretionary,5.86
+2023-04-01,Electricity,Non-Discretionary,-0.56
+2023-04-01,Gas & Household Fuels,Non-Discretionary,9.39
+2023-04-01,Rents,Non-Discretionary,2.6
+2023-05-01,Holiday Travel,Discretionary,-17.62
+2023-05-01,Automotive Fuel,Non-Discretionary,-2.31
+2023-05-01,Electricity,Non-Discretionary,-1.85
+2023-05-01,Gas & Household Fuels,Non-Discretionary,-0.95
+2023-05-01,Rents,Non-Discretionary,2.83
+2023-06-01,Holiday Travel,Discretionary,6.99
+2023-06-01,Automotive Fuel,Non-Discretionary,-2.5
+2023-06-01,Electricity,Non-Discretionary,-2.66
+2023-06-01,Gas & Household Fuels,Non-Discretionary,-2.57
+2023-06-01,Rents,Non-Discretionary,2.99
+2023-07-01,Holiday Travel,Discretionary,1.9
+2023-07-01,Automotive Fuel,Non-Discretionary,-0.55
+2023-07-01,Electricity,Non-Discretionary,3.35
+2023-07-01,Gas & Household Fuels,Non-Discretionary,-0.66
+2023-07-01,Rents,Non-Discretionary,3.36
+2023-08-01,Holiday Travel,Discretionary,-8.54
+2023-08-01,Automotive Fuel,Non-Discretionary,5.47
+2023-08-01,Electricity,Non-Discretionary,3.01
+2023-08-01,Gas & Household Fuels,Non-Discretionary,-0.21
+2023-08-01,Rents,Non-Discretionary,3.3
+2023-09-01,Holiday Travel,Discretionary,7.51
+2023-09-01,Automotive Fuel,Non-Discretionary,16.77
+2023-09-01,Electricity,Non-Discretionary,4.05
+2023-09-01,Gas & Household Fuels,Non-Discretionary,2.15
+2023-09-01,Rents,Non-Discretionary,2.64
+2023-10-01,Holiday Travel,Discretionary,-9.82
+2023-10-01,Automotive Fuel,Non-Discretionary,9.09
+2023-10-01,Electricity,Non-Discretionary,8.43
+2023-10-01,Gas & Household Fuels,Non-Discretionary,0.27
+2023-10-01,Rents,Non-Discretionary,1.4
+2023-11-01,Holiday Travel,Discretionary,-4.26
+2023-11-01,Automotive Fuel,Non-Discretionary,8.85
+2023-11-01,Electricity,Non-Discretionary,2.64
+2023-11-01,Gas & Household Fuels,Non-Discretionary,0.28
+2023-11-01,Rents,Non-Discretionary,1.3
+2023-12-01,Holiday Travel,Discretionary,15.33
+2023-12-01,Automotive Fuel,Non-Discretionary,-5.72
+2023-12-01,Electricity,Non-Discretionary,-2.01
+2023-12-01,Gas & Household Fuels,Non-Discretionary,-0.59
+2023-12-01,Rents,Non-Discretionary,1.34
+2024-01-01,Holiday Travel,Discretionary,4.83
+2024-01-01,Automotive Fuel,Non-Discretionary,-9.59
+2024-01-01,Electricity,Non-Discretionary,-1.3
+2024-01-01,Gas & Household Fuels,Non-Discretionary,-2.54
+2024-01-01,Rents,Non-Discretionary,1.84
+2024-02-01,Holiday Travel,Discretionary,2.3
+2024-02-01,Automotive Fuel,Non-Discretionary,-2.03
+2024-02-01,Electricity,Non-Discretionary,-5.03
+2024-02-01,Gas & Household Fuels,Non-Discretionary,-0.11
+2024-02-01,Rents,Non-Discretionary,2.95
+2024-03-01,Holiday Travel,Discretionary,-1.58
+2024-03-01,Automotive Fuel,Non-Discretionary,-0.08
+2024-03-01,Electricity,Non-Discretionary,-0.78
+2024-03-01,Gas & Household Fuels,Non-Discretionary,-2.57
+2024-03-01,Rents,Non-Discretionary,2.89
+2024-04-01,Holiday Travel,Discretionary,-11.03
+2024-04-01,Automotive Fuel,Non-Discretionary,8.08
+2024-04-01,Electricity,Non-Discretionary,3.25
+2024-04-01,Gas & Household Fuels,Non-Discretionary,-2.76
+2024-04-01,Rents,Non-Discretionary,2.67
+2024-05-01,Holiday Travel,Discretionary,-8.66
+2024-05-01,Automotive Fuel,Non-Discretionary,3.54
+2024-05-01,Electricity,Non-Discretionary,3.76
+2024-05-01,Gas & Household Fuels,Non-Discretionary,-3.48
+2024-05-01,Rents,Non-Discretionary,2.74
+2024-06-01,Holiday Travel,Discretionary,7.63
+2024-06-01,Automotive Fuel,Non-Discretionary,-0.31
+2024-06-01,Electricity,Non-Discretionary,4.34
+2024-06-01,Gas & Household Fuels,Non-Discretionary,-0.77
+2024-06-01,Rents,Non-Discretionary,2.58
+2024-07-01,Holiday Travel,Discretionary,6.32
+2024-07-01,Automotive Fuel,Non-Discretionary,-4.33
+2024-07-01,Electricity,Non-Discretionary,-6.83
+2024-07-01,Gas & Household Fuels,Non-Discretionary,5.14
+2024-07-01,Rents,Non-Discretionary,2.57
+2024-08-01,Clothing & Footwear,Discretionary,-2.34
+2024-08-01,Holiday Travel,Discretionary,0.2
+2024-08-01,Meals Out & Take Away,Discretionary,1.17
+2024-08-01,Recreation & Culture,Discretionary,1.05
+2024-08-01,All Groups CPI,Headline,0.09
+2024-08-01,Automotive Fuel,Non-Discretionary,-9.32
+2024-08-01,Education,Non-Discretionary,0.19
+2024-08-01,Electricity,Non-Discretionary,-18.88
+2024-08-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.23
+2024-08-01,Gas & Household Fuels,Non-Discretionary,6.69
+2024-08-01,Health,Non-Discretionary,-0.15
+2024-08-01,Insurance & Financial Services,Non-Discretionary,1.26
+2024-08-01,Rents,Non-Discretionary,2.58
+2024-08-01,Utilities,Non-Discretionary,-8.87
+2024-09-01,Clothing & Footwear,Discretionary,0.68
+2024-09-01,Holiday Travel,Discretionary,6.99
+2024-09-01,Meals Out & Take Away,Discretionary,0.93
+2024-09-01,Recreation & Culture,Discretionary,3.9
+2024-09-01,All Groups CPI,Headline,0.38
+2024-09-01,Automotive Fuel,Non-Discretionary,-8.2
+2024-09-01,Education,Non-Discretionary,0.21
+2024-09-01,Electricity,Non-Discretionary,-25.89
+2024-09-01,Food & Non-Alcoholic Beverages,Non-Discretionary,0.29
+2024-09-01,Gas & Household Fuels,Non-Discretionary,9.53
+2024-09-01,Health,Non-Discretionary,-0.26
+2024-09-01,Insurance & Financial Services,Non-Discretionary,1.77
+2024-09-01,Rents,Non-Discretionary,1.93
+2024-09-01,Utilities,Non-Discretionary,-12.52
+2024-10-01,Clothing & Footwear,Discretionary,3.03
+2024-10-01,Holiday Travel,Discretionary,-1.91
+2024-10-01,Meals Out & Take Away,Discretionary,1.33
+2024-10-01,Recreation & Culture,Discretionary,-0.81
+2024-10-01,All Groups CPI,Headline,-0.21
+2024-10-01,Automotive Fuel,Non-Discretionary,-9.37
+2024-10-01,Education,Non-Discretionary,0.2
+2024-10-01,Electricity,Non-Discretionary,-34.97
+2024-10-01,Food & Non-Alcoholic Beverages,Non-Discretionary,0.57
+2024-10-01,Gas & Household Fuels,Non-Discretionary,5.33
+2024-10-01,Health,Non-Discretionary,-0.03
+2024-10-01,Insurance & Financial Services,Non-Discretionary,1.29
+2024-10-01,Rents,Non-Discretionary,1.08
+2024-10-01,Utilities,Non-Discretionary,-18.61
+2024-11-01,Clothing & Footwear,Discretionary,-2.89
+2024-11-01,Holiday Travel,Discretionary,-0.79
+2024-11-01,Meals Out & Take Away,Discretionary,0.77
+2024-11-01,Recreation & Culture,Discretionary,0.14
+2024-11-01,All Groups CPI,Headline,-0.09
+2024-11-01,Automotive Fuel,Non-Discretionary,-6.12
+2024-11-01,Education,Non-Discretionary,0.2
+2024-11-01,Electricity,Non-Discretionary,-15.11
+2024-11-01,Food & Non-Alcoholic Beverages,Non-Discretionary,0.16
+2024-11-01,Gas & Household Fuels,Non-Discretionary,2.81
+2024-11-01,Health,Non-Discretionary,-0.17
+2024-11-01,Insurance & Financial Services,Non-Discretionary,1.09
+2024-11-01,Rents,Non-Discretionary,1.02
+2024-11-01,Utilities,Non-Discretionary,-7.71
+2024-12-01,Clothing & Footwear,Discretionary,-1.49
+2024-12-01,Holiday Travel,Discretionary,12.13
+2024-12-01,Meals Out & Take Away,Discretionary,0.88
+2024-12-01,Recreation & Culture,Discretionary,5.27
+2024-12-01,All Groups CPI,Headline,0.85
+2024-12-01,Automotive Fuel,Non-Discretionary,0.56
+2024-12-01,Education,Non-Discretionary,0.06
+2024-12-01,Electricity,Non-Discretionary,-2.02
+2024-12-01,Food & Non-Alcoholic Beverages,Non-Discretionary,0.21
+2024-12-01,Gas & Household Fuels,Non-Discretionary,0.22
+2024-12-01,Health,Non-Discretionary,-0.42
+2024-12-01,Insurance & Financial Services,Non-Discretionary,1.52
+2024-12-01,Rents,Non-Discretionary,0.81
+2024-12-01,Utilities,Non-Discretionary,-0.99
+2025-01-01,Clothing & Footwear,Discretionary,-0.71
+2025-01-01,Holiday Travel,Discretionary,1.53
+2025-01-01,Meals Out & Take Away,Discretionary,0.88
+2025-01-01,Recreation & Culture,Discretionary,0.63
+2025-01-01,All Groups CPI,Headline,1.08
+2025-01-01,Automotive Fuel,Non-Discretionary,3.24
+2025-01-01,Education,Non-Discretionary,0.02
+2025-01-01,Electricity,Non-Discretionary,15.16
+2025-01-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.52
+2025-01-01,Gas & Household Fuels,Non-Discretionary,0.26
+2025-01-01,Health,Non-Discretionary,2.71
+2025-01-01,Insurance & Financial Services,Non-Discretionary,1.21
+2025-01-01,Rents,Non-Discretionary,1.06
+2025-01-01,Utilities,Non-Discretionary,7.61
+2025-02-01,Clothing & Footwear,Discretionary,1.83
+2025-02-01,Holiday Travel,Discretionary,-4.37
+2025-02-01,Meals Out & Take Away,Discretionary,0.92
+2025-02-01,Recreation & Culture,Discretionary,-1.31
+2025-02-01,All Groups CPI,Headline,1.4
+2025-02-01,Automotive Fuel,Non-Discretionary,4.54
+2025-02-01,Education,Non-Discretionary,5.11
+2025-02-01,Electricity,Non-Discretionary,27.94
+2025-02-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.24
+2025-02-01,Gas & Household Fuels,Non-Discretionary,1.7
+2025-02-01,Health,Non-Discretionary,2.63
+2025-02-01,Insurance & Financial Services,Non-Discretionary,1.0
+2025-02-01,Rents,Non-Discretionary,1.76
+2025-02-01,Utilities,Non-Discretionary,13.49
+2025-03-01,Clothing & Footwear,Discretionary,0.74
+2025-03-01,Holiday Travel,Discretionary,-1.43
+2025-03-01,Meals Out & Take Away,Discretionary,0.82
+2025-03-01,Recreation & Culture,Discretionary,-0.89
+2025-03-01,All Groups CPI,Headline,1.32
+2025-03-01,Automotive Fuel,Non-Discretionary,2.8
+2025-03-01,Education,Non-Discretionary,5.14
+2025-03-01,Electricity,Non-Discretionary,14.28
+2025-03-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.61
+2025-03-01,Gas & Household Fuels,Non-Discretionary,-1.66
+2025-03-01,Health,Non-Discretionary,2.77
+2025-03-01,Insurance & Financial Services,Non-Discretionary,1.43
+2025-03-01,Rents,Non-Discretionary,1.51
+2025-03-01,Utilities,Non-Discretionary,6.89
+2025-04-01,Clothing & Footwear,Discretionary,4.97
+2025-04-01,Holiday Travel,Discretionary,-6.25
+2025-04-01,Meals Out & Take Away,Discretionary,0.87
+2025-04-01,Recreation & Culture,Discretionary,-2.77
+2025-04-01,All Groups CPI,Headline,1.41
+2025-04-01,Automotive Fuel,Non-Discretionary,-3.47
+2025-04-01,Education,Non-Discretionary,5.12
+2025-04-01,Electricity,Non-Discretionary,17.64
+2025-04-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.75
+2025-04-01,Gas & Household Fuels,Non-Discretionary,-0.57
+2025-04-01,Health,Non-Discretionary,4.89
+2025-04-01,Insurance & Financial Services,Non-Discretionary,0.81
+2025-04-01,Rents,Non-Discretionary,1.48
+2025-04-01,Utilities,Non-Discretionary,8.9
+2025-05-01,Clothing & Footwear,Discretionary,2.12
+2025-05-01,Holiday Travel,Discretionary,-7.42
+2025-05-01,Meals Out & Take Away,Discretionary,0.98
+2025-05-01,Recreation & Culture,Discretionary,-3.05
+2025-05-01,All Groups CPI,Headline,0.64
+2025-05-01,Automotive Fuel,Non-Discretionary,-5.04
+2025-05-01,Education,Non-Discretionary,5.13
+2025-05-01,Electricity,Non-Discretionary,10.21
+2025-05-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.04
+2025-05-01,Gas & Household Fuels,Non-Discretionary,-2.98
+2025-05-01,Health,Non-Discretionary,1.51
+2025-05-01,Insurance & Financial Services,Non-Discretionary,0.27
+2025-05-01,Rents,Non-Discretionary,1.49
+2025-05-01,Utilities,Non-Discretionary,4.73
+2025-06-01,Clothing & Footwear,Discretionary,-1.95
+2025-06-01,Holiday Travel,Discretionary,2.64
+2025-06-01,Meals Out & Take Away,Discretionary,1.11
+2025-06-01,Recreation & Culture,Discretionary,1.23
+2025-06-01,All Groups CPI,Headline,0.69
+2025-06-01,Automotive Fuel,Non-Discretionary,-2.82
+2025-06-01,Education,Non-Discretionary,0.07
+2025-06-01,Electricity,Non-Discretionary,12.61
+2025-06-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.61
+2025-06-01,Gas & Household Fuels,Non-Discretionary,-2.69
+2025-06-01,Health,Non-Discretionary,1.31
+2025-06-01,Insurance & Financial Services,Non-Discretionary,0.82
+2025-06-01,Rents,Non-Discretionary,1.31
+2025-06-01,Utilities,Non-Discretionary,5.98
+2025-07-01,Clothing & Footwear,Discretionary,4.57
+2025-07-01,Holiday Travel,Discretionary,5.63
+2025-07-01,Meals Out & Take Away,Discretionary,1.26
+2025-07-01,Recreation & Culture,Discretionary,3.22
+2025-07-01,All Groups CPI,Headline,1.7
+2025-07-01,Automotive Fuel,Non-Discretionary,-2.07
+2025-07-01,Education,Non-Discretionary,0.05
+2025-07-01,Electricity,Non-Discretionary,17.05
+2025-07-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.28
+2025-07-01,Gas & Household Fuels,Non-Discretionary,3.58
+2025-07-01,Health,Non-Discretionary,1.36
+2025-07-01,Insurance & Financial Services,Non-Discretionary,0.64
+2025-07-01,Rents,Non-Discretionary,1.32
+2025-07-01,Utilities,Non-Discretionary,10.82
+2025-08-01,Clothing & Footwear,Discretionary,0.91
+2025-08-01,Holiday Travel,Discretionary,-3.85
+2025-08-01,Meals Out & Take Away,Discretionary,1.57
+2025-08-01,Recreation & Culture,Discretionary,-0.96
+2025-08-01,All Groups CPI,Headline,0.88
+2025-08-01,Automotive Fuel,Non-Discretionary,1.23
+2025-08-01,Education,Non-Discretionary,0.19
+2025-08-01,Electricity,Non-Discretionary,8.14
+2025-08-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.0
+2025-08-01,Gas & Household Fuels,Non-Discretionary,4.45
+2025-08-01,Health,Non-Discretionary,-0.33
+2025-08-01,Insurance & Financial Services,Non-Discretionary,0.56
+2025-08-01,Rents,Non-Discretionary,1.34
+2025-08-01,Utilities,Non-Discretionary,6.13
+2025-09-01,Clothing & Footwear,Discretionary,2.39
+2025-09-01,Holiday Travel,Discretionary,8.48
+2025-09-01,Meals Out & Take Away,Discretionary,1.69
+2025-09-01,Recreation & Culture,Discretionary,4.33
+2025-09-01,All Groups CPI,Headline,1.83
+2025-09-01,Automotive Fuel,Non-Discretionary,4.89
+2025-09-01,Education,Non-Discretionary,0.21
+2025-09-01,Electricity,Non-Discretionary,5.51
+2025-09-01,Food & Non-Alcoholic Beverages,Non-Discretionary,0.62
+2025-09-01,Gas & Household Fuels,Non-Discretionary,9.45
+2025-09-01,Health,Non-Discretionary,-0.07
+2025-09-01,Insurance & Financial Services,Non-Discretionary,0.98
+2025-09-01,Rents,Non-Discretionary,1.19
+2025-09-01,Utilities,Non-Discretionary,5.81
+2025-10-01,Clothing & Footwear,Discretionary,5.61
+2025-10-01,Holiday Travel,Discretionary,4.93
+2025-10-01,Meals Out & Take Away,Discretionary,1.51
+2025-10-01,Recreation & Culture,Discretionary,3.27
+2025-10-01,All Groups CPI,Headline,1.68
+2025-10-01,Automotive Fuel,Non-Discretionary,0.35
+2025-10-01,Education,Non-Discretionary,0.19
+2025-10-01,Electricity,Non-Discretionary,-4.86
+2025-10-01,Food & Non-Alcoholic Beverages,Non-Discretionary,0.34
+2025-10-01,Gas & Household Fuels,Non-Discretionary,4.91
+2025-10-01,Health,Non-Discretionary,0.05
+2025-10-01,Insurance & Financial Services,Non-Discretionary,0.62
+2025-10-01,Rents,Non-Discretionary,1.08
+2025-10-01,Utilities,Non-Discretionary,-0.11
+2025-11-01,Clothing & Footwear,Discretionary,-0.21
+2025-11-01,Holiday Travel,Discretionary,-2.24
+2025-11-01,Meals Out & Take Away,Discretionary,1.34
+2025-11-01,Recreation & Culture,Discretionary,-0.33
+2025-11-01,All Groups CPI,Headline,0.38
+2025-11-01,Automotive Fuel,Non-Discretionary,2.84
+2025-11-01,Education,Non-Discretionary,0.19
+2025-11-01,Electricity,Non-Discretionary,-10.51
+2025-11-01,Food & Non-Alcoholic Beverages,Non-Discretionary,0.37
+2025-11-01,Gas & Household Fuels,Non-Discretionary,2.18
+2025-11-01,Health,Non-Discretionary,-0.52
+2025-11-01,Insurance & Financial Services,Non-Discretionary,0.45
+2025-11-01,Rents,Non-Discretionary,1.15
+2025-11-01,Utilities,Non-Discretionary,-4.79
+2025-12-01,Clothing & Footwear,Discretionary,-2.42
+2025-12-01,Holiday Travel,Discretionary,17.36
+2025-12-01,Meals Out & Take Away,Discretionary,1.0
+2025-12-01,Recreation & Culture,Discretionary,8.39
+2025-12-01,All Groups CPI,Headline,1.43
+2025-12-01,Automotive Fuel,Non-Discretionary,1.52
+2025-12-01,Education,Non-Discretionary,0.07
+2025-12-01,Electricity,Non-Discretionary,-4.51
+2025-12-01,Food & Non-Alcoholic Beverages,Non-Discretionary,0.65
+2025-12-01,Gas & Household Fuels,Non-Discretionary,1.92
+2025-12-01,Health,Non-Discretionary,-0.94
+2025-12-01,Insurance & Financial Services,Non-Discretionary,1.06
+2025-12-01,Rents,Non-Discretionary,1.06
+2025-12-01,Utilities,Non-Discretionary,-1.23
+2026-01-01,Clothing & Footwear,Discretionary,1.04
+2026-01-01,Holiday Travel,Discretionary,3.43
+2026-01-01,Meals Out & Take Away,Discretionary,1.2
+2026-01-01,Recreation & Culture,Discretionary,2.48
+2026-01-01,All Groups CPI,Headline,1.33
+2026-01-01,Automotive Fuel,Non-Discretionary,-2.28
+2026-01-01,Education,Non-Discretionary,0.01
+2026-01-01,Electricity,Non-Discretionary,13.68
+2026-01-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.42
+2026-01-01,Gas & Household Fuels,Non-Discretionary,-0.37
+2026-01-01,Health,Non-Discretionary,1.78
+2026-01-01,Insurance & Financial Services,Non-Discretionary,1.11
+2026-01-01,Rents,Non-Discretionary,1.15
+2026-01-01,Utilities,Non-Discretionary,8.45
+2026-02-01,Clothing & Footwear,Discretionary,1.4
+2026-02-01,Holiday Travel,Discretionary,-2.18
+2026-02-01,Meals Out & Take Away,Discretionary,1.07
+2026-02-01,Recreation & Culture,Discretionary,-0.4
+2026-02-01,All Groups CPI,Headline,1.32
+2026-02-01,Automotive Fuel,Non-Discretionary,-4.79
+2026-02-01,Education,Non-Discretionary,4.52
+2026-02-01,Electricity,Non-Discretionary,27.84
+2026-02-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.13
+2026-02-01,Gas & Household Fuels,Non-Discretionary,3.3
+2026-02-01,Health,Non-Discretionary,1.82
+2026-02-01,Insurance & Financial Services,Non-Discretionary,0.98
+2026-02-01,Rents,Non-Discretionary,1.34
+2026-02-01,Utilities,Non-Discretionary,15.65
+2026-03-01,Clothing & Footwear,Discretionary,2.66
+2026-03-01,Holiday Travel,Discretionary,-1.06
+2026-03-01,Meals Out & Take Away,Discretionary,1.21
+2026-03-01,Recreation & Culture,Discretionary,-0.03
+2026-03-01,All Groups CPI,Headline,2.43
+2026-03-01,Automotive Fuel,Non-Discretionary,23.38
+2026-03-01,Education,Non-Discretionary,4.54
+2026-03-01,Electricity,Non-Discretionary,19.74
+2026-03-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.42
+2026-03-01,Gas & Household Fuels,Non-Discretionary,-0.15
+2026-03-01,Health,Non-Discretionary,2.19
+2026-03-01,Insurance & Financial Services,Non-Discretionary,1.72
+2026-03-01,Rents,Non-Discretionary,1.14
+2026-03-01,Utilities,Non-Discretionary,10.73
+2026-04-01,Clothing & Footwear,Discretionary,7.53
+2026-04-01,Holiday Travel,Discretionary,-9.89
+2026-04-01,Meals Out & Take Away,Discretionary,1.11
+2026-04-01,Recreation & Culture,Discretionary,-4.52
+2026-04-01,All Groups CPI,Headline,1.81
+2026-04-01,Automotive Fuel,Non-Discretionary,15.38
+2026-04-01,Education,Non-Discretionary,4.52
+2026-04-01,Electricity,Non-Discretionary,18.62
+2026-04-01,Food & Non-Alcoholic Beverages,Non-Discretionary,1.11
+2026-04-01,Gas & Household Fuels,Non-Discretionary,-0.7
+2026-04-01,Health,Non-Discretionary,5.3
+2026-04-01,Insurance & Financial Services,Non-Discretionary,1.31
+2026-04-01,Rents,Non-Discretionary,1.06
+2026-04-01,Utilities,Non-Discretionary,9.99
