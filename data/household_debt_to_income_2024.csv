@@ -1,0 +1,32 @@
+country,debt_to_income_pct,year,highlight,is_australia,rank,oecd_avg
+Netherlands,216.0,2024,Other,False,1,106.04
+Australia,209.51,2024,Australia,True,2,106.04
+Denmark,203.49,2024,Other,False,3,106.04
+Canada,181.07,2024,Canada,False,4,106.04
+Sweden,179.22,2024,Other,False,5,106.04
+Luxembourg,178.34,2024,Other,False,6,106.04
+Korea,174.34,2024,Other,False,7,106.04
+Iceland,152.38,2024,Other,False,8,106.04
+Finland,141.73,2024,Other,False,9,106.04
+United Kingdom,130.77,2024,UK,False,10,106.04
+Japan,122.38,2024,Japan,False,11,106.04
+France,115.25,2024,Other,False,12,106.04
+Belgium,104.75,2024,Other,False,13,106.04
+Portugal,103.94,2024,Other,False,14,106.04
+United States,98.84,2024,USA,False,15,106.04
+Ireland,85.92,2024,Other,False,16,106.04
+Germany,85.8,2024,Germany,False,17,106.04
+Italy,79.81,2024,Other,False,18,106.04
+Spain,78.36,2024,Other,False,19,106.04
+Slovak Rep.,77.45,2024,Other,False,20,106.04
+Austria,74.89,2024,Other,False,21,106.04
+Estonia,74.63,2024,Other,False,22,106.04
+Greece,74.5,2024,Other,False,23,106.04
+Czechia,60.79,2024,Other,False,24,106.04
+Lithuania,53.37,2024,Other,False,25,106.04
+Slovenia,50.13,2024,Other,False,26,106.04
+Latvia,39.94,2024,Other,False,27,106.04
+Colombia,38.79,2024,Other,False,28,106.04
+Poland,38.46,2024,Other,False,29,106.04
+Hungary,34.53,2024,Other,False,30,106.04
+Mexico,27.88,2024,Other,False,31,106.04
