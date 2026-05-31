@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Rent CPI Growth vs. Net Overseas Migration (NOM)",
   "data": {
     "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/rent_cpi_vs_nom.csv"

@@ -71,7 +71,9 @@
         "fontSize": 22,
         "fontWeight": "bold",
         "color": "#1D9E75",
-        "dy": -10
+        "dy": -10,
+        "x": 130,  
+        "y": 130    
       },
       "encoding": {
         "text": { "field": "pct", "type": "quantitative", "format": ".1f" }

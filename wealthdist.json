@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Distribution of Household Net Worth by Age Group (2002–2025)",
     "subtitle": "Generational wealth shares over time.",

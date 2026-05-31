@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "",
   "data": {
     "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/discretionary_vs_nondiscretionary_cpi_2020_2026.csv"
