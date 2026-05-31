@@ -12,7 +12,9 @@
   "height": 260,
   "background": "white",
   "config": { "font": "system-ui, sans-serif", "view": { "stroke": null } },
-
+  "data": {
+    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/australia_migration_donut_data.csv"
+  },
   "params": [
     {
       "name": "yearFilter",
@@ -24,9 +26,7 @@
       }
     }
   ],
-
   "layer": [
-
     {
       "transform": [{ "filter": "datum.year == yearFilter" }],
       "mark": {
@@ -55,13 +55,12 @@
         },
         "order": { "field": "pct", "type": "quantitative", "sort": "descending" },
         "tooltip": [
-          { "field": "category", "type": "nominal",      "title": "Group" },
-          { "field": "pct",      "type": "quantitative", "title": "Share (%)",  "format": ".2f" },
-          { "field": "value",    "type": "quantitative", "title": "Count",      "format": ",.0f" }
+          { "field": "category", "type": "nominal", "title": "Group" },
+          { "field": "pct", "type": "quantitative", "title": "Share (%)", "format": ".2f" },
+          { "field": "value", "type": "quantitative", "title": "Count", "format": ",.0f" }
         ]
       }
     },
-
     {
       "transform": [
         { "filter": "datum.year == yearFilter && datum.category == 'Immigrants'" }
@@ -71,15 +70,13 @@
         "fontSize": 22,
         "fontWeight": "bold",
         "color": "#1D9E75",
-        "dy": -10,
-        "x": 130,  
-        "y": 130    
+        "x": 130,
+        "y": 120
       },
       "encoding": {
         "text": { "field": "pct", "type": "quantitative", "format": ".1f" }
       }
     },
-
     {
       "transform": [
         { "filter": "datum.year == yearFilter && datum.category == 'Immigrants'" }
@@ -88,14 +85,13 @@
         "type": "text",
         "fontSize": 11,
         "color": "#1D9E75",
-        "fontWeight": "normal",
-        "dy": 10
+        "x": 130,
+        "y": 140
       },
       "encoding": {
         "text": { "value": "% Immigrants" }
       }
     },
-
     {
       "transform": [
         { "filter": "datum.year == yearFilter && datum.category == 'Immigrants'" }
@@ -104,16 +100,12 @@
         "type": "text",
         "fontSize": 9,
         "color": "#888",
-        "dy": 26
+        "x": 130,
+        "y": 156
       },
       "encoding": {
         "text": { "field": "value", "type": "quantitative", "format": ",.0f" }
       }
     }
-
-  ],
-
-  "data": {
-    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/australia_migration_donut_data.csv"
-  }
+  ]
 }
