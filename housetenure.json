@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Housing Tenure (1999–2020) with Interactive Legend",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/housing_tenure_1999_2020.csv"
+  },
+  "vconcat": [
+    {
+      "width": 600,
+      "height": 300,
+      "mark": {"type": "line", "point": true, "strokeWidth": 2.5},
+      "params": [
+        {
+          "name": "CategorySelection",
+          "select": {"type": "point", "fields": ["category"]},
+          "bind": "legend"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": "Year",
+          "scale": {"domain": {"param": "brush"}},
+          "axis": {"format": "%Y", "labelAngle": -45}
+        },
+        "y": {
+          "field": "pct",
+          "type": "quantitative",
+          "title": "Share of Households (%)",
+          "scale": {"zero": false}
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "legend": {
+            "title": "Tenure Type (Click & Shift+Click)",
+            "orient": "right",
+            "titlePadding": 10
+          }
+        },
+        "opacity": {
+          "condition": {"param": "CategorySelection", "value": 1},
+          "value": 0.1
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Date",
+            "format": "%Y"
+          },
+          {"field": "category", "type": "nominal", "title": "Tenure"},
+          {
+            "field": "pct",
+            "type": "quantitative",
+            "title": "%",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "width": 600,
+      "height": 100,
+      "mark": {"type": "line", "strokeWidth": 1.5},
+      "params": [
+        {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
+      ],
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": "Drag here to filter timeline",
+          "axis": {"format": "%Y"}
+        },
+        "y": {
+          "field": "pct",
+          "type": "quantitative",
+          "title": "Overview",
+          "scale": {"zero": false},
+          "axis": {"tickCount": 3}
+        },
+        "color": {"field": "category", "type": "nominal", "legend": null},
+        "opacity": {
+          "condition": {"param": "CategorySelection", "value": 1},
+          "value": 0.1
+        }
+      }
+    }
+  ],
+  "config": {}
+}

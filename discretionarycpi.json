@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Inflation CPI Analysis: View Toggle",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/discretionary_vs_nondiscretionary_cpi_2020_2026.csv"
+  },
+  "width": 650,
+  "height": 400,
+  "params": [
+    {
+      "name": "ViewSelection",
+      "value": "Overview (Grouped by Type)",
+      "bind": {
+        "input": "radio",
+        "options": [
+          "Overview (Grouped by Type)",
+          "Detailed (Stacked by Category)"
+        ],
+        "name": "Select Phase: "
+      }
+    }
+  ],
+  "resolve": {"scale": {"color": "independent"}},
+  "layer": [
+    {
+      "name": "Phase 1: Grouped Bar",
+      "transform": [
+        {"filter": "ViewSelection == 'Overview (Grouped by Type)'"},
+        {
+          "filter": "datum.type == 'Discretionary' || datum.type == 'Non-Discretionary'"
+        }
+      ],
+      "mark": {"type": "bar", "tooltip": true, "cornerRadiusEnd": 3},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "year",
+          "title": "Year",
+          "axis": {"labelAngle": 0, "tickCount": "year"}
+        },
+        "xOffset": {"field": "type", "type": "nominal"},
+        "y": {
+          "field": "yoy_pct_change",
+          "type": "quantitative",
+          "aggregate": "mean",
+          "title": "Average YoY % Change"
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "title": "Expense Type",
+          "scale": {
+            "domain": ["Discretionary", "Non-Discretionary"],
+            "range": ["#1f77b4", "#ff7f0e"]
+          },
+          "legend": {"orient": "right"}
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Year"
+          },
+          {"field": "type", "type": "nominal", "title": "Type"},
+          {
+            "field": "yoy_pct_change",
+            "type": "quantitative",
+            "aggregate": "mean",
+            "title": "Avg YoY % Change",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Phase 2: Stacked Bar",
+      "transform": [
+        {"filter": "ViewSelection == 'Detailed (Stacked by Category)'"},
+        {
+          "filter": "datum.type == 'Discretionary' || datum.type == 'Non-Discretionary'"
+        }
+      ],
+      "params": [
+        {
+          "name": "CategorySelection",
+          "select": {"type": "point", "fields": ["category"]},
+          "bind": "legend"
+        }
+      ],
+      "mark": {"type": "bar", "tooltip": true},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "year",
+          "title": "Year",
+          "axis": {"labelAngle": 0, "tickCount": "year"}
+        },
+        "y": {
+          "field": "yoy_pct_change",
+          "type": "quantitative",
+          "aggregate": "mean",
+          "title": "Average YoY % Change"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "Category (Click to Filter)",
+          "legend": {"orient": "right", "columns": 1}
+        },
+        "opacity": {
+          "condition": {"param": "CategorySelection", "value": 1},
+          "value": 0.1
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Year"
+          },
+          {"field": "category", "type": "nominal", "title": "Category"},
+          {"field": "type", "type": "nominal", "title": "Type"},
+          {
+            "field": "yoy_pct_change",
+            "type": "quantitative",
+            "aggregate": "mean",
+            "title": "Avg YoY % Change",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {}
+}

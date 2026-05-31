@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Rent CPI Growth vs. Net Overseas Migration (NOM)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/rent_cpi_vs_nom.csv"
+  },
+  "width": 650,
+  "height": 400,
+  "resolve": {"scale": {"y": "independent"}},
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "color": "#1f77b4",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": "Date",
+          "axis": {"format": "%b %Y", "labelAngle": -45}
+        },
+        "y": {
+          "field": "rent_cpi_annual_pct",
+          "type": "quantitative",
+          "title": "Rent CPI Annual Growth (%)",
+          "axis": {"titleColor": "#1f77b4", "labelColor": "#1f77b4"},
+          "scale": {"zero": false}
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Date",
+            "format": "%b %Y"
+          },
+          {
+            "field": "rent_cpi_annual_pct",
+            "type": "quantitative",
+            "title": "Rent CPI Growth (%)"
+          },
+          {"field": "note", "type": "nominal", "title": "Note"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "color": "#ff7f0e",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {"field": "date", "type": "temporal"},
+        "y": {
+          "field": "nom_thousands",
+          "type": "quantitative",
+          "title": "NOM (Thousands)",
+          "axis": {"titleColor": "#ff7f0e", "labelColor": "#ff7f0e"},
+          "scale": {"zero": false}
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Date",
+            "format": "%b %Y"
+          },
+          {
+            "field": "nom_thousands",
+            "type": "quantitative",
+            "title": "Net Overseas Migration (000s)"
+          },
+          {"field": "note", "type": "nominal", "title": "Note"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}

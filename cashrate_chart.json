@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "RBA Cash Rate (1990–2026)",
+    "subtitle": "Monthly observations — Source: Reserve Bank of Australia",
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "anchor": "start"
+  },
+  "width": 900,
+  "height": 400,
+  "data": {
+    "url": "YOUR_DATA_URL_HERE",
+    "format": { "type": "csv" }
+  },
+
+  "layer": [
+
+    {
+      "mark": {
+        "type": "line",
+        "color": "#1a6fc4",
+        "strokeWidth": 1.8,
+        "interpolate": "monotone"
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": "Date",
+          "axis": { "format": "%Y", "tickCount": "year", "labelAngle": -45 }
+        },
+        "y": {
+          "field": "CashRate",
+          "type": "quantitative",
+          "title": "Cash Rate (%)",
+          "scale": { "zero": true },
+          "axis": { "format": ".1f", "tickCount": 8 }
+        },
+        "tooltip": [
+          { "field": "Date", "type": "temporal", "format": "%b %Y", "title": "Month" },
+          { "field": "CashRate", "type": "quantitative", "format": ".2f", "title": "Cash Rate (%)" }
+        ]
+      }
+    },
+
+    {
+      "_comment_annotations_guide": [
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "HOW TO ADD PERIOD ANNOTATIONS",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        "OPTION A — Shaded rect band (for a date range)",
+        "Add this as a layer with mark: rect. Example:",
+        "",
+        "  {",
+        "    'data': { 'values': [",
+        "      { 'start': '2008-01-01', 'end': '2009-12-31', 'label': 'GFC' }",
+        "    ]},",
+        "    'mark': { 'type': 'rect', 'opacity': 0.12, 'color': '#e05c5c' },",
+        "    'encoding': {",
+        "      'x':  { 'field': 'start', 'type': 'temporal' },",
+        "      'x2': { 'field': 'end',   'type': 'temporal' },",
+        "      'color': { 'value': '#e05c5c' }",
+        "    }",
+        "  }",
+        "",
+        "OPTION B — Vertical rule line (for a single point in time)",
+        "Add this as a layer with mark: rule. Example:",
+        "",
+        "  {",
+        "    'data': { 'values': [",
+        "      { 'date': '2020-03-01', 'label': 'COVID cuts begin' }",
+        "    ]},",
+        "    'mark': { 'type': 'rule', 'strokeDash': [4,3], 'color': '#888', 'strokeWidth': 1.5 },",
+        "    'encoding': { 'x': { 'field': 'date', 'type': 'temporal' } }",
+        "  }",
+        "",
+        "OPTION C — Text label on the chart",
+        "Add this as a layer with mark: text. Example:",
+        "",
+        "  {",
+        "    'data': { 'values': [",
+        "      { 'date': '2008-07-01', 'rate': 7.5, 'label': 'Peak (GFC)' }",
+        "    ]},",
+        "    'mark': { 'type': 'text', 'dy': -10, 'fontSize': 11, 'fontStyle': 'italic' },",
+        "    'encoding': {",
+        "      'x':    { 'field': 'date', 'type': 'temporal' },",
+        "      'y':    { 'field': 'rate', 'type': 'quantitative' },",
+        "      'text': { 'field': 'label' }",
+        "    }",
+        "  }",
+        "",
+        "SUGGESTED PERIODS TO ANNOTATE (based on your data):",
+        "  ↓ TROUGH  1990-1993  — Post-recession easing:  14% → 4.75%",
+        "  ↑ PEAK    1994-1995  — Tightening cycle:        4.75% → 7.5%",
+        "  ↓ EASING  1996-1998  — Easing to 5%",
+        "  ↑ UP      1999-2000  — Y2K / Dot-com tightening: 5% → 6.25%",
+        "  ↓ DOWN    2001-2002  — Post-9/11 / tech bust easing",
+        "  ↑ PEAK    2007-2008  — Pre-GFC peak: 7.25%",
+        "  ↓ GFC     2008-2009  — GFC cuts: 7.25% → 3%",
+        "  ↑ UP      2009-2011  — Post-GFC recovery",
+        "  ↓ DOWN    2011-2016  — Extended easing cycle",
+        "  ↓ COVID   2019-2021  — COVID emergency lows: 0.1%",
+        "  ↑ HIKE    2022-2024  — Inflation-fighting hikes: 0.1% → 4.35%",
+        "  ↓ EASING  2025+      — Current easing cycle"
+      ],
+
+      "mark": { "type": "point", "opacity": 0 },
+      "encoding": {
+        "x": { "field": "Date", "type": "temporal" },
+        "y": { "field": "CashRate", "type": "quantitative" }
+      }
+    }
+
+  ],
+
+  "config": {
+    "view": { "stroke": "transparent" },
+    "axis": { "grid": true, "gridColor": "#e8e8e8", "domainColor": "#ccc" },
+    "background": "#ffffff"
+  }
+}
