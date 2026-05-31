@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Australia Population Composition",
     "subtitle": "Share of residents, immigrants and emigrants by year",
@@ -63,7 +63,6 @@
     },
 
     {
-      "_comment": "Centre label — Immigrants % (large)",
       "transform": [
         { "filter": "datum.year == yearFilter && datum.category == 'Immigrants'" }
       ],
@@ -80,7 +79,6 @@
     },
 
     {
-      "_comment": "Centre label — % symbol sub-label",
       "transform": [
         { "filter": "datum.year == yearFilter && datum.category == 'Immigrants'" }
       ],
@@ -97,7 +95,6 @@
     },
 
     {
-      "_comment": "Centre label — raw count (small, below)",
       "transform": [
         { "filter": "datum.year == yearFilter && datum.category == 'Immigrants'" }
       ],
