@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "title": {
     "text": "",
     "subtitle": "Global rank based on household debt-to-income ratio among OECD nations. Click any Australia dot to update the panel.",
