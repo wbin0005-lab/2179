@@ -1,0 +1,49 @@
+period,date,year,category,impact,pct,color_hint
+1999-00,1999-07-01,1999,Owns Outright,Unaffected / Benefits,38.6,#2ca02c
+1999-00,1999-07-01,1999,Owns with Mortgage,Directly Hit by Hikes,32.1,#d62728
+1999-00,1999-07-01,1999,Renter – Private,Indirectly Hit,19.9,#ff7f0e
+1999-00,1999-07-01,1999,Renter – Public/Social,Indirectly Hit,5.8,#ffbb78
+2000-01,2000-07-01,2000,Owns Outright,Unaffected / Benefits,38.2,#2ca02c
+2000-01,2000-07-01,2000,Owns with Mortgage,Directly Hit by Hikes,32.1,#d62728
+2000-01,2000-07-01,2000,Renter – Private,Indirectly Hit,21.0,#ff7f0e
+2000-01,2000-07-01,2000,Renter – Public/Social,Indirectly Hit,5.0,#ffbb78
+2002-03,2002-07-01,2002,Owns Outright,Unaffected / Benefits,36.4,#2ca02c
+2002-03,2002-07-01,2002,Owns with Mortgage,Directly Hit by Hikes,33.1,#d62728
+2002-03,2002-07-01,2002,Renter – Private,Indirectly Hit,22.0,#ff7f0e
+2002-03,2002-07-01,2002,Renter – Public/Social,Indirectly Hit,4.9,#ffbb78
+2003-04,2003-07-01,2003,Owns Outright,Unaffected / Benefits,34.9,#2ca02c
+2003-04,2003-07-01,2003,Owns with Mortgage,Directly Hit by Hikes,35.1,#d62728
+2003-04,2003-07-01,2003,Renter – Private,Indirectly Hit,21.2,#ff7f0e
+2003-04,2003-07-01,2003,Renter – Public/Social,Indirectly Hit,4.9,#ffbb78
+2005-06,2005-07-01,2005,Owns Outright,Unaffected / Benefits,34.3,#2ca02c
+2005-06,2005-07-01,2005,Owns with Mortgage,Directly Hit by Hikes,35.0,#d62728
+2005-06,2005-07-01,2005,Renter – Private,Indirectly Hit,22.0,#ff7f0e
+2005-06,2005-07-01,2005,Renter – Public/Social,Indirectly Hit,4.7,#ffbb78
+2007-08,2007-07-01,2007,Owns Outright,Unaffected / Benefits,33.2,#2ca02c
+2007-08,2007-07-01,2007,Owns with Mortgage,Directly Hit by Hikes,35.1,#d62728
+2007-08,2007-07-01,2007,Renter – Private,Indirectly Hit,23.9,#ff7f0e
+2007-08,2007-07-01,2007,Renter – Public/Social,Indirectly Hit,4.5,#ffbb78
+2009-10,2009-07-01,2009,Owns Outright,Unaffected / Benefits,32.6,#2ca02c
+2009-10,2009-07-01,2009,Owns with Mortgage,Directly Hit by Hikes,36.2,#d62728
+2009-10,2009-07-01,2009,Renter – Private,Indirectly Hit,23.7,#ff7f0e
+2009-10,2009-07-01,2009,Renter – Public/Social,Indirectly Hit,3.9,#ffbb78
+2011-12,2011-07-01,2011,Owns Outright,Unaffected / Benefits,30.9,#2ca02c
+2011-12,2011-07-01,2011,Owns with Mortgage,Directly Hit by Hikes,36.6,#d62728
+2011-12,2011-07-01,2011,Renter – Private,Indirectly Hit,25.1,#ff7f0e
+2011-12,2011-07-01,2011,Renter – Public/Social,Indirectly Hit,3.9,#ffbb78
+2013-14,2013-07-01,2013,Owns Outright,Unaffected / Benefits,31.4,#2ca02c
+2013-14,2013-07-01,2013,Owns with Mortgage,Directly Hit by Hikes,35.8,#d62728
+2013-14,2013-07-01,2013,Renter – Private,Indirectly Hit,25.7,#ff7f0e
+2013-14,2013-07-01,2013,Renter – Public/Social,Indirectly Hit,3.6,#ffbb78
+2015-16,2015-07-01,2015,Owns Outright,Unaffected / Benefits,30.4,#2ca02c
+2015-16,2015-07-01,2015,Owns with Mortgage,Directly Hit by Hikes,37.1,#d62728
+2015-16,2015-07-01,2015,Renter – Private,Indirectly Hit,25.3,#ff7f0e
+2015-16,2015-07-01,2015,Renter – Public/Social,Indirectly Hit,3.5,#ffbb78
+2017-18,2017-07-01,2017,Owns Outright,Unaffected / Benefits,29.5,#2ca02c
+2017-18,2017-07-01,2017,Owns with Mortgage,Directly Hit by Hikes,36.7,#d62728
+2017-18,2017-07-01,2017,Renter – Private,Indirectly Hit,27.1,#ff7f0e
+2017-18,2017-07-01,2017,Renter – Public/Social,Indirectly Hit,3.1,#ffbb78
+2019-20,2019-07-01,2019,Owns Outright,Unaffected / Benefits,29.5,#2ca02c
+2019-20,2019-07-01,2019,Owns with Mortgage,Directly Hit by Hikes,36.8,#d62728
+2019-20,2019-07-01,2019,Renter – Private,Indirectly Hit,26.2,#ff7f0e
+2019-20,2019-07-01,2019,Renter – Public/Social,Indirectly Hit,2.9,#ffbb78
