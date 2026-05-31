@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Distribution of Household Net Worth by Age Group (2002–2025)",
+    "subtitle": "Generational wealth shares over time.",
+    "fontSize": 16,
+    "anchor": "start"
+  },
+  "width": 750,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/estimated_shares_net_worth_by_age_2002_2025.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Aged 34 and under",
+        "Aged 35-44",
+        "Aged 45-54",
+        "Aged 55-64",
+        "Aged 65 and over"
+      ],
+      "as": ["Age_Group", "Share"]
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "tooltip": true,
+    "line": {"color": "#ffffff", "width": 1}
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "grid": false,
+        "format": "%Y",
+        "tickCount": "year",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "Share",
+      "type": "quantitative",
+      "title": "Share of Total Net Worth (%)",
+      "axis": {"grid": true}
+    },
+    "color": {
+      "field": "Age_Group",
+      "type": "nominal",
+      "title": "Age Group",
+      "scale": {
+        "domain": [
+          "Aged 65 and over",
+          "Aged 55-64",
+          "Aged 45-54",
+          "Aged 35-44",
+          "Aged 34 and under"
+        ],
+        "range": ["#1f77b4", "#6baed6", "#9ecae1", "#fdae6b", "#e6550d"]
+      },
+      "legend": {"orient": "right", "titlePadding": 10}
+    },
+    "order": {"field": "Age_Group", "type": "nominal", "sort": "descending"},
+    "tooltip": [
+      {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
+      {"field": "Age_Group", "type": "nominal", "title": "Age Cohort"},
+      {
+        "field": "Share",
+        "type": "quantitative",
+        "title": "Share of Wealth (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {}
+}
