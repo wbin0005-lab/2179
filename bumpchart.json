@@ -83,8 +83,7 @@
               "select": {
                 "type": "point",
                 "fields": ["Year"],
-                "on": "click",
-                "nearest": true
+                "on": "click"
               }
             }
           ],

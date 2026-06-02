@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Housing Tenure (1999–2020)",
+  "title": "",
   "data": {
     "url": "https://raw.githubusercontent.com/wbin0005-lab/2179/main/data/housing_tenure_1999_2020.csv"
   },
